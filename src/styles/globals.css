@@ -1,26 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Anton:wght@400&family=Cinzel:wght@400&display=swap');
-
-
-:root {
-  --foreground-color: #131313;
-  --background-color: #ffffff;
-}
-
-body {
-  color: var(--foreground-color);
-  background-color: var(--background-color);
-}
-
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-
-/*  container mx-auto flex h-14 items-center px-6 sm:px-6 lg:px-8 */
+  
