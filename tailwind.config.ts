@@ -18,14 +18,14 @@ const config = {
       },
     },
     extend: {
-
       colors: {
         navyBlue: "#18212A",
         slateBlue: "#334155",
         slateLightBlue: "#6B9ACB",
         devilRed: "#D61C2C",
-        cloudyGray: '#F8F8F8',
-        WayneBlack: '#282828',
+        cloudyGray: "#F8F8F8",
+        WayneBlack: "#282828",
+        SunsetOrange: "#F7A21B",
       },
       keyframes: {
         "accordion-down": {
