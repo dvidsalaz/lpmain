@@ -5,7 +5,7 @@ import { cinzel } from "./font/font";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "LP Construction – Building What Matters",
+  title: "LP Exteriors – Building What Matters",
   description: "Building What Matters", // change this in near future
 };
 
