@@ -32,6 +32,12 @@ export default function Home() {
                 <p className="text-sm sm:text-base lg:text-lg">
                   info@lpexteriors.com
                 </p>
+                <a
+                  href="tel:+8324686980"
+                  className="text-sm sm:text-base lg:text-lg"
+                >
+                  +1 (832) 468-6980
+                </a>
               </div>
               <p className="text-sm sm:text-base lg:text-lg"></p>
             </div>
@@ -188,8 +194,7 @@ export default function Home() {
               </nav>
               <div>
                 <p className="text-white text-sm sm:text-base lg:text-lg text-center">
-                  Copyright &copy; 2024 LP Construction LLC. All rights
-                  reserved.
+                  Copyright &copy; 2024 LP Exteriors LLC. All rights reserved.
                 </p>
               </div>
             </div>
