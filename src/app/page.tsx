@@ -44,9 +44,8 @@ export default function Home() {
             <nav className=" sticky top-0 z-50 flex items-center justify-between p-4">
               <Link href="#main-section">
                 <Image
-                  src="/images/lp_logo.svg"
+                  src="/images/lp_logo(2).svg"
                   alt="LP Construction Logo"
-                  layout=" responsive"
                   width={144}
                   height={144}
                   className=" object-contain"
@@ -166,10 +165,11 @@ export default function Home() {
           </section>
           <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
             <Image
-              src="/images/lp_logo.svg"
+              src="/images/lp_logo(2).svg"
               alt="LP Construction Logo"
               width={144}
               height={144}
+              className="object-contain"
             />
             <div className="flex items-center gap-2">
               <Image
