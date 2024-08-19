@@ -33,7 +33,7 @@ export default function Home() {
                   info@lpexteriors.com
                 </p>
                 <a
-                  href="tel:+8324686980"
+                  href="tel:+18324686980"
                   className="text-sm sm:text-base lg:text-lg"
                 >
                   +1 (832) 468-6980
