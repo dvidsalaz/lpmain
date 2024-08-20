@@ -1,9 +1,15 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import Parallax from "../components/custom/parallax";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import {
   Dialog,
   DialogTrigger,
@@ -63,8 +69,8 @@ export default function Home() {
               </Link>
               <div className=" ">
                 <NavigationMenu>
-                  <NavigationMenuList>
-                    <NavigationMenuItem className="">
+                  <NavigationMenuList className="">
+                    <NavigationMenuItem className=" bg-none">
                       <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink
                           className={navigationMenuTriggerStyle()}
@@ -72,6 +78,37 @@ export default function Home() {
                           HOME
                         </NavigationMenuLink>
                       </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className="">
+                      <NavigationMenuTrigger className=" bg-transparent">
+                        ABOUT
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <NavigationMenuIndicator />
+                        <NavigationMenuList className="flex flex-col p-6 gap-8">
+                          <NavigationMenuItem>
+                            <Link href="/Values" passHref>
+                              <NavigationMenuLink>
+                                Our Company
+                              </NavigationMenuLink>
+                            </Link>
+                          </NavigationMenuItem>
+                          <NavigationMenuItem>
+                            <Link href="/Services" passHref>
+                              <NavigationMenuLink>
+                                Our Services
+                              </NavigationMenuLink>
+                            </Link>
+                          </NavigationMenuItem>
+                          <NavigationMenuItem>
+                            <Link href="/Projects" passHref>
+                              <NavigationMenuLink>
+                                Our Projects
+                              </NavigationMenuLink>
+                            </Link>
+                          </NavigationMenuItem>
+                        </NavigationMenuList>
+                      </NavigationMenuContent>
                     </NavigationMenuItem>
                   </NavigationMenuList>
                 </NavigationMenu>
@@ -91,12 +128,14 @@ export default function Home() {
                 className=" text-lg sm:text-xl lg:text-2xl border-2 gap-2 p-6 rounded-none bg-transparent b"
                 variant={"outline"}
               >
-                <Image
-                  src="/images/arrow-down.svg"
-                  alt="arrow"
-                  width={24}
-                  height={24}
-                />
+                <Link href="#our-mission">
+                  <Image
+                    src="/images/arrow-down.svg"
+                    alt="arrow"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
               </Button>
             </div>
           </section>
@@ -115,12 +154,10 @@ export default function Home() {
           </section>
           <section
             id="team"
-            className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20  bg-slate-400"
+            className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400"
+            style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
           >
-            <div
-              id="image_placeholder"
-              className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"
-            ></div>
+            <div className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
             <div
               id="div1"
               className=" items-center justify-center flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow"
@@ -130,7 +167,7 @@ export default function Home() {
                   Top Projects
                 </h2>
                 <h1 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
-                  Bayshoes Traditional
+                  Uvalde Residential Estate
                 </h1>
               </div>
               <p className=" text-center text-WayneBlack text-base sm:text-lg lg:text-xl">
@@ -179,15 +216,17 @@ export default function Home() {
             >
               <div>
                 <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
-                  Top Projects
+                  Meet Our Team
                 </h2>
                 <h1 className="text-2xl text-WayneBlack sm:text-3xl lg:text-5xl">
-                  Bayshoes Traditional
+                  Experienced Professionals
                 </h1>
               </div>
               <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-                Massa nunc nisi fames adipiscing scelerisque placerat et
-                sagittis cursus. Mi commodo id maecenas amet, elementum a, in.
+                Our team is composed of skilled professionals dedicated to
+                delivering exceptional results. With a wealth of experience and
+                a passion for excellence, they bring a unique blend of expertise
+                to every project.
               </p>
               <div className="flex flex-col">
                 <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
@@ -220,10 +259,15 @@ export default function Home() {
                 </Dialog>
               </div>
             </div>
-            <div
-              id="image_placeholder"
-              className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-SunsetOrange"
-            ></div>
+            <div className=" relative flex-1 flex items-center justify-center">
+              <Image
+                src="/images/IMG_7474.jpg"
+                alt="Uvalde Residential Estate"
+                layout="fill"
+                objectFit="cover"
+                className="absolute inset-0"
+              />
+            </div>
           </section>
           <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center">
             <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
