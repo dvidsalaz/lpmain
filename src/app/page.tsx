@@ -280,18 +280,20 @@ export default function Home() {
                 Nulla felis ac turpis at amet. Purus malesuada placerat arcu at
                 enim elit in accumsan.
               </p>
-              <Button
-                className=" text-lg sm:text-xl lg:text-2xl gap-2 text-devilRed p-6 bg-transparent border-devilRed rounded-none border-2 "
-                variant={"outline"}
-              >
-                CONTACT US
-                <Image
-                  src="/images/arrow-right.svg"
-                  alt="arrow"
-                  width={24}
-                  height={24}
-                />
-              </Button>
+              <Link href="https://popl.co/card/hPZf85iu/1/dash">
+                <Button
+                  className=" text-lg sm:text-xl lg:text-2xl gap-2 text-devilRed p-6 bg-transparent border-devilRed rounded-none border-2 "
+                  variant={"outline"}
+                >
+                  CONTACT US
+                  <Image
+                    src="/images/arrow-right.svg"
+                    alt="arrow"
+                    width={24}
+                    height={24}
+                  />
+                </Button>
+              </Link>
             </div>
           </section>
           <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
