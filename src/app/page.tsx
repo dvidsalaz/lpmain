@@ -295,13 +295,15 @@ export default function Home() {
             </div>
           </section>
           <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
-            <Image
-              src="/images/lp_logo(2).svg"
-              alt="LP Construction Logo"
-              width={144}
-              height={144}
-              className="object-contain"
-            />
+            <Link href="#main-section">
+              <Image
+                src="/images/lp_logo(2).svg"
+                alt="LP Construction Logo"
+                width={144}
+                height={144}
+                className="object-contain"
+              />
+            </Link>
             <div className="flex items-center gap-2">
               <Image
                 src="/images/texasflag.png"
