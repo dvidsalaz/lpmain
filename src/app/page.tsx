@@ -16,17 +16,6 @@ import {
   DialogContent,
   DialogClose,
 } from "@/components/ui/dialog";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
 
 export default function Home() {
   return (
@@ -54,65 +43,43 @@ export default function Home() {
           </div>
           {/* Main Content */}
           <section
-            id="main-section"
             className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-slate-400 min-h-screen"
           >
             <nav className=" sticky top-0 z-50 flex items-center justify-between">
-              <Link href="#main-section">
+              <Link href="#home">
                 <Image
                   src="/images/lp_logo(2).svg"
                   alt="LP Construction Logo"
-                  width={144}
-                  height={144}
+                  width={120}
+                  height={120}
                   className=" object-contain"
                 />
               </Link>
-              <div className=" ">
-                <NavigationMenu>
-                  <NavigationMenuList className="">
-                    <NavigationMenuItem className=" bg-none">
-                      <Link href="/" legacyBehavior passHref>
-                        <NavigationMenuLink
-                          className={navigationMenuTriggerStyle()}
-                        >
-                          HOME
-                        </NavigationMenuLink>
-                      </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem className="">
-                      <NavigationMenuTrigger className=" bg-transparent">
-                        ABOUT
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <NavigationMenuIndicator />
-                        <NavigationMenuList className="flex flex-col p-6 gap-8">
-                          <NavigationMenuItem>
-                            <Link href="/Values" passHref>
-                              <NavigationMenuLink>
-                                Our Company
-                              </NavigationMenuLink>
-                            </Link>
-                          </NavigationMenuItem>
-                          <NavigationMenuItem>
-                            <Link href="/Services" passHref>
-                              <NavigationMenuLink>
-                                Our Services
-                              </NavigationMenuLink>
-                            </Link>
-                          </NavigationMenuItem>
-                          <NavigationMenuItem>
-                            <Link href="/Projects" passHref>
-                              <NavigationMenuLink>
-                                Our Projects
-                              </NavigationMenuLink>
-                            </Link>
-                          </NavigationMenuItem>
-                        </NavigationMenuList>
-                      </NavigationMenuContent>
-                    </NavigationMenuItem>
-                  </NavigationMenuList>
-                </NavigationMenu>
+              <div className=" hidden sm:flex gap-6">
+                <Link href="#home" className="text-lg sm:text-xl text-white">
+                  HOME
+                </Link>
+                <Link href="#company" className="text-lg sm:text-xl text-white">
+                  COMPANY
+                </Link>
+                <Link href="#portfolio" className="text-lg sm:text-xl text-white">
+                  PORTFOLIO
+                </Link>
+                <Link href="#team" className="text-lg sm:text-xl text-white">
+                  OUR TEAM
+                </Link>
+                <Link href="#contact" className="text-lg sm:text-xl text-white">
+                  CONTACT US
+                </Link>
               </div>
+              <button className=" sm:hidden bg-transparent p-0">
+                <Image
+                  src="/images/align-justify.svg"
+                  alt="Menu"
+                  width={32}
+                  height={32}
+                />
+              </button>
             </nav>
             <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
               <h1>LP</h1>
@@ -122,22 +89,6 @@ export default function Home() {
             <p className=" font- text-lg sm:text-xl lg:text-2xl font-light">
               SETTING THE NEW STANDARD FOR HOME CONSTRUCTION
             </p>
-            <div className=" flex justify-end">
-              {/* BUTTON USE PARALLAX PROVIDER  */}
-              <Button
-                className=" text-lg sm:text-xl lg:text-2xl border-2 gap-2 p-6 rounded-none bg-transparent b"
-                variant={"outline"}
-              >
-                <Link href="#our-mission">
-                  <Image
-                    src="/images/arrow-down.svg"
-                    alt="arrow"
-                    width={24}
-                    height={24}
-                  />
-                </Link>
-              </Button>
-            </div>
           </section>
           <section
             id="our-mission"
@@ -153,7 +104,7 @@ export default function Home() {
             </p>
           </section>
           <section
-            id="team"
+            id="portfolio"
             className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400"
             style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
           >
@@ -207,7 +158,7 @@ export default function Home() {
             </div>
           </section>
           <section
-            id="work"
+            id="team"
             className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 "
           >
             <div
@@ -269,7 +220,7 @@ export default function Home() {
               />
             </div>
           </section>
-          <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center">
+          <section id="contact" className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center">
             <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
               <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
                 Get In Touch
