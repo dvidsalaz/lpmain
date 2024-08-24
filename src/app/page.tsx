@@ -29,6 +29,7 @@ export default function Home() {
                 <p className="text-sm sm:text-base lg:text-lg">
                   info@lpexteriors.com
                 </p>
+                <span>|</span>
                 <a
                   href="tel:+18324686980"
                   className="text-sm sm:text-base lg:text-lg"
@@ -37,6 +38,14 @@ export default function Home() {
                 >
                   (832) 468-6980
                 </a>
+                <span>
+                  <Image
+                    src="/images/phone.svg"
+                    alt="Phone Icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
               </div>
               <p className="text-sm sm:text-base lg:text-lg"></p>
             </div>
