@@ -17,6 +17,17 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+
 export default function Home() {
   return (
     <html lang="en" className=" scroll-smooth">
@@ -68,9 +79,33 @@ export default function Home() {
                 <Link href="#home" className="text-lg sm:text-xl text-white">
                   HOME
                 </Link>
-                <Link href="#company" className="text-lg sm:text-xl text-white">
-                  COMPANY
-                </Link>
+                <NavigationMenu>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white">
+                      COMPANY
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent className=" flex flex-col gap-4 p-6">
+                      <Link href="/expertise">
+                        EXPERTISE
+                      </Link>
+                      <Link href="/careers">
+                        CAREERS
+                      </Link>
+                      <Link href="/media">
+                        MEDIA
+                      </Link>
+                      <Link href="/testimonials">
+                        TESTIMONIALS
+                      </Link>
+                      <Link href="/finished-projects">
+                        FINISHED PROJECTS
+                      </Link>
+                      <Link href="/under-construction">
+                        UNDER CONSTRUCTION
+                      </Link>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenu>
                 <Link href="#portfolio" className="text-lg sm:text-xl text-white">
                   PORTFOLIO
                 </Link>
@@ -81,21 +116,47 @@ export default function Home() {
                   CONTACT US
                 </Link>
               </div>
-              <button className=" sm:hidden bg-transparent p-0">
-                <Image
-                  src="/images/align-justify.svg"
-                  alt="Menu"
-                  width={32}
-                  height={32}
-                />
-              </button>
+              <Sheet>
+                <SheetTrigger className=" sm:hidden bg-transparent" asChild>
+                  <Image
+                    src="/images/align-justify.svg"
+                    alt="Menu"
+                    width={32}
+                    height={32}
+                  />
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    <SheetTitle>Menu</SheetTitle>
+                  </SheetHeader>
+                  <SheetDescription>
+                    <nav className=" flex flex-col gap-6">
+                      <Link href="#home" className="text-lg sm:text-xl text-WayneBlack">
+                        HOME
+                      </Link>
+                      <Link href="#company" className="text-lg sm:text-xl text-WayneBlack">
+                        COMPANY
+                      </Link>
+                      <Link href="#portfolio" className="text-lg sm:text-xl text-WayneBlack">
+                        PORTFOLIO
+                      </Link>
+                      <Link href="#team" className="text-lg sm:text-xl text-WayneBlack">
+                        OUR TEAM
+                      </Link>
+                      <Link href="#contact" className="text-lg sm:text-xl text-WayneBlack">
+                        CONTACT US
+                      </Link>
+                    </nav>
+                  </SheetDescription>
+                </SheetContent>
+              </Sheet>
             </nav>
             <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
               <h1>LP</h1>
               <h1>DELIVERS</h1>
               <h1>RESULTS</h1>
             </div>
-            <p className=" font- text-lg sm:text-xl lg:text-2xl font-light">
+            <p className=" text-lg sm:text-xl lg:text-2xl font-light">
               SETTING THE NEW STANDARD FOR HOME CONSTRUCTION
             </p>
           </section>
@@ -106,7 +167,7 @@ export default function Home() {
             <h2 className=" p-4 text-4xl sm:text-5xl lg:text-6xl text-devilRed underline">
               Our Mission
             </h2>
-            <p className=" text-base sm:text-lg lg:text-xl p-4">
+            <p className=" text-lg sm:text-xl lg:text-2xl p-4">
               LP Construction operates with intention. We strive to deliver the
               highest standard of service while fostering a positive influence
               that will resonate for years to come.
@@ -146,7 +207,7 @@ export default function Home() {
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                      VIEW OUR WORK
+                      VIEW OUR PORTFOLIO
                     </Button>
                   </DialogTrigger>
                   <DialogContent className=" w-full p-4 bg-transparent border-0">
@@ -197,26 +258,13 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                      MEET OUR TEAM
-                    </Button>
-                  </DialogTrigger>
-                  <DialogContent className=" w-full p-4 bg-transparent border-0">
-                    <AspectRatio ratio={16 / 9} className=" w-full">
-                      <video
-                        controls
-                        className="w-full h-full object-cover"
-                        style={{ maxHeight: "100%" }}
-                      >
-                        <source src="/videos/work-video.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    </AspectRatio>
-                    <DialogClose />
-                  </DialogContent>
-                </Dialog>
+                <Link href="/team">
+                  <Button
+                    className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none"
+                  >
+                    MEET OUR TEAM
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className=" relative flex-1 flex items-center justify-center">
@@ -277,9 +325,9 @@ export default function Home() {
             </div>
             <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
               <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
-                <Link href="/Values">Our Company</Link>
-                <Link href="/Services">Our Services</Link>
-                <Link href="/Projects">Our Projects</Link>
+                <Link className=" hover:text-gray-300 hover:underline" href="/team">Our Team</Link>
+                <Link className=" hover:text-gray-300 hover:underline" href="/services">Our Services</Link>
+                <Link className=" hover:text-gray-300 hover:underline" href="/portfolio">Our Portfolio</Link>
               </nav>
               <div>
                 <p className="text-white text-sm sm:text-base lg:text-lg text-center">

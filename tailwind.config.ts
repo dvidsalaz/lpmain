@@ -24,7 +24,7 @@ const config = {
         slateLightBlue: "#6B9ACB",
         devilRed: "#D61C2C",
         cloudyGray: "#F8F8F8",
-        WayneBlack: "#282828",
+        WayneBlack: "#151515",
         SunsetOrange: "#F7A21B",
       },
       keyframes: {
