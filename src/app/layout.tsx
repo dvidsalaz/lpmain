@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { oswald } from "./font/font";
-import { anton } from "./font/font";
-import { cinzel } from "./font/font";
+import { Anton } from "next/font/google";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "LP Exteriors – Building What Matters",
   description: "Building What Matters", // change this in near future
 };
+
+const anton = Anton({ subsets: ["latin"], display: "swap", weight: "400" });
+
 
 export default function RootLayout({
   children,

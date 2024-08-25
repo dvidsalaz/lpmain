@@ -5,8 +5,7 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 
 export default function Team() {
   return (
-    <body className=" min-h-screen">
-      <main className="">
+      <main className=" min-h-screen">
       <section
             className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-slate-400 min-h-screen"
           >
@@ -136,6 +135,5 @@ export default function Team() {
             </div>
           </footer>
       </main>
-    </body>
   );
 }

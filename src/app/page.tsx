@@ -30,9 +30,7 @@ import {
 
 export default function Home() {
   return (
-    <html lang="en" className=" scroll-smooth">
-      <body className="min-h-screen">
-        <main className="">
+        <main className=" min-h-screen">
           {/* Notification Bar */}
           <div className="bg-SunsetOrange text-white text-center p-2">
             <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
@@ -337,7 +335,5 @@ export default function Home() {
             </div>
           </footer>
         </main>
-      </body>
-    </html>
   );
 }
