@@ -115,10 +115,7 @@ export default function Home() {
               </SheetHeader>
               <SheetDescription>
                 <nav className=" flex flex-col gap-6">
-                  <Link
-                    href="#home"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
+                  <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
                     HOME
                   </Link>
                   <Link
@@ -134,7 +131,7 @@ export default function Home() {
                     PORTFOLIO
                   </Link>
                   <Link
-                    href="#team"
+                    href="/team"
                     className="text-lg sm:text-xl text-WayneBlack"
                   >
                     OUR TEAM

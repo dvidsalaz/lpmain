@@ -109,10 +109,7 @@ export default function Team() {
               </SheetHeader>
               <SheetDescription>
                 <nav className=" flex flex-col gap-6">
-                  <Link
-                    href="#home"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
+                  <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
                     HOME
                   </Link>
                   <Link
@@ -128,7 +125,7 @@ export default function Team() {
                     PORTFOLIO
                   </Link>
                   <Link
-                    href="#team"
+                    href="/team"
                     className="text-lg sm:text-xl text-WayneBlack"
                   >
                     OUR TEAM
@@ -155,11 +152,11 @@ export default function Team() {
       </section>
       <section
         id="member"
-        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 "
+        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
       >
         <div
           id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow items-center text-center md:text-left md:items-start"
         >
           <div>
             <h2 className=" text-WayneBlack text-2xl sm:text-3xl lg:text-5xl">
