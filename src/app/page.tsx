@@ -229,7 +229,7 @@ export default function Home() {
       >
         <div
           id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow items-center text-center md:text-left md:items-start"
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">

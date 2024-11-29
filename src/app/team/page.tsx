@@ -54,7 +54,9 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-slate-400 min-h-screen">
+      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400"
+              style={{ backgroundImage: "url('/images/IMG_4850.jpg')" }}
+>
         <nav className=" sticky top-0 z-50 flex items-center justify-between">
           <Link href="/">
             <Image
@@ -146,7 +148,7 @@ export default function Team() {
           <h1>OUR</h1>
           <h1>TEAM</h1>
         </div>
-        <p className=" text-lg sm:text-xl lg:text-2xl font-light">
+        <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
           SETTING THE NEW STANDARD FOR HOME CONSTRUCTION
         </p>
       </section>
@@ -188,7 +190,7 @@ export default function Team() {
         </div>
         <div className=" relative flex-1 flex items-center justify-center">
           <Image
-            src="/images/image.png"
+            src="/images/IMG_1684.jpg"
             alt="founderpicture"
             layout="fill"
             objectFit="cover"
