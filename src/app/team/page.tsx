@@ -27,7 +27,7 @@ export default function Team() {
   return (
     <main className=" min-h-screen">
       {/* Notification Bar */}
-      <div className="bg-SunsetOrange text-white text-center p-2">
+      <div className=" bg-WayneBlack text-white text-center p-2">
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
             <p className="text-sm sm:text-base lg:text-lg">
@@ -54,9 +54,16 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400"
-              style={{ backgroundImage: "url('/images/IMG_4850.jpg')" }}
->
+      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
+        <video
+            className=" absolute top-0 left-0 w-full h-full object-cover -z-10"
+            autoPlay
+            muted
+            loop
+            >
+            <source src="/videos/testing.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         <nav className=" sticky top-0 z-50 flex items-center justify-between">
           <Link href="/">
             <Image
