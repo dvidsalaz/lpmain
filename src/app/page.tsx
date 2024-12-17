@@ -18,6 +18,17 @@ import {
 } from "@/components/ui/dialog";
 
 import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+
+import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuIndicator,
@@ -96,25 +107,22 @@ export default function Home() {
             <Link href="/team" className="text-lg sm:text-xl text-white">
               OUR TEAM
             </Link>
-            <Link href="#contact" className="text-lg sm:text-xl text-white">
+            <Link href="/contact" className="text-lg sm:text-xl text-white">
               CONTACT US
             </Link>
           </div>
-          <Sheet>
-            <SheetTrigger className=" sm:hidden bg-transparent" asChild>
+          <Drawer>
+            <DrawerTrigger className=" sm:hidden bg-transparent" asChild>
               <Image
                 src="/images/align-justify.svg"
                 alt="Menu"
                 width={32}
                 height={32}
               />
-            </SheetTrigger>
-            <SheetContent>
-              <SheetHeader>
-                <SheetTitle>Menu</SheetTitle>
-              </SheetHeader>
-              <SheetDescription>
-                <nav className=" flex flex-col gap-6">
+            </DrawerTrigger>
+            <DrawerContent className=" border-none">
+              <DrawerDescription>
+                <nav className=" flex flex-col p-6 gap-6">
                   <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
                     HOME
                   </Link>
@@ -137,15 +145,37 @@ export default function Home() {
                     OUR TEAM
                   </Link>
                   <Link
-                    href="#contact"
+                    href="/contact"
                     className="text-lg sm:text-xl text-WayneBlack"
                   >
                     CONTACT US
                   </Link>
                 </nav>
-              </SheetDescription>
-            </SheetContent>
-          </Sheet>
+              </DrawerDescription>
+              <DrawerFooter className=" bg-WayneBlack p-10">
+                <div className=" flex flex-col justify-center items-center">
+                  <Image
+                    src="/images/lp_logo(2).svg"
+                    alt="LP Construction Logo"
+                    width={80}
+                    height={80}
+                    className="object-contain"
+                  />
+                  <div className=" flex items-center gap-1">
+                    <Image
+                      src="/images/texasflag.png"
+                      alt="Texas Flag"
+                      width={25}
+                      height={17}
+                    />
+                    <p className="text-white text-sm sm:text-base">
+                      A TEXAS COMPANY
+                    </p>
+                  </div>
+                </div>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
         </nav>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
           <h1>LP</h1>
@@ -153,7 +183,7 @@ export default function Home() {
           <h1>RESULTS</h1>
         </div>
         <p className=" text-lg sm:text-xl lg:text-2xl font-light">
-          SETTING THE NEW STANDARD FOR HOME CONSTRUCTION
+          SETTING THE NEW STANDARD FOR ROOFING
         </p>
       </section>
       <section
@@ -285,7 +315,7 @@ export default function Home() {
             felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
             in accumsan.
           </p>
-          <Link href="https://popl.co/card/hPZf85iu/1/dash">
+          <Link href="/contact">
             <Button
               className=" text-lg sm:text-xl lg:text-2xl gap-2 text-devilRed p-6 bg-transparent border-devilRed rounded-none border-2 "
               variant={"outline"}

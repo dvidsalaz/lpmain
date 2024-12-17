@@ -64,7 +64,7 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
+      <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
         <video
           className=" lg:visible absolute top-0 left-0 w-full h-full object-cover -z-10"
           autoPlay
@@ -109,7 +109,7 @@ export default function Team() {
             <Link href="/team" className="text-lg sm:text-xl text-white">
               OUR TEAM
             </Link>
-            <Link href="/contact" className="text-lg sm:text-xl text-white">
+            <Link href="#contact" className="text-lg sm:text-xl text-white">
               CONTACT US
             </Link>
           </div>
@@ -180,9 +180,7 @@ export default function Team() {
           </Drawer>
         </nav>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
-          <h1>MEET</h1>
-          <h1>OUR</h1>
-          <h1>TEAM</h1>
+          <h1>CONTACT US</h1>
         </div>
         <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
           SETTING THE NEW STANDARD FOR ROOFING
