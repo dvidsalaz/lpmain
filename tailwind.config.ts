@@ -26,6 +26,7 @@ const config = {
         cloudyGray: "#F8F8F8",
         WayneBlack: "#151515",
         SunsetOrange: "#F7A21B",
+        whiteBaby: "#fcfcfc",
       },
       keyframes: {
         "accordion-down": {

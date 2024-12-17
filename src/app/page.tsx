@@ -47,7 +47,7 @@ export default function Home() {
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
             <p className="text-sm sm:text-base lg:text-lg">
-              info@lpexteriors.com
+              dsalazar@lpexteriors.com
             </p>
             <span>|</span>
             <a
@@ -101,7 +101,7 @@ export default function Home() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenu>
-            <Link href="#portfolio" className="text-lg sm:text-xl text-white">
+            <Link href="/portfolio" className="text-lg sm:text-xl text-white">
               PORTFOLIO
             </Link>
             <Link href="/team" className="text-lg sm:text-xl text-white">
@@ -116,8 +116,8 @@ export default function Home() {
               <Image
                 src="/images/align-justify.svg"
                 alt="Menu"
-                width={32}
-                height={32}
+                width={56}
+                height={56}
               />
             </DrawerTrigger>
             <DrawerContent className=" border-none">

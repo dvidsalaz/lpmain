@@ -33,6 +33,8 @@ import {
 } from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
+import { MyForm } from "@/components/custom/MyForm";
+
 export default function Team() {
   return (
     <main className=" min-h-screen">
@@ -41,7 +43,7 @@ export default function Team() {
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
             <p className="text-sm sm:text-base lg:text-lg">
-              info@lpexteriors.com
+              dsalazar@lpexteriors.com
             </p>
             <span>|</span>
             <a
@@ -118,8 +120,8 @@ export default function Team() {
               <Image
                 src="/images/align-justify.svg"
                 alt="Menu"
-                width={32}
-                height={32}
+                width={56}
+                height={56}
               />
             </DrawerTrigger>
             <DrawerContent className=" border-none">
@@ -236,56 +238,23 @@ export default function Team() {
       </section>
       <section
         id="portfolio"
-        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400"
+        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center min-h-screen bg-slate-400"
         style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
       >
-        <div className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
+        <div className="lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
         <div
           id="div1"
-          className=" items-center justify-center flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow"
+          className="items-center justify-center flex-1 gap-8 flex flex-col p-6 sm:p-8 lg:p-10 bg-white shadow"
         >
           <div>
             <h2 className="text-gray-300 text-center text-2xl sm:text-3xl lg:text-5xl">
               Build With Us
             </h2>
             <h1 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
-              Uvalde Residential Estate
+              Request Free Estimate
             </h1>
           </div>
-          <p className=" text-center text-WayneBlack text-base sm:text-lg lg:text-xl">
-            We are looking forward to learning more about your project. Please
-            click on the button below to visit our contact page.
-          </p>
-          <div className="flex flex-col">
-            <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-              4 Bed | 3 Bath | 2,500 Sqft
-            </p>
-            <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-              4 Bed | 3 Bath | 2,500 Sqft
-            </p>
-          </div>
-          <div>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  CONTACT US
-                </Button>
-              </DialogTrigger>
-              <DialogContent className=" w-full p-4 bg-transparent border-0">
-                <AspectRatio ratio={16 / 9} className=" w-full">
-                  <video
-                    controls
-                    className="w-full h-full object-cover"
-                    style={{ maxHeight: "100%" }}
-                  >
-                    <source src="/videos/work-video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </AspectRatio>
-                <DialogClose />
-              </DialogContent>
-            </Dialog>
-          </div>
+          <MyForm />
         </div>
       </section>
       <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">

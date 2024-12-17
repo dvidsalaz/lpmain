@@ -41,7 +41,7 @@ export default function Team() {
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
             <p className="text-sm sm:text-base lg:text-lg">
-              info@lpexteriors.com
+              dsalazar@lpexteriors.com
             </p>
             <span>|</span>
             <a
@@ -118,8 +118,8 @@ export default function Team() {
               <Image
                 src="/images/align-justify.svg"
                 alt="Menu"
-                width={32}
-                height={32}
+                width={56}
+                height={56}
               />
             </DrawerTrigger>
             <DrawerContent className=" border-none">
@@ -237,6 +237,67 @@ export default function Team() {
         </div>
       </section>
       <section
+        id="our-mission"
+        className=" bg-cloudyGray flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center text-center"
+      >
+        <h2 className=" p-4 text-4xl sm:text-5xl lg:text-6xl text-devilRed underline">
+          Our Mission
+        </h2>
+        <p className=" text-lg sm:text-xl lg:text-2xl p-4">
+          LP Construction operates with intention. We strive to deliver the
+          highest standard of service while fostering a positive influence that
+          will resonate for years to come.
+        </p>
+      </section>
+      <section
+        id="member"
+        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
+      >
+        <div className="relative flex-1 flex items-center justify-center md:flex-col">
+          <Image
+            src="/images/IMG_1684.jpg"
+            alt="founderpicture"
+            layout="responsive"
+            width={500}
+            height={500}
+            objectFit=" cover"
+            className="shadow-lg"
+          />
+        </div>
+        <div
+          id="div1"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow items-center text-center md:text-left md:items-start"
+        >
+          <div>
+            <h2 className=" text-WayneBlack text-2xl sm:text-3xl lg:text-5xl">
+              David Salazar
+            </h2>
+            <h1 className="text-2xl text-gray-300 sm:text-3xl lg:text-5xl">
+              Founder
+            </h1>
+          </div>
+          <p className=" text-base sm:text-lg lg:text-xl">
+            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
+            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
+            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
+            in accumsan.
+          </p>
+          <p className=" text-base sm:text-lg lg:text-xl">
+            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
+            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
+            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
+            in accumsan.
+          </p>
+          <div>
+            <Link href="/team">
+              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                CONTACT
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section
         id="portfolio"
         className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400"
         style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
@@ -288,6 +349,36 @@ export default function Team() {
               </DialogContent>
             </Dialog>
           </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
+      >
+        <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
+          <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
+            Get In Touch
+          </h1>
+          <p className=" text-base sm:text-lg lg:text-xl text-gray-400">
+            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
+            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
+            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
+            in accumsan.
+          </p>
+          <Link href="/contact">
+            <Button
+              className=" text-lg sm:text-xl lg:text-2xl gap-2 text-devilRed p-6 bg-transparent border-devilRed rounded-none border-2 "
+              variant={"outline"}
+            >
+              CONTACT US
+              <Image
+                src="/images/arrow-right.svg"
+                alt="arrow"
+                width={24}
+                height={24}
+              />
+            </Button>
+          </Link>
         </div>
       </section>
       <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
