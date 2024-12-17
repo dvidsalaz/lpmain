@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { SmartDatetimeInput } from "@/components/ui/smart-datetime-input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   first: z.string().max(20),
@@ -29,8 +29,6 @@ const formSchema = z.object({
 });
 
 export function MyForm() {
-  const { toast } = useToast();
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
