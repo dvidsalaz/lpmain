@@ -201,7 +201,7 @@ export default function Home() {
       </section>
       <section
         id="portfolio"
-        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-4=00"
+        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen bg-slate-4=00"
         style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
       >
         <div className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
