@@ -2,14 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+
 import {
   Dialog,
   DialogTrigger,
@@ -38,6 +31,13 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
@@ -71,7 +71,10 @@ export default function Home() {
         </div>
       </div>
       {/* Main Content */}
-      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-slate-400 min-h-screen">
+      <section
+        id="header"
+        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-slate-400 min-h-screen"
+      >
         <nav className=" sticky top-0 z-50 flex items-center justify-between">
           <Link href="#home">
             <Image
@@ -331,48 +334,77 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
-        <Link href="#main-section">
-          <Image
-            src="/images/lp_logo(2).svg"
-            alt="LP Construction Logo"
-            width={144}
-            height={144}
-            className="object-contain"
-          />
-        </Link>
-        <div className="flex items-center gap-2">
-          <Image
-            src="/images/texasflag.png"
-            alt="Texas Flag"
-            width={50}
-            height={33}
-          />
-          <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
-        </div>
-        <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
-          <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
-            <Link className=" hover:text-gray-300 hover:underline" href="/team">
-              Our Team
-            </Link>
-            <Link
-              className=" hover:text-gray-300 hover:underline"
-              href="/services"
-            >
-              Our Services
-            </Link>
-            <Link
-              className=" hover:text-gray-300 hover:underline"
-              href="/portfolio"
-            >
-              Our Portfolio
-            </Link>
-          </nav>
-          <div>
-            <p className="text-white text-sm sm:text-base lg:text-lg text-center">
-              Copyright &copy; 2024 LP Exteriors LLC. All rights reserved.
-            </p>
+      <footer className="">
+        <div className="  flex flex-col gap-8 bg-WayneBlack items-center text-center p-10 md:p-20 lg:p-20">
+          <Link href="#main-section">
+            <Image
+              src="/images/lp_logo(2).svg"
+              alt="LP Construction Logo"
+              height={144}
+              width={144}
+              className="object-contain"
+            />
+          </Link>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/images/texasflag.png"
+              alt="Texas Flag"
+              width={50}
+              height={33}
+            />
+            <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
           </div>
+          <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
+            <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
+              <Link
+                className=" hover:text-gray-300 hover:underline"
+                href="/team"
+              >
+                Our Team
+              </Link>
+              <Link
+                className=" hover:text-gray-300 hover:underline"
+                href="/services"
+              >
+                Our Services
+              </Link>
+              <Link
+                className=" hover:text-gray-300 hover:underline"
+                href="/portfolio"
+              >
+                Our Portfolio
+              </Link>
+            </nav>
+            <div className=" text-white">Test</div>
+          </div>
+        </div>
+        <div className=" bg-darkGray text-cloudyGray md:hidden lg:hidden">
+          <Accordion type="single" collapsible>
+            <AccordionItem className=" text-xl p-4" value="item-1">
+              <AccordionTrigger>Frequently Asked Questions</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem className=" text-xl p-4" value="item-2">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem className=" text-xl p-4" value="item-3">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem className=" text-xl p-4" value="item-4">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </footer>
     </main>
