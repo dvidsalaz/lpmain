@@ -321,25 +321,27 @@ export default function Home() {
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
           id="div1"
-          className=" hover:shadow-lg justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-red-500 items-start text-left"
+          className=" hover:shadow-inner-balanced bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
+          style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
         >
           <div>
-            <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
+            <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Our Portfolio
             </h2>
-            <h1 className="text-2xl text-WayneBlack sm:text-3xl lg:text-5xl">
+            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               We work together to make great things happen.
             </h1>
           </div>
           <Link href="/team">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-              OUR PORTFOLIO
+              VIEW OUR WORK
             </Button>
           </Link>
         </div>
         <div
           id="div2"
-          className=" hover:shadow-lg justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-purple-500 items-start text-left"
+          className=" hover:shadow-inner-balanced bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-purple-500 items-start text-left"
+          style={{ backgroundImage: "url('/images/.jpg')" }}
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
@@ -361,7 +363,7 @@ export default function Home() {
 
       <section
         id="contact"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
+        className="flex flex-col p-6 sm:p-10 lg:p-20 items-center"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">

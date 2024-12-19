@@ -29,6 +29,10 @@ const config = {
         whiteBaby: "#fcfcfc",
         darkGray: "#373737",
       },
+
+      boxShadow: {
+        "inner-balanced": "inset 0 0 70px rgba(0, 0, 0, 0.3)",
+      },
       keyframes: {
         "accordion-down": {
           from: {
