@@ -39,6 +39,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import { MyForm } from "@/components/custom/MyForm";
+
 export default function Home() {
   return (
     <main className=" min-h-screen">
@@ -86,7 +88,10 @@ export default function Home() {
             />
           </Link>
           <div className=" hidden sm:flex gap-6">
-            <Link href="#home" className="text-lg sm:text-xl text-white">
+            <Link
+              href="#home"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               HOME
             </Link>
             <NavigationMenu>
@@ -104,13 +109,22 @@ export default function Home() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenu>
-            <Link href="/portfolio" className="text-lg sm:text-xl text-white">
+            <Link
+              href="/portfolio"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               PORTFOLIO
             </Link>
-            <Link href="/team" className="text-lg sm:text-xl text-white">
+            <Link
+              href="/team"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               OUR TEAM
             </Link>
-            <Link href="/contact" className="text-lg sm:text-xl text-white">
+            <Link
+              href="/contact"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               CONTACT US
             </Link>
           </div>
@@ -258,7 +272,7 @@ export default function Home() {
       </section>
       <section
         id="team"
-        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 "
+        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 h-screen "
       >
         <div
           id="div1"
@@ -304,6 +318,47 @@ export default function Home() {
           />
         </div>
       </section>
+      <section id="team" className=" flex flex-col md:flex-row h-screen">
+        <div
+          id="div1"
+          className=" hover:shadow-lg justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-red-500 items-start text-left"
+        >
+          <div>
+            <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
+              Our Portfolio
+            </h2>
+            <h1 className="text-2xl text-WayneBlack sm:text-3xl lg:text-5xl">
+              We work together to make great things happen.
+            </h1>
+          </div>
+          <Link href="/team">
+            <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+              OUR PORTFOLIO
+            </Button>
+          </Link>
+        </div>
+        <div
+          id="div2"
+          className=" hover:shadow-lg justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-purple-500 items-start text-left"
+        >
+          <div>
+            <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
+              Our Team
+            </h2>
+            <h1 className="text-2xl text-WayneBlack sm:text-3xl lg:text-5xl">
+              Impact-driven projects that build Houston for better.
+            </h1>
+          </div>
+          <div>
+            <Link href="/team">
+              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                MEET OUR TEAM
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section
         id="contact"
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
@@ -377,34 +432,6 @@ export default function Home() {
             </nav>
             <div className=" text-white">Test</div>
           </div>
-        </div>
-        <div className=" bg-darkGray text-cloudyGray md:hidden lg:hidden">
-          <Accordion type="single" collapsible>
-            <AccordionItem className=" text-xl p-4" value="item-1">
-              <AccordionTrigger>Frequently Asked Questions</AccordionTrigger>
-              <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem className=" text-xl p-4" value="item-2">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
-              <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem className=" text-xl p-4" value="item-3">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
-              <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem className=" text-xl p-4" value="item-4">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
-              <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
         </div>
       </footer>
     </main>
