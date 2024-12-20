@@ -32,15 +32,6 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
-import { MyForm } from "@/components/custom/MyForm";
-
 export default function Home() {
   return (
     <main className=" min-h-screen">
@@ -90,7 +81,7 @@ export default function Home() {
           <div className=" hidden sm:flex gap-6">
             <Link
               href="#home"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange "
             >
               HOME
             </Link>
@@ -100,12 +91,30 @@ export default function Home() {
                   COMPANY
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className=" flex flex-col gap-4 p-6">
-                  <Link href="/expertise">EXPERTISE</Link>
-                  <Link href="/careers">CAREERS</Link>
-                  <Link href="/media">MEDIA</Link>
-                  <Link href="/testimonials">TESTIMONIALS</Link>
-                  <Link href="/finished-projects">FINISHED PROJECTS</Link>
-                  <Link href="/under-construction">UNDER CONSTRUCTION</Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/about"
+                  >
+                    ABOUT US
+                  </Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/expertise"
+                  >
+                    EXPERTISE
+                  </Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/testimonials"
+                  >
+                    TESTIMONIALS
+                  </Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/finished-projects"
+                  >
+                    FINISHED PROJECTS
+                  </Link>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenu>
@@ -321,7 +330,7 @@ export default function Home() {
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
           id="div1"
-          className=" hover:shadow-inner-balanced bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
+          className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
           style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
         >
           <div>
@@ -340,7 +349,7 @@ export default function Home() {
         </div>
         <div
           id="div2"
-          className=" hover:shadow-inner-balanced bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-purple-500 items-start text-left"
+          className="shadow-inner-before hover:shadow-inner-after bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-purple-500 items-start text-left"
           style={{ backgroundImage: "url('/images/.jpg')" }}
         >
           <div>

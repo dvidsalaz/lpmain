@@ -1,14 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -85,7 +77,10 @@ export default function Team() {
             />
           </Link>
           <div className=" hidden sm:flex gap-6">
-            <Link href="/" className="text-lg sm:text-xl text-white">
+            <Link
+              href="/"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               HOME
             </Link>
             <NavigationMenu>
@@ -94,22 +89,49 @@ export default function Team() {
                   COMPANY
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className=" flex flex-col gap-4 p-6">
-                  <Link href="/expertise">EXPERTISE</Link>
-                  <Link href="/careers">CAREERS</Link>
-                  <Link href="/media">MEDIA</Link>
-                  <Link href="/testimonials">TESTIMONIALS</Link>
-                  <Link href="/finished-projects">FINISHED PROJECTS</Link>
-                  <Link href="/under-construction">UNDER CONSTRUCTION</Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/about"
+                  >
+                    ABOUT US
+                  </Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/expertise"
+                  >
+                    EXPERTISE
+                  </Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/testimonials"
+                  >
+                    TESTIMONIALS
+                  </Link>
+                  <Link
+                    className="hover:underline hover:decoration-SunsetOrange"
+                    href="/finished-projects"
+                  >
+                    FINISHED PROJECTS
+                  </Link>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenu>
-            <Link href="#portfolio" className="text-lg sm:text-xl text-white">
+            <Link
+              href="#portfolio"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               PORTFOLIO
             </Link>
-            <Link href="/team" className="text-lg sm:text-xl text-white">
+            <Link
+              href="/team"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               OUR TEAM
             </Link>
-            <Link href="/contact" className="text-lg sm:text-xl text-white">
+            <Link
+              href="/contact"
+              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+            >
               CONTACT US
             </Link>
           </div>

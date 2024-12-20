@@ -31,7 +31,8 @@ const config = {
       },
 
       boxShadow: {
-        "inner-balanced": "inset 0 0 70px rgba(0, 0, 0, 0.3)",
+        "inner-before": "inset 0 0 70px rgba(0, 0, 0, 0.3)",
+        "inner-after": "inset 0 0 70px rgba(0, 0, 0, 0.5)",
       },
       keyframes: {
         "accordion-down": {

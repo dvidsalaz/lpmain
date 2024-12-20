@@ -15,6 +15,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+
 import {
   Drawer,
   DrawerClose,
@@ -25,15 +26,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-
-import { MyForm } from "@/components/custom/MyForm";
 
 export default function Team() {
   return (
@@ -66,16 +58,7 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
-        <video
-          className=" lg:visible absolute top-0 left-0 w-full h-full object-cover -z-10"
-          autoPlay
-          muted
-          loop
-        >
-          <source src="/videos/testing.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400">
         <nav className=" sticky top-0 z-50 flex items-center justify-between">
           <Link href="/">
             <Image
@@ -127,7 +110,7 @@ export default function Team() {
               </NavigationMenuItem>
             </NavigationMenu>
             <Link
-              href="#portfolio"
+              href="/portfolio"
               className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
             >
               PORTFOLIO
@@ -139,7 +122,7 @@ export default function Team() {
               OUR TEAM
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
             >
               CONTACT US
@@ -212,80 +195,11 @@ export default function Team() {
           </Drawer>
         </nav>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
-          <h1>CONTACT US</h1>
+          <h1>ABOUT US</h1>
         </div>
         <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
           SETTING THE NEW STANDARD FOR ROOFING
         </p>
-      </section>
-      <section
-        id="member"
-        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
-      >
-        <div
-          id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow items-center text-center md:text-left md:items-start"
-        >
-          <div>
-            <h2 className=" text-WayneBlack text-2xl sm:text-3xl lg:text-5xl">
-              Joaquin Salazar
-            </h2>
-            <h1 className="text-2xl text-gray-300 sm:text-3xl lg:text-5xl">
-              Founder
-            </h1>
-          </div>
-          <p className=" text-base sm:text-lg lg:text-xl">
-            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
-            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
-            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
-            in accumsan.
-          </p>
-          <p className=" text-base sm:text-lg lg:text-xl">
-            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
-            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
-            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
-            in accumsan.
-          </p>
-          <div>
-            <Link href="/team">
-              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                CONTACT
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className="relative flex-1 flex items-center justify-center md:flex-col">
-          <Image
-            src="/images/IMG_1684.jpg"
-            alt="founderpicture"
-            layout="responsive"
-            width={500}
-            height={500}
-            objectFit=" cover"
-            className="shadow-lg"
-          />
-        </div>
-      </section>
-      <section
-        id="portfolio"
-        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center min-h-screen bg-slate-400"
-        style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
-      >
-        <div className="lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
-        <div
-          id="div1"
-          className="items-center justify-center flex-1 gap-8 flex flex-col p-6 sm:p-8 lg:p-10 bg-white shadow"
-        >
-          <div>
-            <h2 className="text-gray-300 text-center text-2xl sm:text-3xl lg:text-5xl">
-              Build With Us
-            </h2>
-            <h1 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
-              Request Free Estimate
-            </h1>
-          </div>
-          <MyForm />
-        </div>
       </section>
       <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
         <Link href="#main-section">
