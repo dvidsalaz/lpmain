@@ -31,6 +31,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import { SeparatorHorizontal } from "lucide-react";
 
 export default function Home() {
   return (
@@ -153,7 +154,7 @@ export default function Home() {
                     HOME
                   </Link>
                   <Link
-                    href="#company"
+                    href="/company"
                     className="text-lg sm:text-xl text-WayneBlack"
                   >
                     COMPANY
@@ -225,6 +226,107 @@ export default function Home() {
           will resonate for years to come.
         </p>
       </section>
+      <section
+        id="process"
+        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
+      >
+        <h2
+          id="top"
+          className="text-4xl sm:text-5xl lg:text-6xl text-WayneBlack underline"
+        >
+          The Process
+        </h2>
+        <div className="flex flex-wrap justify-between gap-4">
+          <div id="container" className="flex flex-col bg-cloudyGray flex-1">
+            <div className=" relative w-full h-96 sm:h-[400px] lg:h-[500px] overflow-hidden">
+              <Image
+                src="/images/IMG_7164.jpg"
+                alt="A flexible image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div
+              id="text-space"
+              className="flex flex-col items-center justify-center text-center gap-8 p-6 sm:p-10 lg:p-20"
+            >
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl text-WayneBlack underline">
+                BUILT FOR HEAVY
+              </h3>
+              <p>
+                Massa nunc nisi fames adipiscing scelerisque placerat et
+                sagittis cursus. Mi commodo id maecenas amet, elementum a, in.
+                Massa nunc nisi fames adipiscing scelerisque placerat et
+                sagittis cursus.
+              </p>
+              <Link href="/team">
+                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                  MEET OUR TEAM
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <div id="container" className="flex flex-col bg-cloudyGray flex-1">
+            <div className="relative w-full h-96 sm:h-[400px] lg:h-[500px] overflow-hidden">
+              <Image
+                src="/images/IMG_7164.jpg"
+                alt="A flexible image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div
+              id="text-space"
+              className="flex flex-col items-center justify-center text-center gap-8 p-6 sm:p-10 lg:p-20"
+            >
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl text-WayneBlack underline">
+                BUILT FOR HEAVY
+              </h3>
+              <p>
+                Massa nunc nisi fames adipiscing scelerisque placerat et
+                sagittis cursus. Mi commodo id maecenas amet, elementum a, in.
+                Massa nunc nisi fames adipiscing scelerisque placerat et
+                sagittis cursus.
+              </p>
+              <Link href="/team">
+                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                  MEET OUR TEAM
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <div id="container" className="flex flex-col bg-cloudyGray flex-1">
+            <div className="relative w-full h-96 sm:h-[400px] lg:h-[500px] overflow-hidden">
+              <Image
+                src="/images/IMG_7164.jpg"
+                alt="A flexible image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div
+              id="text-space"
+              className="flex flex-col items-center justify-center text-center gap-8 p-6 sm:p-10 lg:p-20"
+            >
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl text-WayneBlack underline">
+                BUILT FOR HEAVY
+              </h3>
+              <p>
+                Massa nunc nisi fames adipiscing scelerisque placerat et
+                sagittis cursus. Mi commodo id maecenas amet, elementum a, in.
+                Massa nunc nisi fames adipiscing scelerisque placerat et
+                sagittis cursus.
+              </p>
+              <Link href="/team">
+                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                  MEET OUR TEAM
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         id="portfolio"
         className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen bg-slate-4=00"
@@ -400,48 +502,41 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <footer className="">
-        <div className="  flex flex-col gap-8 bg-WayneBlack items-center text-center p-10 md:p-20 lg:p-20">
-          <Link href="#main-section">
-            <Image
-              src="/images/lp_logo(2).svg"
-              alt="LP Construction Logo"
-              height={144}
-              width={144}
-              className="object-contain"
-            />
-          </Link>
-          <div className="flex items-center gap-2">
-            <Image
-              src="/images/texasflag.png"
-              alt="Texas Flag"
-              width={50}
-              height={33}
-            />
-            <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
-          </div>
-          <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
-            <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="/team"
-              >
-                Our Team
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="/services"
-              >
-                Our Services
-              </Link>
-              <Link
-                className=" hover:text-gray-300 hover:underline"
-                href="/portfolio"
-              >
-                Our Portfolio
-              </Link>
-            </nav>
-            <div className=" text-white">Test</div>
+      <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
+        <Link href="#main-section">
+          <Image
+            src="/images/lp_logo(2).svg"
+            alt="LP Construction Logo"
+            width={144}
+            height={144}
+            className="object-contain"
+          />
+        </Link>
+        <div className="flex items-center gap-2">
+          <Image
+            src="/images/texasflag.png"
+            alt="Texas Flag"
+            width={50}
+            height={33}
+          />
+          <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
+        </div>
+        <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
+          <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
+            <Link className=" hover:text-gray-300" href="/team">
+              Our Team
+            </Link>
+            <Link className=" hover:text-gray-300" href="/services">
+              Our Services
+            </Link>
+            <Link className=" hover:text-gray-300" href="/portfolio">
+              Our Portfolio
+            </Link>
+          </nav>
+          <div>
+            <p className="text-white text-sm sm:text-base lg:text-lg text-center">
+              Copyright &copy; 2024 LP Exteriors LLC. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
