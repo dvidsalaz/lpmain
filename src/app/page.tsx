@@ -32,6 +32,8 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { SeparatorHorizontal } from "lucide-react";
+import { MyForm } from "@/components/custom/MyForm";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -237,10 +239,13 @@ export default function Home() {
           The Process
         </h2>
         <div className="flex flex-wrap justify-between gap-4">
-          <div id="container" className="flex flex-col bg-cloudyGray flex-1">
-            <div className=" relative w-full h-96 sm:h-[400px] lg:h-[500px] overflow-hidden">
+          <div
+            id="container"
+            className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
+          >
+            <div className=" relative w-full h-96 overflow-hidden">
               <Image
-                src="/images/IMG_7164.jpg"
+                src="/images/IMG_5501.jpeg"
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
@@ -248,28 +253,30 @@ export default function Home() {
             </div>
             <div
               id="text-space"
-              className="flex flex-col items-center justify-center text-center gap-8 p-6 sm:p-10 lg:p-20"
+              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl text-WayneBlack underline">
-                BUILT FOR HEAVY
+              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                VERIFY DAMAGE
               </h3>
-              <p>
-                Massa nunc nisi fames adipiscing scelerisque placerat et
-                sagittis cursus. Mi commodo id maecenas amet, elementum a, in.
-                Massa nunc nisi fames adipiscing scelerisque placerat et
-                sagittis cursus.
+              <p className=" flex-1">
+                Schedule a free in-person inspection with us. Our experts will
+                assess your property and provide a recommendation on whether to
+                proceed with the claims process.
               </p>
               <Link href="/team">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  MEET OUR TEAM
+                  LEARN MORE
                 </Button>
               </Link>
             </div>
           </div>
-          <div id="container" className="flex flex-col bg-cloudyGray flex-1">
-            <div className="relative w-full h-96 sm:h-[400px] lg:h-[500px] overflow-hidden">
+          <div
+            id="container"
+            className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
+          >
+            <div className=" relative w-full h-96 overflow-hidden">
               <Image
-                src="/images/IMG_7164.jpg"
+                src="/images/insurance.jpg"
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
@@ -277,28 +284,30 @@ export default function Home() {
             </div>
             <div
               id="text-space"
-              className="flex flex-col items-center justify-center text-center gap-8 p-6 sm:p-10 lg:p-20"
+              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl text-WayneBlack underline">
-                BUILT FOR HEAVY
+              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                FILE A CLAIM
               </h3>
-              <p>
-                Massa nunc nisi fames adipiscing scelerisque placerat et
-                sagittis cursus. Mi commodo id maecenas amet, elementum a, in.
-                Massa nunc nisi fames adipiscing scelerisque placerat et
-                sagittis cursus.
+              <p className=" flex-1">
+                Filing a claim is simple and takes only a few minutes. We guide
+                you through the process, ensuring the insurance company is
+                informed of our collaboration and your claim details.
               </p>
               <Link href="/team">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  MEET OUR TEAM
+                  LEARN MORE
                 </Button>
               </Link>
             </div>
           </div>
-          <div id="container" className="flex flex-col bg-cloudyGray flex-1">
-            <div className="relative w-full h-96 sm:h-[400px] lg:h-[500px] overflow-hidden">
+          <div
+            id="container"
+            className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
+          >
+            <div className=" relative w-full h-96 overflow-hidden">
               <Image
-                src="/images/IMG_7164.jpg"
+                src="/images/adjuster.png"
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
@@ -306,27 +315,26 @@ export default function Home() {
             </div>
             <div
               id="text-space"
-              className="flex flex-col items-center justify-center text-center gap-8 p-6 sm:p-10 lg:p-20"
+              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl text-WayneBlack underline">
-                BUILT FOR HEAVY
+              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                SCHEDULE THE ADJUSTMENT
               </h3>
-              <p>
-                Massa nunc nisi fames adipiscing scelerisque placerat et
-                sagittis cursus. Mi commodo id maecenas amet, elementum a, in.
-                Massa nunc nisi fames adipiscing scelerisque placerat et
-                sagittis cursus.
+              <p className=" flex-1">
+                An insurance adjuster will visit your property to assess the
+                damage. Our presence ensures that all issues are addressed and
+                nothing critical is overlooked.
               </p>
               <Link href="/team">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  MEET OUR TEAM
+                  LEARN MORE
                 </Button>
               </Link>
             </div>
           </div>
         </div>
       </section>
-
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="portfolio"
         className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen bg-slate-4=00"
@@ -381,6 +389,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="team"
         className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 h-screen "
@@ -502,7 +511,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
+      <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center">
+        {" "}
         <Link href="#main-section">
           <Image
             src="/images/lp_logo(2).svg"
@@ -523,13 +534,19 @@ export default function Home() {
         </div>
         <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
           <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
-            <Link className=" hover:text-gray-300" href="/team">
+            <Link className=" hover:text-gray-300 hover:underline" href="/team">
               Our Team
             </Link>
-            <Link className=" hover:text-gray-300" href="/services">
+            <Link
+              className=" hover:text-gray-300 hover:underline"
+              href="/services"
+            >
               Our Services
             </Link>
-            <Link className=" hover:text-gray-300" href="/portfolio">
+            <Link
+              className=" hover:text-gray-300 hover:underline"
+              href="/portfolio"
+            >
               Our Portfolio
             </Link>
           </nav>
