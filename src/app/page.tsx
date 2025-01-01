@@ -215,19 +215,7 @@ export default function Home() {
           SETTING THE NEW STANDARD FOR ROOFING
         </p>
       </section>
-      <section
-        id="our-mission"
-        className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center text-center"
-      >
-        <h2 className=" p-4 text-4xl sm:text-5xl lg:text-6xl text-devilRed underline">
-          Our Mission
-        </h2>
-        <p className=" text-lg sm:text-xl lg:text-2xl p-4">
-          LP Construction operates with intention. We strive to deliver the
-          highest standard of service while fostering a positive influence that
-          will resonate for years to come.
-        </p>
-      </section>
+
       <section
         id="process"
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
@@ -243,94 +231,100 @@ export default function Home() {
             id="container"
             className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
           >
-            <div className=" relative w-full h-96 overflow-hidden">
-              <Image
-                src="/images/IMG_5501.jpeg"
-                alt="A flexible image"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <div
-              id="text-space"
-              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
-            >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                VERIFY DAMAGE
-              </h3>
-              <p className=" flex-1">
-                Schedule a free in-person inspection with us. Our experts will
-                assess your property and provide a recommendation on whether to
-                proceed with the claims process.
-              </p>
-              <Link href="/team">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  LEARN MORE
-                </Button>
-              </Link>
-            </div>
+            <Link href="/team">
+              <div className=" relative w-full h-96 overflow-hidden">
+                <Image
+                  src="/images/IMG_5501.jpeg"
+                  alt="A flexible image"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div
+                id="text-space"
+                className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
+              >
+                <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                  VERIFY DAMAGE
+                </h3>
+                <p className=" flex-1">
+                  Schedule a free in-person inspection with us. Our experts will
+                  assess your property and provide a recommendation on whether
+                  to proceed with the claims process.
+                </p>
+                <Link href="/team">
+                  <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                    LEARN MORE
+                  </Button>
+                </Link>
+              </div>
+            </Link>
           </div>
           <div
             id="container"
             className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
           >
-            <div className=" relative w-full h-96 overflow-hidden">
-              <Image
-                src="/images/insurance.jpg"
-                alt="A flexible image"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <div
-              id="text-space"
-              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
-            >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                FILE A CLAIM
-              </h3>
-              <p className=" flex-1">
-                Filing a claim is simple and takes only a few minutes. We guide
-                you through the process, ensuring the insurance company is
-                informed of our collaboration and your claim details.
-              </p>
-              <Link href="/team">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  LEARN MORE
-                </Button>
-              </Link>
-            </div>
+            <Link href="/team">
+              <div className=" relative w-full h-96 overflow-hidden">
+                <Image
+                  src="/images/insurance.jpg"
+                  alt="A flexible image"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div
+                id="text-space"
+                className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
+              >
+                <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                  FILE A CLAIM
+                </h3>
+                <p className=" flex-1">
+                  Filing a claim is simple and takes only a few minutes. We
+                  guide you through the process, ensuring the insurance company
+                  is informed of our collaboration and your claim details.
+                </p>
+                <Link href="/team">
+                  <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                    LEARN MORE
+                  </Button>
+                </Link>
+              </div>
+            </Link>
           </div>
           <div
             id="container"
             className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
           >
-            <div className=" relative w-full h-96 overflow-hidden">
-              <Image
-                src="/images/adjuster.png"
-                alt="A flexible image"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <div
-              id="text-space"
-              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
-            >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                SCHEDULE THE ADJUSTMENT
-              </h3>
-              <p className=" flex-1">
-                An insurance adjuster will visit your property to assess the
-                damage. Our presence ensures that all issues are addressed and
-                nothing critical is overlooked.
-              </p>
-              <Link href="/team">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  LEARN MORE
-                </Button>
-              </Link>
-            </div>
+            <Link href="/team">
+              <div className=" relative w-full h-96 overflow-hidden">
+                <Image
+                  src="/images/adjuster.png"
+                  alt="A flexible image"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div
+                id="text-space"
+                className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
+              >
+                <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                  SCHEDULE THE ADJUSTMENT
+                </h3>
+                <p className=" flex-1">
+                  An insurance adjuster will visit your property to assess the
+                  damage. Our presence ensures that all issues are addressed and
+                  nothing critical is overlooked.
+                </p>
+                <Link href="/team">
+                  <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                    LEARN MORE
+                  </Button>
+                </Link>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -461,13 +455,13 @@ export default function Home() {
         <div
           id="div2"
           className="shadow-inner-before hover:shadow-inner-after bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-purple-500 items-start text-left"
-          style={{ backgroundImage: "url('/images/.jpg')" }}
+          style={{ backgroundImage: "url('/images/IMG_6683.jpg')" }}
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Our Team
             </h2>
-            <h1 className="text-2xl text-WayneBlack sm:text-3xl lg:text-5xl">
+            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               Impact-driven projects that build Houston for better.
             </h1>
           </div>
