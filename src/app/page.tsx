@@ -31,9 +31,14 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { SeparatorHorizontal } from "lucide-react";
 import { MyForm } from "@/components/custom/MyForm";
 import { Separator } from "@/components/ui/separator";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
@@ -125,7 +130,7 @@ export default function Home() {
               href="/portfolio"
               className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
             >
-              PORTFOLIO
+              SERVICES
             </Link>
             <Link
               href="/team"
@@ -384,54 +389,7 @@ export default function Home() {
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
-      <section
-        id="team"
-        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 h-screen "
-      >
-        <div
-          id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow items-center text-center md:text-left md:items-start"
-        >
-          <div>
-            <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
-              Meet Our Team
-            </h2>
-            <h1 className="text-2xl text-WayneBlack sm:text-3xl lg:text-5xl">
-              Experienced Professionals
-            </h1>
-          </div>
-          <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-            Our team is composed of skilled professionals dedicated to
-            delivering exceptional results. With a wealth of experience and a
-            passion for excellence, they bring a unique blend of expertise to
-            every project.
-          </p>
-          <div className="flex flex-col">
-            <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-              4 Bed | 3 Bath | 2,500 Sqft
-            </p>
-            <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-              4 Bed | 3 Bath | 2,500 Sqft
-            </p>
-          </div>
-          <div>
-            <Link href="/team">
-              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                MEET OUR TEAM
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className=" relative flex-1 flex items-center justify-center">
-          <Image
-            src="/images/IMG_7474.jpg"
-            alt="Uvalde Residential Estate"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0"
-          />
-        </div>
-      </section>
+
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
           id="div1"
@@ -440,7 +398,7 @@ export default function Home() {
         >
           <div>
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
-              Our Portfolio
+              About Us
             </h2>
             <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               We work together to make great things happen.
@@ -448,14 +406,14 @@ export default function Home() {
           </div>
           <Link href="/team">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-              VIEW OUR WORK
+              LEARN MORE
             </Button>
           </Link>
         </div>
         <div
           id="div2"
-          className="shadow-inner-before hover:shadow-inner-after bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-purple-500 items-start text-left"
-          style={{ backgroundImage: "url('/images/IMG_6683.jpg')" }}
+          className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
+          style={{ backgroundImage: "url('/images/.jpg')" }}
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
@@ -474,10 +432,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section
         id="contact"
-        className="flex flex-col p-6 sm:p-10 lg:p-20 items-center"
+        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
@@ -506,50 +463,205 @@ export default function Home() {
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
-      <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center">
-        {" "}
-        <Link href="#main-section">
-          <Image
-            src="/images/lp_logo(2).svg"
-            alt="LP Construction Logo"
-            width={144}
-            height={144}
-            className="object-contain"
-          />
-        </Link>
-        <div className="flex items-center gap-2">
-          <Image
-            src="/images/texasflag.png"
-            alt="Texas Flag"
-            width={50}
-            height={33}
-          />
-          <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
-        </div>
-        <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
-          <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
-            <Link className=" hover:text-gray-300 hover:underline" href="/team">
-              Our Team
+      <footer className="flex flex-col">
+        <div className="flex flex-col bg-WayneBlack gap-10 p-6 sm:p-10 lg:p-20">
+          <div id="logo" className="flex flex-col gap-2 items-center">
+            <Link href="#main-section">
+              <Image
+                src="/images/lp_logo(2).svg"
+                alt="LP Construction Logo"
+                width={144}
+                height={144}
+                className="object-contain"
+              />
             </Link>
-            <Link
-              className=" hover:text-gray-300 hover:underline"
-              href="/services"
-            >
-              Our Services
-            </Link>
-            <Link
-              className=" hover:text-gray-300 hover:underline"
-              href="/portfolio"
-            >
-              Our Portfolio
-            </Link>
-          </nav>
-          <div>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/images/texasflag.png"
+                alt="Texas Flag"
+                width={50}
+                height={33}
+              />
+              <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
+            </div>
+          </div>
+          <Separator></Separator>
+          <div className=" flex items-center gap-8 justify-between w-full">
+            <nav className=" flex gap-4 items-center justify-items-end">
+              <Link href="/team">
+                <Image
+                  src="/images/facebook.svg"
+                  alt="facebook"
+                  width={32}
+                  height={32}
+                />
+              </Link>
+
+              <Link href="/portfolio">
+                <Image
+                  src="/images/linkedin.svg"
+                  alt="linkedin"
+                  width={32}
+                  height={32}
+                />
+              </Link>
+              <Link href="/portfolio">
+                <Image
+                  src="/images/envelope.svg"
+                  alt="envelope"
+                  width={32}
+                  height={32}
+                />
+              </Link>
+            </nav>
             <p className="text-white text-sm sm:text-base lg:text-lg text-center">
-              Copyright &copy; 2024 LP Exteriors LLC. All rights reserved.
+              Copyright &copy; 2025 LP Exteriors LLC. All rights reserved.
             </p>
           </div>
         </div>
+
+        <Accordion type="single" collapsible className=" w-full bg-bottomGray">
+          {/* Quick Links */}
+          <AccordionItem value="item-1" className=" p-6">
+            <AccordionTrigger className=" text-white text-2xl">
+              QUICK LINKS
+            </AccordionTrigger>
+            <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
+              <Link
+                href="/"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                HOME
+              </Link>
+              <Link
+                href="/about"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                ABOUT US
+              </Link>
+              <Link
+                href="/expertise"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                EXPERTISE
+              </Link>
+              <Link
+                href="/services"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                SERVICES
+              </Link>
+              <Link
+                href="/team"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                OUR TEAM
+              </Link>
+              <Link
+                href="/contact"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                CONTACT US
+              </Link>
+            </AccordionContent>
+          </AccordionItem>
+          {/* Services */}
+          <AccordionItem value="item-2" className=" p-6">
+            <AccordionTrigger className=" text-white text-2xl">
+              SERVICES
+            </AccordionTrigger>
+            <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
+              <Link
+                href="/services"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; ROOFING
+              </Link>
+              <Link
+                href="/services"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; SIDING
+              </Link>
+              <Link
+                href="/services"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; GUTTER INSTALLATION
+              </Link>
+              <Link
+                href="/services"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; STORM DAMAGE REPAIR
+              </Link>
+            </AccordionContent>
+          </AccordionItem>
+          {/* LEARN MORE */}
+          <AccordionItem value="item-3" className=" p-6">
+            <AccordionTrigger className=" text-white text-2xl">
+              LEARN MORE
+            </AccordionTrigger>
+            <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
+              <Link
+                href="/questions"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; FAQs
+              </Link>
+              <Link
+                href="/team"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; Insurance Process
+              </Link>
+              <Link
+                href="/team"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; Maintenance Tips
+              </Link>
+              <Link
+                href="/team"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; Project Timelines
+              </Link>
+            </AccordionContent>
+          </AccordionItem>
+          {/* LEGAL */}
+          <AccordionItem value="item-4" className=" p-6">
+            <AccordionTrigger className=" text-white text-2xl">
+              LEGAL
+            </AccordionTrigger>
+            <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
+              <Link
+                href="/privacy"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; Terms of Service
+              </Link>
+              <Link
+                href="/licensing"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; Licensing Information
+              </Link>
+              <Link
+                href="/certificates"
+                className=" hover:underline hover:decoration-SunsetOrange"
+              >
+                &middot; Insurance Certificates
+              </Link>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </footer>
     </main>
   );

@@ -28,6 +28,7 @@ const config = {
         SunsetOrange: "#F7A21B",
         whiteBaby: "#fcfcfc",
         darkGray: "#373737",
+        bottomGray: "#4C4C4C",
       },
 
       boxShadow: {
