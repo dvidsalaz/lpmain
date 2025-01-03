@@ -26,6 +26,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { Separator } from "@/components/ui/separator";
 
 export default function Team() {
   return (
@@ -58,149 +59,238 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400">
-        <nav className=" sticky top-0 z-50 flex items-center justify-between">
-          <Link href="/">
-            <Image
-              src="/images/lp_logo(2).svg"
-              alt="LP Construction Logo"
-              width={120}
-              height={120}
-              className=" object-contain"
-            />
-          </Link>
-          <div className=" hidden sm:flex gap-6">
-            <Link
-              href="/"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              HOME
+      <section className="flex flex-col h-screen bg-slate-400">
+        <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
+          <nav className="sticky top-0 z-50 flex items-center justify-between">
+            <Link href="/">
+              <Image
+                src="/images/lp_logo(2).svg"
+                alt="LP Construction Logo"
+                width={120}
+                height={120}
+                className=" object-contain"
+              />
             </Link>
-            <NavigationMenu>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white">
-                  COMPANY
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className=" flex flex-col gap-4 p-6">
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/about"
-                  >
-                    ABOUT US
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/expertise"
-                  >
-                    EXPERTISE
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/testimonials"
-                  >
-                    TESTIMONIALS
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/finished-projects"
-                  >
-                    FINISHED PROJECTS
-                  </Link>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenu>
-            <Link
-              href="/portfolio"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              PORTFOLIO
+            <div className=" hidden sm:flex gap-6">
+              <Link
+                href="/"
+                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+              >
+                HOME
+              </Link>
+              <NavigationMenu>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white">
+                    COMPANY
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className=" flex flex-col gap-4 p-6">
+                    <Link
+                      className="hover:underline hover:decoration-SunsetOrange"
+                      href="/about"
+                    >
+                      ABOUT US
+                    </Link>
+                    <Link
+                      className="hover:underline hover:decoration-SunsetOrange"
+                      href="/expertise"
+                    >
+                      EXPERTISE
+                    </Link>
+                    <Link
+                      className="hover:underline hover:decoration-SunsetOrange"
+                      href="/testimonials"
+                    >
+                      TESTIMONIALS
+                    </Link>
+                    <Link
+                      className="hover:underline hover:decoration-SunsetOrange"
+                      href="/finished-projects"
+                    >
+                      FINISHED PROJECTS
+                    </Link>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenu>
+              <Link
+                href="/portfolio"
+                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+              >
+                PORTFOLIO
+              </Link>
+              <Link
+                href="/team"
+                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+              >
+                OUR TEAM
+              </Link>
+              <Link
+                href="/contact"
+                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
+              >
+                CONTACT US
+              </Link>
+            </div>
+            <Drawer>
+              <DrawerTrigger className=" sm:hidden bg-transparent" asChild>
+                <Image
+                  src="/images/align-justify.svg"
+                  alt="Menu"
+                  width={56}
+                  height={56}
+                />
+              </DrawerTrigger>
+              <DrawerContent className=" border-none">
+                <DrawerDescription>
+                  <nav className=" flex flex-col p-6 gap-6">
+                    <Link
+                      href="/"
+                      className="text-lg sm:text-xl text-WayneBlack"
+                    >
+                      HOME
+                    </Link>
+                    <Link
+                      href="#company"
+                      className="text-lg sm:text-xl text-WayneBlack"
+                    >
+                      COMPANY
+                    </Link>
+                    <Link
+                      href="#portfolio"
+                      className="text-lg sm:text-xl text-WayneBlack"
+                    >
+                      PORTFOLIO
+                    </Link>
+                    <Link
+                      href="/team"
+                      className="text-lg sm:text-xl text-WayneBlack"
+                    >
+                      OUR TEAM
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className="text-lg sm:text-xl text-WayneBlack"
+                    >
+                      CONTACT US
+                    </Link>
+                  </nav>
+                </DrawerDescription>
+                <DrawerFooter className=" bg-WayneBlack p-10">
+                  <div className=" flex flex-col justify-center items-center">
+                    <Image
+                      src="/images/lp_logo(2).svg"
+                      alt="LP Construction Logo"
+                      width={80}
+                      height={80}
+                      className="object-contain"
+                    />
+                    <div className=" flex items-center gap-1">
+                      <Image
+                        src="/images/texasflag.png"
+                        alt="Texas Flag"
+                        width={25}
+                        height={17}
+                      />
+                      <p className="text-white text-sm sm:text-base">
+                        A TEXAS COMPANY
+                      </p>
+                    </div>
+                  </div>
+                </DrawerFooter>
+              </DrawerContent>
+            </Drawer>
+          </nav>
+          <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
+            <h1>ABOUT US</h1>
+          </div>
+          <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
+            SETTING THE NEW STANDARD FOR ROOFING
+          </p>
+        </div>
+        <div
+          id="socials"
+          className=" bg-WayneBlack p-4 px-20 flex items-center gap-8 justify-end w-full"
+        >
+          <nav className=" flex gap-4 items-center">
+            <Link href="/team">
+              <Image
+                src="/images/facebook.svg"
+                alt="facebook"
+                width={32}
+                height={32}
+                className=" border-2"
+              />
             </Link>
-            <Link
-              href="/team"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              OUR TEAM
+
+            <Link href="/portfolio">
+              <Image
+                src="/images/linkedin.svg"
+                alt="linkedin"
+                width={32}
+                height={32}
+                className=" border-2"
+              />
             </Link>
-            <Link
-              href="/contact"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              CONTACT US
+            <Link href="/portfolio">
+              <Image
+                src="/images/envelope.svg"
+                alt="envelope"
+                width={32}
+                height={32}
+                className=" border-2"
+              />
+            </Link>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="member"
+        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
+      >
+        <div
+          id="div1"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow items-center text-center md:text-left md:items-start"
+        >
+          <div>
+            <h2 className=" text-WayneBlack text-2xl sm:text-3xl lg:text-5xl">
+              Joaquin Salazar
+            </h2>
+            <h1 className="text-2xl text-gray-300 sm:text-3xl lg:text-5xl">
+              Founder
+            </h1>
+          </div>
+          <p className=" text-base sm:text-lg lg:text-xl">
+            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
+            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
+            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
+            in accumsan.
+          </p>
+          <p className=" text-base sm:text-lg lg:text-xl">
+            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
+            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
+            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
+            in accumsan.
+          </p>
+          <div>
+            <Link href="/team">
+              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                CONTACT
+              </Button>
             </Link>
           </div>
-          <Drawer>
-            <DrawerTrigger className=" sm:hidden bg-transparent" asChild>
-              <Image
-                src="/images/align-justify.svg"
-                alt="Menu"
-                width={56}
-                height={56}
-              />
-            </DrawerTrigger>
-            <DrawerContent className=" border-none">
-              <DrawerDescription>
-                <nav className=" flex flex-col p-6 gap-6">
-                  <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
-                    HOME
-                  </Link>
-                  <Link
-                    href="#company"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    COMPANY
-                  </Link>
-                  <Link
-                    href="#portfolio"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    PORTFOLIO
-                  </Link>
-                  <Link
-                    href="/team"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    OUR TEAM
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    CONTACT US
-                  </Link>
-                </nav>
-              </DrawerDescription>
-              <DrawerFooter className=" bg-WayneBlack p-10">
-                <div className=" flex flex-col justify-center items-center">
-                  <Image
-                    src="/images/lp_logo(2).svg"
-                    alt="LP Construction Logo"
-                    width={80}
-                    height={80}
-                    className="object-contain"
-                  />
-                  <div className=" flex items-center gap-1">
-                    <Image
-                      src="/images/texasflag.png"
-                      alt="Texas Flag"
-                      width={25}
-                      height={17}
-                    />
-                    <p className="text-white text-sm sm:text-base">
-                      A TEXAS COMPANY
-                    </p>
-                  </div>
-                </div>
-              </DrawerFooter>
-            </DrawerContent>
-          </Drawer>
-        </nav>
-        <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
-          <h1>ABOUT US</h1>
         </div>
-        <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
-          SETTING THE NEW STANDARD FOR ROOFING
-        </p>
+        <div className="relative flex-1 flex items-center justify-center md:flex-col">
+          <Image
+            src="/images/IMG_1684.jpg"
+            alt="founderpicture"
+            layout="responsive"
+            width={500}
+            height={500}
+            objectFit=" cover"
+            className="shadow-lg"
+          />
+        </div>
       </section>
+
       <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
         <Link href="#main-section">
           <Image

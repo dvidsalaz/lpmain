@@ -470,8 +470,8 @@ export default function Home() {
               <Image
                 src="/images/lp_logo(2).svg"
                 alt="LP Construction Logo"
-                width={144}
-                height={144}
+                width={192}
+                height={192}
                 className="object-contain"
               />
             </Link>
@@ -636,25 +636,25 @@ export default function Home() {
             </AccordionTrigger>
             <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
               <Link
-                href="/privacy"
+                href="/legal"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                href="/legal"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; Terms of Service
               </Link>
               <Link
-                href="/licensing"
+                href="/legal"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; Licensing Information
               </Link>
               <Link
-                href="/certificates"
+                href="/legal"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; Insurance Certificates
