@@ -329,7 +329,7 @@ export default function Team() {
             </Link>
           </nav>
           <div>
-            <p className="text-white text-sm sm:text-base lg:text-lg text-center">
+            <p className="text-white text-sm hidden sm:text-base lg:text-lg text-center">
               Copyright &copy; 2024 LP Exteriors LLC. All rights reserved.
             </p>
           </div>

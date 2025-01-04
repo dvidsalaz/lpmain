@@ -48,12 +48,17 @@ export default function Home() {
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
             <p className="text-sm sm:text-base lg:text-lg">
-              dsalazar@lpexteriors.com
+              <a
+                href="mailto:dsalazar@lpexteriors.com"
+                className=" hover:underline"
+              >
+                dsalazar@lpexteriors.com
+              </a>
             </p>
             <span>|</span>
             <a
               href="tel:+18324686980"
-              className="text-sm sm:text-base lg:text-lg"
+              className="text-sm sm:text-base hover:underline lg:text-lg"
               aria-label="Call us at (832) 468-6980"
               title="Call us at (832) 468-6980"
             >
@@ -161,16 +166,16 @@ export default function Home() {
                     HOME
                   </Link>
                   <Link
-                    href="/company"
+                    href="/about"
                     className="text-lg sm:text-xl text-WayneBlack"
                   >
-                    COMPANY
+                    ABOUT US
                   </Link>
                   <Link
-                    href="#portfolio"
+                    href="/services"
                     className="text-lg sm:text-xl text-WayneBlack"
                   >
-                    PORTFOLIO
+                    SERVICES
                   </Link>
                   <Link
                     href="/team"
@@ -186,8 +191,9 @@ export default function Home() {
                   </Link>
                 </nav>
               </DrawerDescription>
+              <Separator className=" bg-SunsetOrange p-1"></Separator>
               <DrawerFooter className=" bg-WayneBlack p-10">
-                <div className=" flex flex-col justify-center items-center">
+                <div className=" flex flex-col gap-2 justify-center items-center">
                   <Image
                     src="/images/lp_logo(2).svg"
                     alt="LP Construction Logo"
@@ -206,6 +212,35 @@ export default function Home() {
                       A TEXAS COMPANY
                     </p>
                   </div>
+                  <Separator></Separator>
+
+                  <nav className=" flex gap-4 items-center justify-items-end">
+                    <Link href="/team">
+                      <Image
+                        src="/images/facebook.svg"
+                        alt="facebook"
+                        width={24}
+                        height={24}
+                      />
+                    </Link>
+
+                    <Link href="/portfolio">
+                      <Image
+                        src="/images/linkedin.svg"
+                        alt="linkedin"
+                        width={24}
+                        height={24}
+                      />
+                    </Link>
+                    <Link href="/portfolio">
+                      <Image
+                        src="/images/envelope.svg"
+                        alt="envelope"
+                        width={24}
+                        height={24}
+                      />
+                    </Link>
+                  </nav>
                 </div>
               </DrawerFooter>
             </DrawerContent>
@@ -463,15 +498,15 @@ export default function Home() {
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
-      <footer className="flex flex-col">
+      <footer className="flex flex-col bg-none">
         <div className="flex flex-col bg-WayneBlack gap-10 p-6 sm:p-10 lg:p-20">
           <div id="logo" className="flex flex-col gap-2 items-center">
             <Link href="#main-section">
               <Image
                 src="/images/lp_logo(2).svg"
                 alt="LP Construction Logo"
-                width={192}
-                height={192}
+                width={144}
+                height={144}
                 className="object-contain"
               />
             </Link>
@@ -486,7 +521,7 @@ export default function Home() {
             </div>
           </div>
           <Separator></Separator>
-          <div className=" flex items-center gap-8 justify-between w-full">
+          <div className="flex flex-col sm:flex-row items-center gap-8 justify-center sm:justify-between w-full">
             <nav className=" flex gap-4 items-center justify-items-end">
               <Link href="/team">
                 <Image
