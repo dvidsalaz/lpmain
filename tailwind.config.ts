@@ -31,7 +31,7 @@ const config = {
         bottomGray: "#4C4C4C",
       },
       fontFamily: {
-        oswald: ["Oswald", "sans-serif"],
+        anton: ["Anton", "sans-serif"],
       },
       boxShadow: {
         "inner-before": "inset 0 0 70px rgba(0, 0, 0, 0.3)",

@@ -100,7 +100,7 @@ export default function Home() {
             </Link>
             <NavigationMenu>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white font-oswald">
+                <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white font-anton">
                   COMPANY
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className=" flex flex-col gap-4 p-6">
@@ -197,7 +197,7 @@ export default function Home() {
                 assess your property and provide a recommendation on whether to
                 proceed with the claims process.
               </p>
-              <Link href="/team">
+              <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                 </Button>
@@ -228,7 +228,7 @@ export default function Home() {
                 you through the process, ensuring the insurance company is
                 informed of our collaboration and your claim details.
               </p>
-              <Link href="/team">
+              <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                 </Button>
@@ -259,7 +259,7 @@ export default function Home() {
                 damage. Our presence ensures that all issues are addressed and
                 nothing critical is overlooked.
               </p>
-              <Link href="/team">
+              <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                 </Button>
@@ -322,7 +322,7 @@ export default function Home() {
               We work together to make great things happen.
             </h1>
           </div>
-          <Link href="/team">
+          <Link href="/about">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
               LEARN MORE
             </Button>
