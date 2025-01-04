@@ -48,14 +48,14 @@ export default function Home() {
       <div className="bg-SunsetOrange text-white text-center p-2">
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
-            <p className="text-sm sm:text-base lg:text-lg">
+            <h3 className="text-sm sm:text-base lg:text-lg">
               <a
                 href="mailto:dsalazar@lpexteriors.com"
                 className=" hover:underline"
               >
                 dsalazar@lpexteriors.com
               </a>
-            </p>
+            </h3>
             <span>|</span>
             <a
               href="tel:+18324686980"
@@ -74,7 +74,6 @@ export default function Home() {
               />
             </span>
           </div>
-          <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
       {/* Main Content */}
@@ -101,7 +100,7 @@ export default function Home() {
             </Link>
             <NavigationMenu>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white">
+                <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white font-oswald">
                   COMPANY
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className=" flex flex-col gap-4 p-6">
@@ -158,9 +157,9 @@ export default function Home() {
           <h1>DELIVERS</h1>
           <h1>RESULTS</h1>
         </div>
-        <p className=" text-lg sm:text-xl lg:text-2xl font-light">
+        <h2 className=" text-lg sm:text-xl lg:text-2xl font-light">
           SETTING THE NEW STANDARD FOR ROOFING
-        </p>
+        </h2>
       </section>
 
       <section
@@ -178,100 +177,94 @@ export default function Home() {
             id="container"
             className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
           >
-            <Link href="/team">
-              <div className=" relative w-full h-96 overflow-hidden">
-                <Image
-                  src="/images/IMG_5501.jpeg"
-                  alt="A flexible image"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div
-                id="text-space"
-                className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
-              >
-                <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                  VERIFY DAMAGE
-                </h3>
-                <p className=" flex-1">
-                  Schedule a free in-person inspection with us. Our experts will
-                  assess your property and provide a recommendation on whether
-                  to proceed with the claims process.
-                </p>
-                <Link href="/team">
-                  <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                    LEARN MORE
-                  </Button>
-                </Link>
-              </div>
-            </Link>
+            <div className=" relative w-full h-96 overflow-hidden">
+              <Image
+                src="/images/IMG_5501.jpeg"
+                alt="A flexible image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div
+              id="text-space"
+              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
+            >
+              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                VERIFY DAMAGE
+              </h3>
+              <p className=" flex-1">
+                Schedule a free in-person inspection with us. Our experts will
+                assess your property and provide a recommendation on whether to
+                proceed with the claims process.
+              </p>
+              <Link href="/team">
+                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                  LEARN MORE
+                </Button>
+              </Link>
+            </div>
           </div>
           <div
             id="container"
             className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
           >
-            <Link href="/team">
-              <div className=" relative w-full h-96 overflow-hidden">
-                <Image
-                  src="/images/insurance.jpg"
-                  alt="A flexible image"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div
-                id="text-space"
-                className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
-              >
-                <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                  FILE A CLAIM
-                </h3>
-                <p className=" flex-1">
-                  Filing a claim is simple and takes only a few minutes. We
-                  guide you through the process, ensuring the insurance company
-                  is informed of our collaboration and your claim details.
-                </p>
-                <Link href="/team">
-                  <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                    LEARN MORE
-                  </Button>
-                </Link>
-              </div>
-            </Link>
+            <div className=" relative w-full h-96 overflow-hidden">
+              <Image
+                src="/images/insurance.jpg"
+                alt="A flexible image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div
+              id="text-space"
+              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
+            >
+              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                FILE A CLAIM
+              </h3>
+              <p className=" flex-1">
+                Filing a claim is simple and takes only a few minutes. We guide
+                you through the process, ensuring the insurance company is
+                informed of our collaboration and your claim details.
+              </p>
+              <Link href="/team">
+                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                  LEARN MORE
+                </Button>
+              </Link>
+            </div>
           </div>
           <div
             id="container"
             className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
           >
-            <Link href="/team">
-              <div className=" relative w-full h-96 overflow-hidden">
-                <Image
-                  src="/images/adjuster.png"
-                  alt="A flexible image"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div
-                id="text-space"
-                className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
-              >
-                <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                  SCHEDULE THE ADJUSTMENT
-                </h3>
-                <p className=" flex-1">
-                  An insurance adjuster will visit your property to assess the
-                  damage. Our presence ensures that all issues are addressed and
-                  nothing critical is overlooked.
-                </p>
-                <Link href="/team">
-                  <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                    LEARN MORE
-                  </Button>
-                </Link>
-              </div>
-            </Link>
+            <div className=" relative w-full h-96 overflow-hidden">
+              <Image
+                src="/images/adjuster.png"
+                alt="A flexible image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div
+              id="text-space"
+              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
+            >
+              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                SCHEDULE THE ADJUSTMENT
+              </h3>
+              <p className=" flex-1">
+                An insurance adjuster will visit your property to assess the
+                damage. Our presence ensures that all issues are addressed and
+                nothing critical is overlooked.
+              </p>
+              <Link href="/team">
+                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                  LEARN MORE
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -306,28 +299,11 @@ export default function Home() {
               4 Bed | 3 Bath | 2,500 Sqft
             </p>
           </div>
-          <div>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  VIEW OUR SERVICES
-                </Button>
-              </DialogTrigger>
-              <DialogContent className=" w-full p-4 bg-transparent border-0">
-                <AspectRatio ratio={16 / 9} className=" w-full">
-                  <video
-                    controls
-                    className="w-full h-full object-cover"
-                    style={{ maxHeight: "100%" }}
-                  >
-                    <source src="/videos/work-video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </AspectRatio>
-                <DialogClose />
-              </DialogContent>
-            </Dialog>
-          </div>
+          <Link href="/team">
+            <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+              VIEW OUR SERVICES
+            </Button>
+          </Link>
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
@@ -423,7 +399,9 @@ export default function Home() {
                 width={50}
                 height={33}
               />
-              <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
+              <h3 className="text-white text-sm sm:text-base">
+                A TEXAS COMPANY
+              </h3>
             </div>
           </div>
           <Separator></Separator>
@@ -545,25 +523,25 @@ export default function Home() {
             </AccordionTrigger>
             <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
               <Link
-                href="/questions"
+                href="/learn"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; FAQs
               </Link>
               <Link
-                href="/team"
+                href="/learn"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; Insurance Process
               </Link>
               <Link
-                href="/team"
+                href="/learn"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; Maintenance Tips
               </Link>
               <Link
-                href="/team"
+                href="/learn"
                 className=" hover:underline hover:decoration-SunsetOrange"
               >
                 &middot; Project Timelines

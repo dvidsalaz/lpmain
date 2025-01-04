@@ -113,10 +113,10 @@ export default function Team() {
                 </NavigationMenuItem>
               </NavigationMenu>
               <Link
-                href="/portfolio"
+                href="/services"
                 className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
               >
-                PORTFOLIO
+                SERVICES
               </Link>
               <Link
                 href="/team"
@@ -242,7 +242,7 @@ export default function Team() {
             width={50}
             height={33}
           />
-          <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
+          <h3 className="text-white text-sm sm:text-base">A TEXAS COMPANY</h3>
         </div>
         <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
           <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">

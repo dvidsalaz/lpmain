@@ -21,3 +21,19 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: black !important;
   transition: background-color 5000s ease-in-out 0s; /* Prevents flashing */
 }
+
+:root {
+  --font-anton: "Anton", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+}
+
+body {
+  font-family: var(--font-oswald);
+}
+
+a,
+h1,
+h2,
+h3 {
+  font-family: var(--font-anton);
+}
