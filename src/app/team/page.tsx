@@ -24,6 +24,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import MyDrawer from "@/components/custom/myDrawer";
 
 export default function Team() {
   return (
@@ -118,10 +119,10 @@ export default function Team() {
               </NavigationMenuItem>
             </NavigationMenu>
             <Link
-              href="#portfolio"
+              href="/services"
               className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
             >
-              PORTFOLIO
+              SERVICES
             </Link>
             <Link
               href="/team"
@@ -136,71 +137,7 @@ export default function Team() {
               CONTACT US
             </Link>
           </div>
-          <Drawer>
-            <DrawerTrigger className=" sm:hidden bg-transparent" asChild>
-              <Image
-                src="/images/align-justify.svg"
-                alt="Menu"
-                width={56}
-                height={56}
-              />
-            </DrawerTrigger>
-            <DrawerContent className=" border-none">
-              <DrawerDescription>
-                <nav className=" flex flex-col p-6 gap-6">
-                  <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
-                    HOME
-                  </Link>
-                  <Link
-                    href="#company"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    COMPANY
-                  </Link>
-                  <Link
-                    href="#portfolio"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    PORTFOLIO
-                  </Link>
-                  <Link
-                    href="/team"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    OUR TEAM
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    CONTACT US
-                  </Link>
-                </nav>
-              </DrawerDescription>
-              <DrawerFooter className=" bg-WayneBlack p-10">
-                <div className=" flex flex-col justify-center items-center">
-                  <Image
-                    src="/images/lp_logo(2).svg"
-                    alt="LP Construction Logo"
-                    width={80}
-                    height={80}
-                    className="object-contain"
-                  />
-                  <div className=" flex items-center gap-1">
-                    <Image
-                      src="/images/texasflag.png"
-                      alt="Texas Flag"
-                      width={25}
-                      height={17}
-                    />
-                    <p className="text-white text-sm sm:text-base">
-                      A TEXAS COMPANY
-                    </p>
-                  </div>
-                </div>
-              </DrawerFooter>
-            </DrawerContent>
-          </Drawer>
+          <MyDrawer></MyDrawer>
         </nav>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
           <h1>MEET</h1>

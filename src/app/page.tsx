@@ -39,6 +39,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import MyDrawer from "@/components/custom/myDrawer";
 
 export default function Home() {
   return (
@@ -132,7 +133,7 @@ export default function Home() {
               </NavigationMenuItem>
             </NavigationMenu>
             <Link
-              href="/portfolio"
+              href="/services"
               className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
             >
               SERVICES
@@ -150,101 +151,7 @@ export default function Home() {
               CONTACT US
             </Link>
           </div>
-          <Drawer>
-            <DrawerTrigger className=" sm:hidden bg-transparent" asChild>
-              <Image
-                src="/images/align-justify.svg"
-                alt="Menu"
-                width={56}
-                height={56}
-              />
-            </DrawerTrigger>
-            <DrawerContent className=" border-none">
-              <DrawerDescription>
-                <nav className=" flex flex-col p-6 gap-6">
-                  <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
-                    HOME
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    ABOUT US
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    SERVICES
-                  </Link>
-                  <Link
-                    href="/team"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    OUR TEAM
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="text-lg sm:text-xl text-WayneBlack"
-                  >
-                    CONTACT US
-                  </Link>
-                </nav>
-              </DrawerDescription>
-              <Separator className=" bg-SunsetOrange p-1"></Separator>
-              <DrawerFooter className=" bg-WayneBlack p-10">
-                <div className=" flex flex-col gap-2 justify-center items-center">
-                  <Image
-                    src="/images/lp_logo(2).svg"
-                    alt="LP Construction Logo"
-                    width={80}
-                    height={80}
-                    className="object-contain"
-                  />
-                  <div className=" flex items-center gap-1">
-                    <Image
-                      src="/images/texasflag.png"
-                      alt="Texas Flag"
-                      width={25}
-                      height={17}
-                    />
-                    <p className="text-white text-sm sm:text-base">
-                      A TEXAS COMPANY
-                    </p>
-                  </div>
-                  <Separator></Separator>
-
-                  <nav className=" flex gap-4 items-center justify-items-end">
-                    <Link href="/team">
-                      <Image
-                        src="/images/facebook.svg"
-                        alt="facebook"
-                        width={24}
-                        height={24}
-                      />
-                    </Link>
-
-                    <Link href="/portfolio">
-                      <Image
-                        src="/images/linkedin.svg"
-                        alt="linkedin"
-                        width={24}
-                        height={24}
-                      />
-                    </Link>
-                    <Link href="/portfolio">
-                      <Image
-                        src="/images/envelope.svg"
-                        alt="envelope"
-                        width={24}
-                        height={24}
-                      />
-                    </Link>
-                  </nav>
-                </div>
-              </DrawerFooter>
-            </DrawerContent>
-          </Drawer>
+          <MyDrawer></MyDrawer>
         </nav>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
           <h1>LP</h1>
@@ -539,14 +446,14 @@ export default function Home() {
                   height={32}
                 />
               </Link>
-              <Link href="/portfolio">
+              <a href="mailto:dsalazar@lpexteriors.com">
                 <Image
                   src="/images/envelope.svg"
                   alt="envelope"
                   width={32}
                   height={32}
                 />
-              </Link>
+              </a>
             </nav>
             <p className="text-white text-sm sm:text-base lg:text-lg text-center">
               Copyright &copy; 2025 LP Exteriors LLC. All rights reserved.

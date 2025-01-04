@@ -27,6 +27,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
+import MyDrawer from "@/components/custom/myDrawer";
 
 export default function Team() {
   return (
@@ -130,74 +131,7 @@ export default function Team() {
                 CONTACT US
               </Link>
             </div>
-            <Drawer>
-              <DrawerTrigger className=" sm:hidden bg-transparent" asChild>
-                <Image
-                  src="/images/align-justify.svg"
-                  alt="Menu"
-                  width={56}
-                  height={56}
-                />
-              </DrawerTrigger>
-              <DrawerContent className=" border-none">
-                <DrawerDescription>
-                  <nav className=" flex flex-col p-6 gap-6">
-                    <Link
-                      href="/"
-                      className="text-lg sm:text-xl text-WayneBlack"
-                    >
-                      HOME
-                    </Link>
-                    <Link
-                      href="#company"
-                      className="text-lg sm:text-xl text-WayneBlack"
-                    >
-                      COMPANY
-                    </Link>
-                    <Link
-                      href="#portfolio"
-                      className="text-lg sm:text-xl text-WayneBlack"
-                    >
-                      PORTFOLIO
-                    </Link>
-                    <Link
-                      href="/team"
-                      className="text-lg sm:text-xl text-WayneBlack"
-                    >
-                      OUR TEAM
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="text-lg sm:text-xl text-WayneBlack"
-                    >
-                      CONTACT US
-                    </Link>
-                  </nav>
-                </DrawerDescription>
-                <DrawerFooter className=" bg-WayneBlack p-10">
-                  <div className=" flex flex-col justify-center items-center">
-                    <Image
-                      src="/images/lp_logo(2).svg"
-                      alt="LP Construction Logo"
-                      width={80}
-                      height={80}
-                      className="object-contain"
-                    />
-                    <div className=" flex items-center gap-1">
-                      <Image
-                        src="/images/texasflag.png"
-                        alt="Texas Flag"
-                        width={25}
-                        height={17}
-                      />
-                      <p className="text-white text-sm sm:text-base">
-                        A TEXAS COMPANY
-                      </p>
-                    </div>
-                  </div>
-                </DrawerFooter>
-              </DrawerContent>
-            </Drawer>
+            <MyDrawer></MyDrawer>
           </nav>
           <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
             <h1>ABOUT US</h1>
@@ -272,7 +206,7 @@ export default function Team() {
           </p>
           <div>
             <Link href="/team">
-              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-slate-400 rounded-none">
                 CONTACT
               </Button>
             </Link>
@@ -329,7 +263,7 @@ export default function Team() {
             </Link>
           </nav>
           <div>
-            <p className="text-white text-sm hidden sm:text-base lg:text-lg text-center">
+            <p className="text-white text-sm sm:text-base lg:text-lg text-center">
               Copyright &copy; 2024 LP Exteriors LLC. All rights reserved.
             </p>
           </div>
