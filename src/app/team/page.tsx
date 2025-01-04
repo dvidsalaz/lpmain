@@ -57,7 +57,7 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
+      <section className="flex flex-col gap-8 p-6 bg-slate-400 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
         <video
           className=" lg:visible absolute top-0 left-0 w-full h-full object-cover -z-10 pointer-events-none"
           autoPlay
@@ -65,7 +65,7 @@ export default function Team() {
           loop
           playsInline
         >
-          <source src="/videos/testing.mp4" type="video/mp4" />
+          <source src="/videos/.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <nav className=" sticky top-0 z-50 flex items-center justify-between">
