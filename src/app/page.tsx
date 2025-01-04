@@ -403,7 +403,7 @@ export default function Home() {
             <Dialog>
               <DialogTrigger asChild>
                 <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                  VIEW OUR PORTFOLIO
+                  VIEW OUR SERVICES
                 </Button>
               </DialogTrigger>
               <DialogContent className=" w-full p-4 bg-transparent border-0">
@@ -475,11 +475,10 @@ export default function Home() {
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
             Get In Touch
           </h1>
-          <p className=" text-base sm:text-lg lg:text-xl text-gray-400">
-            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
-            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
-            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
-            in accumsan.
+          <p className=" text-base sm:text-lg lg:text-xl text-bottomGray">
+            Have questions or want to learn more about how we can help? Reach
+            out to us! We're here to provide answers, support, and guidance
+            every step of the way. Let's start a conversation today.
           </p>
           <Link href="/contact">
             <Button

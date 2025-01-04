@@ -58,10 +58,11 @@ export default function Team() {
       </div>
       <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
         <video
-          className=" lg:visible absolute top-0 left-0 w-full h-full object-cover -z-10"
+          className=" lg:visible absolute top-0 left-0 w-full h-full object-cover -z-10 pointer-events-none"
           autoPlay
           muted
           loop
+          playsInline
         >
           <source src="/videos/testing.mp4" type="video/mp4" />
           Your browser does not support the video tag.
