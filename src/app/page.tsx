@@ -477,7 +477,7 @@ export default function Home() {
           </h1>
           <p className=" text-base sm:text-lg lg:text-xl text-bottomGray">
             Have questions or want to learn more about how we can help? Reach
-            out to us! We're here to provide answers, support, and guidance
+            out to us! We&apos;re here to provide answers, support, and guidance
             every step of the way. Let's start a conversation today.
           </p>
           <Link href="/contact">
