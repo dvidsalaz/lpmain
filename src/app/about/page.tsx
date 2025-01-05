@@ -16,16 +16,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 import MyDrawer from "@/components/custom/myDrawer";
 
@@ -36,9 +26,9 @@ export default function Team() {
       <div className=" bg-WayneBlack text-white text-center p-2">
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
-            <p className="text-sm sm:text-base lg:text-lg">
+            <h3 className="text-sm sm:text-base lg:text-lg">
               dsalazar@lpexteriors.com
-            </p>
+            </h3>
             <span>|</span>
             <a
               href="tel:+18324686980"
@@ -136,13 +126,13 @@ export default function Team() {
           <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
             <h1>ABOUT US</h1>
           </div>
-          <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
+          <h3 className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
             SETTING THE NEW STANDARD FOR ROOFING
-          </p>
+          </h3>
         </div>
         <div
           id="socials"
-          className=" bg-WayneBlack p-4 px-20 flex items-center gap-8 justify-end w-full"
+          className=" bg-WayneBlack p-4 px-10 lg:px-20 flex items-center gap-8 justify-end w-full"
         >
           <nav className=" flex gap-4 items-center">
             <Link href="/team">

@@ -69,7 +69,9 @@ const MyDrawer = () => {
                 width={25}
                 height={17}
               />
-              <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
+              <h3 className="text-white text-sm sm:text-base">
+                A TEXAS COMPANY
+              </h3>
             </div>
             <Separator></Separator>
 

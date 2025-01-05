@@ -4,24 +4,6 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogClose,
-} from "@/components/ui/dialog";
-
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-
-import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuIndicator,
@@ -31,7 +13,6 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { MyForm } from "@/components/custom/MyForm";
 import { Separator } from "@/components/ui/separator";
 import {
   Accordion,
@@ -192,7 +173,7 @@ export default function Home() {
               <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
                 VERIFY DAMAGE
               </h3>
-              <p className=" flex-1">
+              <p className=" flex-1 sm:text-lg lg:text-xl">
                 Schedule a free in-person inspection with us. Our experts will
                 assess your property and provide a recommendation on whether to
                 proceed with the claims process.
@@ -223,7 +204,7 @@ export default function Home() {
               <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
                 FILE A CLAIM
               </h3>
-              <p className=" flex-1">
+              <p className=" flex-1 sm:text-lg lg:text-xl">
                 Filing a claim is simple and takes only a few minutes. We guide
                 you through the process, ensuring the insurance company is
                 informed of our collaboration and your claim details.
@@ -254,7 +235,7 @@ export default function Home() {
               <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
                 SCHEDULE THE ADJUSTMENT
               </h3>
-              <p className=" flex-1">
+              <p className=" flex-1 sm:text-lg lg:text-xl">
                 An insurance adjuster will visit your property to assess the
                 damage. Our presence ensures that all issues are addressed and
                 nothing critical is overlooked.
@@ -270,7 +251,7 @@ export default function Home() {
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
-        id="portfolio"
+        id="services"
         className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen bg-slate-4=00"
         style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
       >
@@ -281,23 +262,63 @@ export default function Home() {
         >
           <div>
             <h2 className="text-gray-300 text-center text-2xl sm:text-3xl lg:text-5xl">
-              Top Projects
+              Solutions That Last
             </h2>
             <h1 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
-              Uvalde Residential Estate
+              Quality You Can Trust
             </h1>
           </div>
           <p className=" text-center text-WayneBlack text-base sm:text-lg lg:text-xl">
-            Massa nunc nisi fames adipiscing scelerisque placerat et sagittis
-            cursus. Mi commodo id maecenas amet, elementum a, in.
+            Whether you need repairs, replacements, or enhancements, we’re here
+            to bring your vision to life. Explore our comprehensive services
+            designed to meet your needs with precision and care.
           </p>
-          <div className="flex flex-col">
-            <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-              4 Bed | 3 Bath | 2,500 Sqft
-            </p>
-            <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
-              4 Bed | 3 Bath | 2,500 Sqft
-            </p>
+          <div className="flex flex-col items-center justify-center">
+            <div className=" flex">
+              <Image
+                src="/images/check.svg"
+                alt="check"
+                width={24}
+                height={24}
+              ></Image>
+              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+                Roof Storm Damage Repair
+              </p>
+            </div>
+            <div className=" flex">
+              <Image
+                src="/images/check.svg"
+                alt="check"
+                width={24}
+                height={24}
+              ></Image>
+              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+                Full Roof Replacement
+              </p>
+            </div>
+
+            <div className=" flex">
+              <Image
+                src="/images/check.svg"
+                alt="check"
+                width={24}
+                height={24}
+              ></Image>
+              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+                Siding & Fascia Repair
+              </p>
+            </div>
+            <div className=" flex">
+              <Image
+                src="/images/check.svg"
+                alt="check"
+                width={24}
+                height={24}
+              ></Image>
+              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+                Gutter Installation
+              </p>
+            </div>
           </div>
           <Link href="/team">
             <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
