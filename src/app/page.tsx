@@ -133,12 +133,12 @@ export default function Home() {
           </div>
           <MyDrawer></MyDrawer>
         </nav>
-        <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
+        <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold ">
           <h1>LP</h1>
           <h1>DELIVERS</h1>
           <h1>RESULTS</h1>
         </div>
-        <h2 className=" text-lg sm:text-xl lg:text-2xl font-light">
+        <h2 className=" text-lg sm:text-xl lg:text-2xl font-light motion-opacity-in-0 motion-translate-y-in-100">
           SETTING THE NEW STANDARD FOR ROOFING
         </h2>
       </section>
@@ -258,7 +258,7 @@ export default function Home() {
         <div className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
         <div
           id="div1"
-          className=" items-center justify-center flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow"
+          className=" items-center motion-scale-y-in justify-center flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow"
         >
           <div>
             <h2 className="text-gray-300 text-center text-2xl sm:text-3xl lg:text-5xl">
@@ -269,9 +269,9 @@ export default function Home() {
             </h1>
           </div>
           <p className=" text-center text-WayneBlack text-base sm:text-lg lg:text-xl">
-            Whether you need repairs, replacements, or enhancements, we’re here
-            to bring your vision to life. Explore our comprehensive services
-            designed to meet your needs with precision and care.
+            Whether you need repairs, replacements, or enhancements, we&apos;re
+            here to bring your vision to life. Explore our comprehensive
+            services designed to meet your needs with precision and care.
           </p>
           <div className="flex flex-col items-center justify-center">
             <div className=" flex">
