@@ -22,6 +22,8 @@ import {
 } from "@/components/ui/accordion";
 import MyDrawer from "@/components/custom/myDrawer";
 
+import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
+
 export default function Home() {
   return (
     <main className=" min-h-screen">
@@ -153,7 +155,7 @@ export default function Home() {
         >
           The Process
         </h2>
-        <div className="flex flex-wrap justify-between gap-4">
+        <div className="flex flex-wrap justify-between gap-4 ">
           <div
             id="container"
             className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
@@ -328,6 +330,9 @@ export default function Home() {
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
+      <section className=" bg-cloudyGray flex flex-col items-center justify-center p-3">
+        <CarouselPlugin></CarouselPlugin>
+      </section>
 
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
