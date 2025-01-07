@@ -174,6 +174,8 @@ export default function Home() {
                 objectFit="cover"
               />
             </div>
+            <Separator className=" bg-SunsetOrange p-1"></Separator>
+
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
@@ -205,6 +207,8 @@ export default function Home() {
                 objectFit="cover"
               />
             </div>
+            <Separator className=" bg-SunsetOrange p-1"></Separator>
+
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
@@ -236,6 +240,8 @@ export default function Home() {
                 objectFit="cover"
               />
             </div>
+            <Separator className=" bg-SunsetOrange p-1"></Separator>
+
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
@@ -337,8 +343,8 @@ export default function Home() {
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
-        <h3 className=" font-oswald font-bold text-2xl  md:text-2xl lg:text-3xl">
-          TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
+        <h3 className=" font-oswald font-bold text-lg text-center sm:xl md:text-2xl lg:text-3xl">
+          WE USE TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
         </h3>
         <CarouselPlugin></CarouselPlugin>
       </section>
@@ -393,10 +399,15 @@ export default function Home() {
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
             Get In Touch
           </h1>
-          <p className=" text-base sm:text-lg lg:text-xl text-bottomGray">
+          <p className="text-lg sm:text-2xl lg:text-3xl text-bottomGray">
             Have questions or want to learn more about how we can help? Reach
             out to us! We&apos;re here to provide answers, support, and guidance
-            every step of the way. Let&apos;s start a conversation today.
+            every step of the way.&nbsp;
+            <Link href="/contact">
+              <span className="hover:motion-text-out-devilRed font-oswald hover:font-bold">
+                Let&apos;s start a conversation today.
+              </span>
+            </Link>
           </p>
           <Link href="/contact">
             <Button
