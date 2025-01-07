@@ -32,6 +32,7 @@ const config = {
       },
       fontFamily: {
         anton: ["Anton", "sans-serif"],
+        oswald: ["Oswald", "sans-serif"],
       },
       boxShadow: {
         "inner-before": "inset 0 0 70px rgba(0, 0, 0, 0.3)",

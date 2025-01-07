@@ -136,11 +136,17 @@ export default function Home() {
           <MyDrawer></MyDrawer>
         </nav>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold ">
-          <h1>LP</h1>
-          <h1>DELIVERS</h1>
-          <h1>RESULTS</h1>
+          <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-100 ">
+            LP
+          </h1>
+          <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-500">
+            DELIVERS
+          </h1>
+          <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-1000">
+            RESULTS
+          </h1>
         </div>
-        <h2 className=" text-lg sm:text-xl lg:text-2xl font-light motion-opacity-in-0 motion-translate-y-in-100">
+        <h2 className=" text-lg sm:text-xl lg:text-2xl font-light motion-opacity-in-0 motion-translate-y-in-100 motion-delay-1500">
           SETTING THE NEW STANDARD FOR ROOFING
         </h2>
       </section>
@@ -330,7 +336,10 @@ export default function Home() {
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
-      <section className=" bg-cloudyGray flex flex-col items-center justify-center p-3">
+      <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
+        <h3 className=" font-oswald font-bold text-2xl  md:text-2xl lg:text-3xl">
+          TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
+        </h3>
         <CarouselPlugin></CarouselPlugin>
       </section>
 
