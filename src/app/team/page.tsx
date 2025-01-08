@@ -25,7 +25,7 @@ import {
 } from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import MyDrawer from "@/components/custom/myDrawer";
-import MyNavigationBar from "@/components/custom/myNavigation";
+import MyNavigationBar from "@/components/custom/MyNavigation";
 
 export default function Team() {
   return (

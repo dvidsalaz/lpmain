@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-import MyNavigationBar from "@/components/custom/myNavigation";
+import MyNavigationBar from "@/components/custom/MyNavigation";
 
 import { Separator } from "@/components/ui/separator";
 import {

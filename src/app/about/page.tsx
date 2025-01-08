@@ -18,7 +18,7 @@ import { Button } from "@/components/ui/button";
 
 import { Separator } from "@/components/ui/separator";
 import MyDrawer from "@/components/custom/myDrawer";
-import MyNavigationBar from "@/components/custom/myNavigation";
+import MyNavigationBar from "@/components/custom/MyNavigation";
 
 export default function Team() {
   return (
