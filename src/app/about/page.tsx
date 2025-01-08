@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 
 import { Separator } from "@/components/ui/separator";
 import MyDrawer from "@/components/custom/myDrawer";
+import MyNavigationBar from "@/components/custom/myNavigation";
 
 export default function Team() {
   return (
@@ -52,77 +53,7 @@ export default function Team() {
       </div>
       <section className="flex flex-col h-screen bg-slate-400">
         <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
-          <nav className="sticky top-0 z-50 flex items-center justify-between">
-            <Link href="/">
-              <Image
-                src="/images/lp_logo(2).svg"
-                alt="LP Construction Logo"
-                width={120}
-                height={120}
-                className=" object-contain"
-              />
-            </Link>
-            <div className=" hidden sm:flex gap-6">
-              <Link
-                href="/"
-                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-              >
-                HOME
-              </Link>
-              <NavigationMenu>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white">
-                    COMPANY
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className=" flex flex-col gap-4 p-6">
-                    <Link
-                      className="hover:underline hover:decoration-SunsetOrange"
-                      href="/about"
-                    >
-                      ABOUT US
-                    </Link>
-                    <Link
-                      className="hover:underline hover:decoration-SunsetOrange"
-                      href="/expertise"
-                    >
-                      EXPERTISE
-                    </Link>
-                    <Link
-                      className="hover:underline hover:decoration-SunsetOrange"
-                      href="/testimonials"
-                    >
-                      TESTIMONIALS
-                    </Link>
-                    <Link
-                      className="hover:underline hover:decoration-SunsetOrange"
-                      href="/finished-projects"
-                    >
-                      FINISHED PROJECTS
-                    </Link>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenu>
-              <Link
-                href="/services"
-                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-              >
-                SERVICES
-              </Link>
-              <Link
-                href="/team"
-                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-              >
-                OUR TEAM
-              </Link>
-              <Link
-                href="/contact"
-                className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-              >
-                CONTACT US
-              </Link>
-            </div>
-            <MyDrawer></MyDrawer>
-          </nav>
+          <MyNavigationBar></MyNavigationBar>
           <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
             <h1>ABOUT US</h1>
           </div>
@@ -166,6 +97,49 @@ export default function Team() {
           </nav>
         </div>
       </section>
+      <section id="team" className=" flex flex-col md:flex-row h-screen">
+        <div
+          id="div1"
+          className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
+          style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
+        >
+          <div>
+            <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
+              About Us
+            </h2>
+            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+              We work together to make great things happen.
+            </h1>
+          </div>
+          <Link href="/about">
+            <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+              LEARN MORE
+            </Button>
+          </Link>
+        </div>
+        <div
+          id="div2"
+          className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
+          style={{ backgroundImage: "url('/images/.jpg')" }}
+        >
+          <div>
+            <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
+              Our Team
+            </h2>
+            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+              Impact-driven projects that build Houston for better.
+            </h1>
+          </div>
+          <div>
+            <Link href="/team">
+              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                MEET OUR TEAM
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="member"
         className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"

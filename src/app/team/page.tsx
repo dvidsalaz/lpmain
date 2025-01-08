@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/dialog";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import MyDrawer from "@/components/custom/myDrawer";
+import MyNavigationBar from "@/components/custom/myNavigation";
 
 export default function Team() {
   return (
@@ -68,77 +69,7 @@ export default function Team() {
           <source src="/videos/.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <nav className=" sticky top-0 z-50 flex items-center justify-between">
-          <Link href="/">
-            <Image
-              src="/images/lp_logo(2).svg"
-              alt="LP Construction Logo"
-              width={120}
-              height={120}
-              className=" object-contain"
-            />
-          </Link>
-          <div className=" hidden sm:flex gap-6">
-            <Link
-              href="/"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              HOME
-            </Link>
-            <NavigationMenu>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white">
-                  COMPANY
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className=" flex flex-col gap-4 p-6">
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/about"
-                  >
-                    ABOUT US
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/expertise"
-                  >
-                    EXPERTISE
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/testimonials"
-                  >
-                    TESTIMONIALS
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/finished-projects"
-                  >
-                    FINISHED PROJECTS
-                  </Link>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenu>
-            <Link
-              href="/services"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              SERVICES
-            </Link>
-            <Link
-              href="/team"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              OUR TEAM
-            </Link>
-            <Link
-              href="/contact"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              CONTACT US
-            </Link>
-          </div>
-          <MyDrawer></MyDrawer>
-        </nav>
+        <MyNavigationBar></MyNavigationBar>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
           <h1>MEET</h1>
           <h1>OUR</h1>

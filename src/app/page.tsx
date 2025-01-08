@@ -3,16 +3,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+import MyNavigationBar from "@/components/custom/myNavigation";
+
 import { Separator } from "@/components/ui/separator";
 import {
   Accordion,
@@ -64,77 +56,7 @@ export default function Home() {
         id="header"
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-slate-400 min-h-screen"
       >
-        <nav className=" sticky top-0 z-50 flex items-center justify-between">
-          <Link href="#home">
-            <Image
-              src="/images/lp_logo(2).svg"
-              alt="LP Construction Logo"
-              width={120}
-              height={120}
-              className=" object-contain"
-            />
-          </Link>
-          <div className=" hidden sm:flex gap-6">
-            <Link
-              href="#home"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange "
-            >
-              HOME
-            </Link>
-            <NavigationMenu>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className=" hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white font-anton">
-                  COMPANY
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className=" flex flex-col gap-4 p-6">
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/about"
-                  >
-                    ABOUT US
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/expertise"
-                  >
-                    EXPERTISE
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/testimonials"
-                  >
-                    TESTIMONIALS
-                  </Link>
-                  <Link
-                    className="hover:underline hover:decoration-SunsetOrange"
-                    href="/finished-projects"
-                  >
-                    FINISHED PROJECTS
-                  </Link>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            </NavigationMenu>
-            <Link
-              href="/services"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              SERVICES
-            </Link>
-            <Link
-              href="/team"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              OUR TEAM
-            </Link>
-            <Link
-              href="/contact"
-              className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-            >
-              CONTACT US
-            </Link>
-          </div>
-          <MyDrawer></MyDrawer>
-        </nav>
+        <MyNavigationBar></MyNavigationBar>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold ">
           <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-100 ">
             LP
@@ -266,7 +188,7 @@ export default function Home() {
       <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="services"
-        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen bg-slate-4=00"
+        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen"
         style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
       >
         <div className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
@@ -399,7 +321,7 @@ export default function Home() {
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
             Get In Touch
           </h1>
-          <p className="text-lg sm:text-2xl lg:text-3xl text-bottomGray">
+          <p className=" text-lg sm:text-2xl lg:text-2xl text-bottomGray">
             Have questions or want to learn more about how we can help? Reach
             out to us! We&apos;re here to provide answers, support, and guidance
             every step of the way.&nbsp;
