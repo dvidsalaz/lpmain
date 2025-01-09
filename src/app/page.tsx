@@ -11,6 +11,8 @@ import MyDrawer from "@/components/custom/myDrawer";
 
 import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
 import MyFooter from "@/components/custom/MyFooter";
+import { Carousel } from "@/components/ui/carousel";
+import { CarouselSize } from "@/components/custom/CarouselSize";
 
 export default function Home() {
   return (
@@ -260,12 +262,17 @@ export default function Home() {
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
+
+      <section className=" bg-cloudyGray flex items-center justify-center gap-4">
+        <CarouselSize></CarouselSize>
+      </section>
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
         <h3 className=" font-oswald font-bold text-lg text-center sm:xl md:text-2xl lg:text-3xl">
           WE USE TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
         </h3>
         <CarouselPlugin></CarouselPlugin>
       </section>
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
 
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
@@ -309,6 +316,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section
         id="contact"
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
