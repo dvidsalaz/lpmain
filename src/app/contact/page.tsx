@@ -5,6 +5,7 @@ import MyNavigationBar from "@/components/custom/MyNavigation";
 import { Button } from "@/components/ui/button";
 
 import { MyForm } from "@/components/custom/MyForm";
+import MyFooter from "@/components/custom/MyFooter";
 
 export default function Team() {
   return (
@@ -125,50 +126,7 @@ export default function Team() {
           <MyForm />
         </div>
       </section>
-      <footer className="flex flex-col gap-8 bg-WayneBlack p-6 sm:p-10 lg:p-20 items-center text-center">
-        <Link href="#main-section">
-          <Image
-            src="/images/lp_logo(2).svg"
-            alt="LP Construction Logo"
-            width={144}
-            height={144}
-            className="object-contain"
-          />
-        </Link>
-        <div className="flex items-center gap-2">
-          <Image
-            src="/images/texasflag.png"
-            alt="Texas Flag"
-            width={50}
-            height={33}
-          />
-          <p className="text-white text-sm sm:text-base">A TEXAS COMPANY</p>
-        </div>
-        <div className=" flex flex-col lg:flex-row items-center gap-8 justify-between w-full ">
-          <nav className="text-white flex gap-4 items-center text-sm sm:text-base lg:text-lg">
-            <Link className=" hover:text-gray-300 hover:underline" href="/team">
-              Our Team
-            </Link>
-            <Link
-              className=" hover:text-gray-300 hover:underline"
-              href="/services"
-            >
-              Our Services
-            </Link>
-            <Link
-              className=" hover:text-gray-300 hover:underline"
-              href="/portfolio"
-            >
-              Our Portfolio
-            </Link>
-          </nav>
-          <div>
-            <p className="text-white text-sm sm:text-base lg:text-lg text-center">
-              Copyright &copy; 2024 LP Exteriors LLC. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <MyFooter></MyFooter>
     </main>
   );
 }
