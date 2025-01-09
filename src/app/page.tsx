@@ -161,7 +161,6 @@ export default function Home() {
               />
             </div>
             <Separator className=" bg-SunsetOrange p-1"></Separator>
-
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
@@ -260,6 +259,9 @@ export default function Home() {
             </Button>
           </Link>
         </div>
+      </section>
+      <section className=" flex flex-col items-center justify-center gap-4 p-6 sm:p-10 lg:p-10">
+        <CarouselSize></CarouselSize>
       </section>
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
         <h3 className=" font-oswald font-bold text-lg text-center sm:xl md:text-2xl lg:text-3xl">

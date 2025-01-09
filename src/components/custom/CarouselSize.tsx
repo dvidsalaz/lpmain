@@ -16,30 +16,31 @@ import Link from "next/link";
 
 export function CarouselSize() {
   return (
-    <section id="services" className="flex p-10">
-      <Carousel className="w-full">
-        <CarouselContent className=" gap-4">
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 bg-cloudyGray shadow-lg hover:shadow-xl ">
-            <div className="relative w-full h-96 overflow-hidden">
+    <Carousel className="w-full">
+      <CarouselContent className="">
+        <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <Card className="flex flex-col bg-cloudyGray flex-1 rounded-none border-none">
+            <div className=" relative w-full h-96 overflow-hidden">
               <Image
-                src="/images/IMG_5501.jpeg"
+                src="/images/insurance.jpg"
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
               />
             </div>
             <Separator className=" bg-SunsetOrange p-1"></Separator>
+
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                VERIFY DAMAGE
+              <h3 className=" font-oswald font-bold text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                Roof Storm Damage Repair
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Schedule a free in-person inspection with us. Our experts will
-                assess your property and provide a recommendation on whether to
-                proceed with the claims process.
+                Filing a claim is simple and takes only a few minutes. We guide
+                you through the process, ensuring the insurance company is
+                informed of our collaboration and your claim details.
               </p>
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -47,28 +48,31 @@ export function CarouselSize() {
                 </Button>
               </Link>
             </div>
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 bg-cloudyGray shadow-lg hover:shadow-xl ">
-            <div className="relative w-full h-96 overflow-hidden">
+          </Card>
+        </CarouselItem>
+        <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <Card className="flex flex-col bg-cloudyGray flex-1 rounded-none border-none">
+            <div className=" relative w-full h-96 overflow-hidden">
               <Image
-                src="/images/IMG_5501.jpeg"
+                src="/images/insurance.jpg"
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
               />
             </div>
             <Separator className=" bg-SunsetOrange p-1"></Separator>
+
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                VERIFY DAMAGE
+              <h3 className=" font-oswald font-bold text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                Full Roof Replacement
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Schedule a free in-person inspection with us. Our experts will
-                assess your property and provide a recommendation on whether to
-                proceed with the claims process.
+                Filing a claim is simple and takes only a few minutes. We guide
+                you through the process, ensuring the insurance company is
+                informed of our collaboration and your claim details.
               </p>
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -76,28 +80,31 @@ export function CarouselSize() {
                 </Button>
               </Link>
             </div>
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 bg-cloudyGray shadow-lg hover:shadow-xl ">
-            <div className="relative w-full h-96 overflow-hidden">
+          </Card>
+        </CarouselItem>
+        <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <Card className="flex flex-col bg-cloudyGray flex-1 rounded-none border-none">
+            <div className=" relative w-full h-96 overflow-hidden">
               <Image
-                src="/images/IMG_5501.jpeg"
+                src="/images/insurance.jpg"
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
               />
             </div>
             <Separator className=" bg-SunsetOrange p-1"></Separator>
+
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                VERIFY DAMAGE
+              <h3 className="font-oswald font-bold text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                Siding & Fascia Repair
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Schedule a free in-person inspection with us. Our experts will
-                assess your property and provide a recommendation on whether to
-                proceed with the claims process.
+                Filing a claim is simple and takes only a few minutes. We guide
+                you through the process, ensuring the insurance company is
+                informed of our collaboration and your claim details.
               </p>
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -105,28 +112,31 @@ export function CarouselSize() {
                 </Button>
               </Link>
             </div>
-          </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 bg-cloudyGray shadow-lg hover:shadow-xl ">
-            <div className="relative w-full h-96 overflow-hidden">
+          </Card>
+        </CarouselItem>
+        <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <Card className="flex flex-col bg-cloudyGray flex-1 rounded-none border-none">
+            <div className=" relative w-full h-96 overflow-hidden">
               <Image
-                src="/images/IMG_5501.jpeg"
+                src="/images/insurance.jpg"
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
               />
             </div>
             <Separator className=" bg-SunsetOrange p-1"></Separator>
+
             <div
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
-                VERIFY DAMAGE
+              <h3 className="font-oswald font-bold text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+                Gutter Installation
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Schedule a free in-person inspection with us. Our experts will
-                assess your property and provide a recommendation on whether to
-                proceed with the claims process.
+                Filing a claim is simple and takes only a few minutes. We guide
+                you through the process, ensuring the insurance company is
+                informed of our collaboration and your claim details.
               </p>
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -134,9 +144,9 @@ export function CarouselSize() {
                 </Button>
               </Link>
             </div>
-          </CarouselItem>
-        </CarouselContent>
-      </Carousel>
-    </section>
+          </Card>
+        </CarouselItem>
+      </CarouselContent>
+    </Carousel>
   );
 }
