@@ -261,11 +261,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Separator className=" bg-SunsetOrange p-1"></Separator>
-
-      <section className=" bg-cloudyGray flex items-center justify-center gap-4">
-        <CarouselSize></CarouselSize>
-      </section>
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
         <h3 className=" font-oswald font-bold text-lg text-center sm:xl md:text-2xl lg:text-3xl">
           WE USE TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
