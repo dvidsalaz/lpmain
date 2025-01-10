@@ -38,7 +38,7 @@ export function CarouselSize() {
                 Storm Damage Repair
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Wind damage, hail damage, we've seen it before. LP offers
+                Wind damage, hail damage, we&apos;ve seen it before. LP offers
                 comprehensive storm damage repair services to get your roof back
                 in shape.
               </p>
@@ -113,9 +113,9 @@ export function CarouselSize() {
                 Shingle Replacement
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Missing shingles, worn shingles, we've seen it all. LP offers
-                reliable shingle replacement services to restore your roof's
-                durability and appearance.
+                Missing shingles, worn shingles, we&apos;ve seen it all. LP
+                offers reliable shingle replacement services to restore your
+                roof&apos;s durability and appearance.
               </p>
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -152,7 +152,7 @@ export function CarouselSize() {
                 Roof Replacement
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                If you feel like upgrading your roof, let LP's high-quality
+                If you feel like upgrading your roof, let LP&apos;s high-quality
                 craftsmanship complete your roof replacement to protect and
                 enhance your home.
               </p>
