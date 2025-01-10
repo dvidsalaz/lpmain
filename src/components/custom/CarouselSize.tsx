@@ -38,7 +38,8 @@ export function CarouselSize() {
                 Storm Damage Repair
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Comprehensive storm damage repair services to get your roof back
+                Wind damage, hail damage, we've seen it before. LP offers
+                comprehensive storm damage repair services to get your roof back
                 in shape.
               </p>
               <Link href="/services">
@@ -75,7 +76,8 @@ export function CarouselSize() {
                 Roof Leak Repair
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Reliable roof repair services to fix leaks and ensure lasting
+                Roof leaks can happen.. Let us take care of you. LP offers
+                reliable roof repair services to fix leaks and ensure lasting
                 protection.
               </p>
               <Link href="/services">
@@ -111,8 +113,9 @@ export function CarouselSize() {
                 Shingle Replacement
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                Seamless shingle replacement to protect your home and enhance
-                curb appeal.
+                Missing shingles, worn shingles, we've seen it all. LP offers
+                reliable shingle replacement services to restore your roof's
+                durability and appearance.
               </p>
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -149,7 +152,8 @@ export function CarouselSize() {
                 Roof Replacement
               </h3>
               <p className=" flex-1 sm:text-lg lg:text-xl">
-                High-quality complete roof replacement services to protect and
+                If you feel like upgrading your roof, let LP's high-quality
+                craftsmanship complete your roof replacement to protect and
                 enhance your home.
               </p>
               <Link href="/services">
