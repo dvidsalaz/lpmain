@@ -288,6 +288,12 @@ export default function Home() {
           <Link href="/about">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
               LEARN MORE
+              <Image
+                src="/images/arrow-up-right.svg"
+                alt="arrow"
+                width={24}
+                height={24}
+              />
             </Button>
           </Link>
         </div>
@@ -308,6 +314,12 @@ export default function Home() {
             <Link href="/team">
               <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                 MEET OUR TEAM
+                <Image
+                  src="/images/arrow-up-right.svg"
+                  alt="arrow"
+                  width={24}
+                  height={24}
+                />
               </Button>
             </Link>
           </div>
