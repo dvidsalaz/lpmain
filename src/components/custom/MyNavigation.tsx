@@ -64,12 +64,45 @@ const MyNavigationBar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenu>
-        <Link
-          href="/services"
-          className="text-lg sm:text-xl text-white hover:text-SunsetOrange"
-        >
-          SERVICES
-        </Link>
+        <NavigationMenu>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="hover:bg-transparent p-0 text-lg sm:text-xl bg-transparent text-white font-anton">
+              SERVICES
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="flex flex-col gap-4 p-6">
+              <Link
+                className="hover:underline hover:decoration-SunsetOrange"
+                href="/about"
+              >
+                STORM DAMAGE
+              </Link>
+              <Link
+                className="hover:underline hover:decoration-SunsetOrange"
+                href="/expertise"
+              >
+                ROOF LEAKS
+              </Link>
+              <Link
+                className="hover:underline hover:decoration-SunsetOrange"
+                href="/testimonials"
+              >
+                SHINGLE REPLACEMENT
+              </Link>
+              <Link
+                className="hover:underline hover:decoration-SunsetOrange"
+                href="/finished-projects"
+              >
+                ROOF REPLACEMENT
+              </Link>
+              <Link
+                className="hover:underline hover:decoration-SunsetOrange"
+                href="/finished-projects"
+              >
+                GUTTER REPAIR & INSTALLATION
+              </Link>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenu>
         <Link
           href="/team"
           className="text-lg sm:text-xl text-white hover:text-SunsetOrange"

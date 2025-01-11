@@ -182,6 +182,7 @@ export function CarouselSize() {
                 alt="A flexible image"
                 layout="fill"
                 objectFit="cover"
+                loading="eager"
               />
             </div>
             <Separator className=" bg-SunsetOrange p-1"></Separator>

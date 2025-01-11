@@ -45,6 +45,7 @@ export default function Team() {
           muted
           loop
           playsInline
+          preload="auto"
         >
           <source src="/videos/testing.mp4" type="video/mp4" />
           Your browser does not support the video tag.

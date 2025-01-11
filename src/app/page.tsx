@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className=" min-h-screen">
       {/* Notification Bar */}
-      <div className="bg-SunsetOrange text-white text-center p-2">
+      <div className="bg-WayneBlack text-white text-center p-2">
         <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
           <div className=" flex gap-4">
             <h3 className="text-sm sm:text-base lg:text-lg">
@@ -50,10 +50,18 @@ export default function Home() {
         </div>
       </div>
       {/* Main Content */}
-      <section
-        id="header"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-slate-400 min-h-screen"
-      >
+      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
+        <video
+          className=" lg:visible absolute top-0 left-0 w-full h-screen object-cover -z-10 pointer-events-none"
+          autoPlay
+          muted
+          loop
+          preload="auto"
+          playsInline
+        >
+          <source src="/videos/testing.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <MyNavigationBar></MyNavigationBar>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold ">
           <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-100 ">
@@ -66,11 +74,11 @@ export default function Home() {
             RESULTS
           </h1>
         </div>
-        <h2 className=" text-lg sm:text-xl lg:text-2xl font-light motion-opacity-in-0 motion-translate-y-in-100 motion-delay-1500">
+        <h2 className=" text-white text-lg sm:text-xl lg:text-2xl font-light motion-opacity-in-0 motion-translate-y-in-100 motion-delay-1500">
           SETTING THE NEW STANDARD FOR ROOFING
         </h2>
       </section>
-
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="process"
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"

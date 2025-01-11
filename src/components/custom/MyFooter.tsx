@@ -123,25 +123,31 @@ const MyFooter = () => {
               href="/services"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
-              &middot; ROOFING
-            </Link>
-            <Link
-              href="/services"
-              className=" hover:underline hover:decoration-SunsetOrange"
-            >
-              &middot; SIDING
-            </Link>
-            <Link
-              href="/services"
-              className=" hover:underline hover:decoration-SunsetOrange"
-            >
-              &middot; GUTTER INSTALLATION
-            </Link>
-            <Link
-              href="/services"
-              className=" hover:underline hover:decoration-SunsetOrange"
-            >
               &middot; STORM DAMAGE REPAIR
+            </Link>
+            <Link
+              href="/services"
+              className=" hover:underline hover:decoration-SunsetOrange"
+            >
+              &middot; ROOF LEAKS
+            </Link>
+            <Link
+              href="/services"
+              className=" hover:underline hover:decoration-SunsetOrange"
+            >
+              &middot; SHINGLE REPLACEMENT
+            </Link>
+            <Link
+              href="/services"
+              className=" hover:underline hover:decoration-SunsetOrange"
+            >
+              &middot; ROOF REPLACEMENT
+            </Link>
+            <Link
+              href="/services"
+              className=" hover:underline hover:decoration-SunsetOrange"
+            >
+              &middot; GUTTER REAPIR & INSTALLATION
             </Link>
           </AccordionContent>
         </AccordionItem>
