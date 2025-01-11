@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </div>
       {/* Main Content */}
-      <section className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
+      <section className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
         <video
           className=" lg:visible absolute top-0 left-0 w-full h-screen object-cover -z-10 pointer-events-none"
           autoPlay
@@ -79,9 +79,10 @@ export default function Home() {
         </h2>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
+
       <section
         id="process"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
+        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center bg-white"
       >
         <h2
           id="top"
@@ -268,7 +269,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className=" flex flex-col items-center justify-center gap-4 p-6 sm:p-10 lg:p-10">
+      <section className=" bg-white flex flex-col items-center justify-center gap-4 p-6 sm:p-10 lg:p-10">
         <CarouselSize></CarouselSize>
       </section>
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
@@ -336,7 +337,7 @@ export default function Home() {
 
       <section
         id="contact"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
+        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center bg-white"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
