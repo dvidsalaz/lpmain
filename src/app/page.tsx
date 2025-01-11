@@ -198,7 +198,7 @@ export default function Home() {
               Solutions That Last
             </h2>
             <h1 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
-              Quality You Can Trust
+              Request A Quote
             </h1>
           </div>
           <p className=" text-center text-WayneBlack text-base sm:text-lg lg:text-xl">
@@ -255,7 +255,7 @@ export default function Home() {
           </div>
           <Link href="/team">
             <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-              VIEW OUR SERVICES
+              REQUEST A QUOTE
             </Button>
           </Link>
         </div>
