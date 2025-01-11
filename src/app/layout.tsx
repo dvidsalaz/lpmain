@@ -3,8 +3,8 @@ import { Anton, Oswald } from "next/font/google";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "LP Exteriors – Building What Matters",
-  description: "Building What Matters", // change this in near future
+  title: "LP Exteriors – Setting The New Standard",
+  description: "Setting The New Standard", // change this in near future
 };
 
 const anton = Anton({

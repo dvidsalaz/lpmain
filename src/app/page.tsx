@@ -78,9 +78,10 @@ export default function Home() {
           SETTING THE NEW STANDARD FOR ROOFING
         </h2>
       </section>
+
       <section
         id="process"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center bg-white"
+        className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
       >
         <h2
           id="top"
@@ -267,7 +268,11 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className=" bg-white flex flex-col items-center justify-center gap-4 p-12 sm:p-12 lg:p-12">
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
+      <section className=" bg-white flex flex-col items-center justify-center gap-8 p-12 sm:p-12 lg:p-12">
+        <h3 className=" text-4xl sm:text-5xl lg:text-6xl underline">
+          Our Services
+        </h3>
         <CarouselSize></CarouselSize>
       </section>
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
