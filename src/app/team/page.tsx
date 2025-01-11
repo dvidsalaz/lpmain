@@ -82,7 +82,7 @@ export default function Team() {
       </section>
       <section
         id="member"
-        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
+        className=" bg-white flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
       >
         <div
           id="div1"
@@ -143,7 +143,7 @@ export default function Team() {
       </section>
       <section
         id="member"
-        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
+        className=" bg-white flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
       >
         <div className="relative flex-1 flex items-center justify-center md:flex-col">
           <Image
@@ -245,7 +245,7 @@ export default function Team() {
       </section>
       <section
         id="contact"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
+        className=" bg-white flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">

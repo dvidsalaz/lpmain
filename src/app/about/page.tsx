@@ -143,7 +143,7 @@ export default function Team() {
       <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="member"
-        className=" flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
+        className=" bg-white flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
       >
         <div
           id="div1"
