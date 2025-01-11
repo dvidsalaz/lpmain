@@ -193,7 +193,7 @@ export default function Home() {
       <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="services"
-        className="flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen"
+        className="flex shadow-inner-before flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen"
         style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
       >
         <div className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>

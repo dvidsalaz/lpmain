@@ -27,31 +27,23 @@ const MyDrawer = () => {
         />
       </DrawerTrigger>
       <DrawerContent className=" border-none">
-        <DrawerDescription>
-          <nav className=" flex flex-col p-6 gap-6">
-            <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
-              HOME
-            </Link>
-            <Link href="/about" className="text-lg sm:text-xl text-WayneBlack">
-              ABOUT US
-            </Link>
-            <Link
-              href="/services"
-              className="text-lg sm:text-xl text-WayneBlack"
-            >
-              SERVICES
-            </Link>
-            <Link href="/team" className="text-lg sm:text-xl text-WayneBlack">
-              OUR TEAM
-            </Link>
-            <Link
-              href="/contact"
-              className="text-lg sm:text-xl text-WayneBlack"
-            >
-              CONTACT US
-            </Link>
-          </nav>
-        </DrawerDescription>
+        <nav className=" flex flex-col p-6 gap-6">
+          <Link href="/" className="text-lg sm:text-xl text-WayneBlack">
+            HOME
+          </Link>
+          <Link href="/about" className="text-lg sm:text-xl text-WayneBlack">
+            ABOUT US
+          </Link>
+          <Link href="/services" className="text-lg sm:text-xl text-WayneBlack">
+            SERVICES
+          </Link>
+          <Link href="/team" className="text-lg sm:text-xl text-WayneBlack">
+            OUR TEAM
+          </Link>
+          <Link href="/contact" className="text-lg sm:text-xl text-WayneBlack">
+            CONTACT US
+          </Link>
+        </nav>
         <Separator className=" bg-SunsetOrange p-1"></Separator>
         <DrawerFooter className=" bg-WayneBlack p-10">
           <div className=" flex flex-col gap-2 justify-center items-center">

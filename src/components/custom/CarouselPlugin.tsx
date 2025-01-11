@@ -22,7 +22,7 @@ export function CarouselPlugin() {
   return (
     <Carousel plugins={[plugin.current]} className=" w-full">
       <CarouselContent className="bg-none">
-        <CarouselItem className=" basis-1/3 sm:basis-1/5 lg:basis-1/5">
+        <CarouselItem className=" basis-1/2 sm:basis-1/5 lg:basis-1/5">
           <div className="p-1">
             <Card className="">
               <CardContent className="relative flex aspect-square items-center justify-center p-6">
@@ -36,7 +36,7 @@ export function CarouselPlugin() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" basis-1/3 sm:basis-1/5 lg:basis-1/5">
+        <CarouselItem className=" basis-1/2 sm:basis-1/5 lg:basis-1/5">
           <div className="p-1">
             <Card className="">
               <CardContent className="relative flex aspect-square items-center justify-center p-6">
@@ -50,7 +50,7 @@ export function CarouselPlugin() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" basis-1/3 sm:basis-1/5 lg:basis-1/5">
+        <CarouselItem className=" basis-1/2 sm:basis-1/5 lg:basis-1/5">
           <div className="p-1">
             <Card className="">
               <CardContent className="relative flex aspect-square items-center justify-center p-6">
@@ -64,7 +64,7 @@ export function CarouselPlugin() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" basis-1/3 sm:basis-1/5 lg:basis-1/5">
+        <CarouselItem className=" basis-1/2 sm:basis-1/5 lg:basis-1/5">
           <div className="p-1">
             <Card className="">
               <CardContent className="relative flex aspect-square items-center justify-center p-6">
@@ -78,7 +78,7 @@ export function CarouselPlugin() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" basis-1/3 sm:basis-1/5 lg:basis-1/5">
+        <CarouselItem className=" basis-1/2 sm:basis-1/5 lg:basis-1/5">
           <div className="p-1">
             <Card className="">
               <CardContent className="relative flex aspect-square items-center justify-center p-6">
@@ -92,7 +92,7 @@ export function CarouselPlugin() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" basis-1/3 sm:basis-1/5 lg:basis-1/5">
+        <CarouselItem className=" basis-1/2 sm:basis-1/5 lg:basis-1/5">
           <div className="p-1">
             <Card className="">
               <CardContent className="relative flex aspect-square items-center justify-center p-6">
@@ -106,7 +106,7 @@ export function CarouselPlugin() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" basis-1/3 sm:basis-1/5 lg:basis-1/5">
+        <CarouselItem className=" basis-1/2 sm:basis-1/5 lg:basis-1/5">
           <div className="p-1">
             <Card className="">
               <CardContent className="relative flex aspect-square items-center justify-center p-6">

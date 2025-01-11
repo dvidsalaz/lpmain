@@ -20,7 +20,7 @@ export function CarouselSize() {
       <CarouselContent className="">
         <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
           <Card className="flex flex-col bg-cloudyGray flex-1 rounded-none border-none">
-            <div className=" relative w-full h-96 overflow-hidden">
+            <div className=" relative w-full h-96 overflow-hidden ">
               <Image
                 src="/images/stormDamage.svg"
                 alt="A flexible image"
