@@ -213,6 +213,8 @@ export function CarouselSize() {
           </Card>
         </CarouselItem>
       </CarouselContent>
+      <CarouselNext />
+      <CarouselPrevious />
     </Carousel>
   );
 }
