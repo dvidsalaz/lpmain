@@ -99,14 +99,13 @@ export default function Privacy() {
         </div>
       </section>
 
-      <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="member"
         className=" bg-white flex flex-col gap-8 p-6 sm:p-10 lg:p-10"
       >
         <div
           id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg items-center text-center md:text-left md:items-start"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg items-center text-center md:text-left md:items-start border-b-8 border-WayneBlack"
         >
           <div>
             <h2 className=" text-WayneBlack text-2xl lg:text-5xl">
@@ -128,13 +127,14 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" bg-white flex flex-col gap-8 p-6 sm:p-10 lg:p-10"
+        className="flex shadow-inner-after flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center"
+        style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
       >
         <div
           id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white items-center text-center md:text-left md:items-start"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-center text-center md:text-left md:items-start"
         >
-          <p className="text-3xl lg:text-6xl hover:underline hover:decoration-SunsetOrange">
+          <p className="text-3xl lg:text-6xl text-white">
             By using our services or interacting with us, you agree to the terms
             of this Privacy Policy. If you disagree, please stop using our
             services immediately.
@@ -144,7 +144,7 @@ export default function Privacy() {
       <section id="member" className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10">
         <div
           id="container"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -188,7 +188,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -223,7 +223,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -260,7 +260,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -283,7 +283,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -314,7 +314,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -337,7 +337,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -365,7 +365,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -387,7 +387,7 @@ export default function Privacy() {
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
