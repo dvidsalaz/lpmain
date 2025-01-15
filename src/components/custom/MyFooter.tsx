@@ -45,7 +45,7 @@ const MyFooter = () => {
               />
             </Link>
 
-            <Link href="/portfolio">
+            <Link href="/">
               <Image
                 src="/images/linkedin.svg"
                 alt="linkedin"
@@ -190,7 +190,7 @@ const MyFooter = () => {
           </AccordionTrigger>
           <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
             <Link
-              href="/legal"
+              href="/privacy-policy"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
               &middot; Privacy Policy

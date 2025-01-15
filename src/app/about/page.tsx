@@ -77,7 +77,7 @@ export default function Team() {
               />
             </Link>
 
-            <Link href="/portfolio">
+            <Link href="/">
               <Image
                 src="/images/linkedin.svg"
                 alt="linkedin"
@@ -86,7 +86,7 @@ export default function Team() {
                 className=" border-2"
               />
             </Link>
-            <Link href="/portfolio">
+            <Link href="/">
               <Image
                 src="/images/envelope.svg"
                 alt="envelope"
