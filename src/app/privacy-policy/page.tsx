@@ -375,7 +375,8 @@ export default function Privacy() {
           <div className="text-xl font-oswald flex flex-col gap-4">
             <p>
               We may update this Privacy Policy from time to time. Any changes
-              will be posted on this page with an updated "Effective Date."
+              will be posted on this page with an updated &quot;Effective
+              Date.&quot;
             </p>
           </div>
         </div>
