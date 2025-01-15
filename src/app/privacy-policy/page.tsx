@@ -117,12 +117,12 @@ export default function Privacy() {
             </h3>
           </div>
           <p className="text-xl font-oswald">
-            LP Exteriors ("us", "we", or "our") operates the
-            https://lpexteriors.com Website. Please read this Privacy Policy
-            carefully before using the https://lpexteriors.com/ Website (the
-            “Website”) as this Privacy Policy contains important information
-            regarding your privacy and how we may use the information we collect
-            about you.
+            LP Exteriors (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;)
+            operates the https://lpexteriors.com Website. Please read this
+            Privacy Policy carefully before using the https://lpexteriors.com/
+            Website (the &quot;Website&quot;) as this Privacy Policy contains
+            important information regarding your privacy and how we may use the
+            information we collect about you.
           </p>
         </div>
       </section>
