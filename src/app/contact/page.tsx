@@ -38,18 +38,7 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen">
-        <video
-          className=" lg:visible absolute top-0 left-0 w-full h-full object-cover -z-10 pointer-events-none"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="/videos/testing.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400">
         <MyNavigationBar></MyNavigationBar>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
           <h1>CONTACT US</h1>

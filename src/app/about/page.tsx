@@ -54,14 +54,14 @@ export default function Team() {
       </div>
       <section
         style={{ backgroundImage: "url('/images/IMG_6687.jpg')" }}
-        className="flex flex-col h-screen bg-cover shadow-inner-after"
+        className="flex flex-col h-screen bg-cover shadow-inner-before"
       >
         <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
           <MyNavigationBar></MyNavigationBar>
-          <h1 className="text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
+          <h1 className="text-6xl sm:text-8xl lg:text-9xl text-white font-bold motion-opacity-in-0 motion-translate-y-in-100 motion-delay-100">
             ABOUT US
           </h1>
-          <h3 className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
+          <h3 className=" text-lg sm:text-xl lg:text-2xl font-light text-white motion-opacity-in-0 motion-translate-y-in-100 motion-delay-500">
             SETTING THE NEW STANDARD FOR ROOFING
           </h3>
         </div>
@@ -117,48 +117,6 @@ export default function Team() {
           </p>
         </div>
       </section>
-      <section id="team" className=" flex flex-col md:flex-row h-screen">
-        <div
-          id="div1"
-          className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
-        >
-          <div>
-            <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
-              About Us
-            </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
-              We work together to make great things happen.
-            </h1>
-          </div>
-          <Link href="/about">
-            <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-              LEARN MORE
-            </Button>
-          </Link>
-        </div>
-        <div
-          id="div2"
-          className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/.jpg')" }}
-        >
-          <div>
-            <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
-              Our Team
-            </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
-              Impact-driven projects that build Houston for better.
-            </h1>
-          </div>
-          <div>
-            <Link href="/team">
-              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                MEET OUR TEAM
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       <section
         id="member"
@@ -206,6 +164,64 @@ export default function Team() {
             objectFit=" cover"
             className="shadow-lg"
           />
+        </div>
+      </section>
+      <section
+        id="member"
+        className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10 bg-cloudyGray"
+      >
+        <div
+          id="div1"
+          className=" gap-4 flex flex-col p-10 lg:p-20 text-left items-start border-l-8 border-SunsetOrange"
+        >
+          <h2 className=" text-4xl sm:text-5xl lg:text-6xl">Why Choose LP?</h2>
+          <p className="text-2xl lg:text-4xl">
+            LP Exteriors operates with intention. We strive to deliver the
+            highest standard of service while fostering a positive influence
+            that will resonate for years to come.
+          </p>
+        </div>
+      </section>
+      <section id="team" className=" flex flex-col md:flex-row h-screen">
+        <div
+          id="div1"
+          className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
+          style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
+        >
+          <div>
+            <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
+              Our Services
+            </h2>
+            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+              We work together to make great things happen.
+            </h1>
+          </div>
+          <Link href="/about">
+            <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+              LEARN MORE
+            </Button>
+          </Link>
+        </div>
+        <div
+          id="div2"
+          className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
+          style={{ backgroundImage: "url('/images/.jpg')" }}
+        >
+          <div>
+            <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
+              Contact Us
+            </h2>
+            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+              Impact-driven projects that build Houston for better.
+            </h1>
+          </div>
+          <div>
+            <Link href="/team">
+              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                MEET OUR TEAM
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
       <MyFooter></MyFooter>
