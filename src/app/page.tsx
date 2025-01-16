@@ -92,7 +92,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-between gap-4 ">
           <div
             id="container"
-            className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
+            className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1 shadow-lg hover:shadow-xl"
           >
             <div className=" relative w-full h-96 overflow-hidden">
               <Image
@@ -119,13 +119,19 @@ export default function Home() {
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
+                  <Image
+                    src="/images/arrow-up-right.svg"
+                    alt="arrow"
+                    width={24}
+                    height={24}
+                  />
                 </Button>
               </Link>
             </div>
           </div>
           <div
             id="container"
-            className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
+            className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1  shadow-lg hover:shadow-xl"
           >
             <div className=" relative w-full h-96 overflow-hidden">
               <Image
@@ -152,13 +158,19 @@ export default function Home() {
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
+                  <Image
+                    src="/images/arrow-up-right.svg"
+                    alt="arrow"
+                    width={24}
+                    height={24}
+                  />
                 </Button>
               </Link>
             </div>
           </div>
           <div
             id="container"
-            className="flex flex-col bg-cloudyGray flex-1 shadow-lg hover:shadow-xl"
+            className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1  shadow-lg hover:shadow-xl"
           >
             <div className=" relative w-full h-96 overflow-hidden">
               <Image
@@ -184,6 +196,12 @@ export default function Home() {
               <Link href="/services">
                 <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
+                  <Image
+                    src="/images/arrow-up-right.svg"
+                    alt="arrow"
+                    width={24}
+                    height={24}
+                  />
                 </Button>
               </Link>
             </div>

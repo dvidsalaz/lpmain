@@ -195,24 +195,6 @@ const MyFooter = () => {
             >
               &middot; Privacy Policy
             </Link>
-            <Link
-              href="/legal"
-              className=" hover:underline hover:decoration-SunsetOrange"
-            >
-              &middot; Terms of Service
-            </Link>
-            <Link
-              href="/legal"
-              className=" hover:underline hover:decoration-SunsetOrange"
-            >
-              &middot; Licensing Information
-            </Link>
-            <Link
-              href="/legal"
-              className=" hover:underline hover:decoration-SunsetOrange"
-            >
-              &middot; Insurance Certificates
-            </Link>
           </AccordionContent>
         </AccordionItem>
       </Accordion>

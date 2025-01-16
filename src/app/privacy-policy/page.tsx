@@ -125,16 +125,12 @@ export default function Privacy() {
           </p>
         </div>
       </section>
-      <section
-        id="member"
-        className="flex shadow-inner-after flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center"
-        style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
-      >
+      <section id="member" className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10">
         <div
           id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-center text-center md:text-left md:items-start"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-center text-center md:text-left md:items-start border-l-8 border-SunsetOrange"
         >
-          <p className="text-3xl lg:text-6xl text-white">
+          <p className="text-3xl lg:text-6xl">
             By using our services or interacting with us, you agree to the terms
             of this Privacy Policy. If you disagree, please stop using our
             services immediately.
