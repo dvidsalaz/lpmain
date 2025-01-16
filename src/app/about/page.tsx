@@ -52,7 +52,10 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section className="flex flex-col h-screen bg-slate-400">
+      <section
+        style={{ backgroundImage: "url('/images/IMG_6687.jpg')" }}
+        className="flex flex-col h-screen bg-cover shadow-inner-after"
+      >
         <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
           <MyNavigationBar></MyNavigationBar>
           <h1 className="text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
@@ -108,7 +111,7 @@ export default function Team() {
         >
           <h2 className=" text-4xl sm:text-5xl lg:text-6xl">Our Mission</h2>
           <p className="text-2xl lg:text-4xl">
-            LP Construction operates with intention. We strive to deliver the
+            LP Exteriors operates with intention. We strive to deliver the
             highest standard of service while fostering a positive influence
             that will resonate for years to come.
           </p>

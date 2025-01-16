@@ -72,31 +72,31 @@ const MyNavigationBar = () => {
             <NavigationMenuContent className="flex flex-col gap-4 p-6">
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/about"
+                href="/services"
               >
                 STORM DAMAGE
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/expertise"
+                href="/services"
               >
                 ROOF LEAKS
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/testimonials"
+                href="/services"
               >
                 SHINGLE REPLACEMENT
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/finished-projects"
+                href="/services"
               >
                 ROOF REPLACEMENT
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/finished-projects"
+                href="/services"
               >
                 GUTTER REPAIR & INSTALLATION
               </Link>
