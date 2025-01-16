@@ -108,16 +108,16 @@ export default function Home() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className="text-2xl lg:text-3xl text-WayneBlack underline">
                 VERIFY DAMAGE
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 Schedule a free in-person inspection with us. Our experts will
                 assess your property and provide a recommendation on whether to
                 proceed with the claims process.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"
@@ -147,16 +147,16 @@ export default function Home() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className="text-2xl lg:text-3xl text-WayneBlack underline">
                 FILE A CLAIM
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 Filing a claim is simple and takes only a few minutes. We guide
                 you through the process, ensuring the insurance company is
                 informed of our collaboration and your claim details.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"
@@ -185,16 +185,16 @@ export default function Home() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className="text-2xl lg:text-3xl text-WayneBlack underline">
                 SCHEDULE THE ADJUSTMENT
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 An insurance adjuster will visit your property to assess the
                 damage. Our presence ensures that all issues are addressed and
                 nothing critical is overlooked.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"
@@ -227,7 +227,7 @@ export default function Home() {
               Request A Quote
             </h1>
           </div>
-          <p className=" text-center text-WayneBlack text-base sm:text-lg lg:text-xl">
+          <p className=" text-center text-WayneBlack text-lg lg:text-xl">
             Whether you need repairs, replacements, or enhancements, we&apos;re
             here to bring your vision to life. Explore our comprehensive
             services designed to meet your needs with precision and care.
@@ -240,7 +240,7 @@ export default function Home() {
                 width={24}
                 height={24}
               ></Image>
-              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+              <p className="text-WayneBlack text-lg lg:text-xl">
                 Roof Storm Damage Repair
               </p>
             </div>
@@ -251,7 +251,7 @@ export default function Home() {
                 width={24}
                 height={24}
               ></Image>
-              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+              <p className="text-WayneBlack text-lg lg:text-xl">
                 Full Roof Replacement
               </p>
             </div>
@@ -263,7 +263,7 @@ export default function Home() {
                 width={24}
                 height={24}
               ></Image>
-              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+              <p className="text-WayneBlack text-lg lg:text-xl">
                 Siding & Fascia Repair
               </p>
             </div>
@@ -274,13 +274,13 @@ export default function Home() {
                 width={24}
                 height={24}
               ></Image>
-              <p className="text-WayneBlack text-base sm:text-lg lg:text-xl">
+              <p className="text-WayneBlack text-lg lg:text-xl">
                 Gutter Installation
               </p>
             </div>
           </div>
           <Link href="/team">
-            <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+            <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
               REQUEST A QUOTE
             </Button>
           </Link>
@@ -294,7 +294,7 @@ export default function Home() {
         <CarouselSize></CarouselSize>
       </section>
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
-        <h3 className=" font-oswald font-bold text-lg text-center sm:xl md:text-2xl lg:text-3xl">
+        <h3 className=" font-oswald font-bold text-2xl text-center md:text-2xl lg:text-3xl">
           WE USE TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
         </h3>
         <CarouselPlugin></CarouselPlugin>
@@ -316,7 +316,7 @@ export default function Home() {
             </h1>
           </div>
           <Link href="/about">
-            <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+            <Button className=" text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
               LEARN MORE
               <Image
                 src="/images/arrow-up-right.svg"
@@ -342,7 +342,7 @@ export default function Home() {
           </div>
           <div>
             <Link href="/team">
-              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+              <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                 MEET OUR TEAM
                 <Image
                   src="/images/arrow-up-right.svg"

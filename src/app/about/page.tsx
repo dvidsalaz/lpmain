@@ -55,9 +55,9 @@ export default function Team() {
       <section className="flex flex-col h-screen bg-slate-400">
         <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
           <MyNavigationBar></MyNavigationBar>
-          <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
-            <h1>ABOUT US</h1>
-          </div>
+          <h1 className="text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
+            ABOUT US
+          </h1>
           <h3 className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
             SETTING THE NEW STANDARD FOR ROOFING
           </h3>
@@ -96,6 +96,22 @@ export default function Team() {
               />
             </Link>
           </nav>
+        </div>
+      </section>
+      <section
+        id="member"
+        className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10 bg-cloudyGray"
+      >
+        <div
+          id="div1"
+          className=" gap-4 flex flex-col p-10 lg:p-20 text-left items-start border-l-8 border-SunsetOrange"
+        >
+          <h2 className=" text-4xl sm:text-5xl lg:text-6xl">Our Mission</h2>
+          <p className="text-2xl lg:text-4xl">
+            LP Construction operates with intention. We strive to deliver the
+            highest standard of service while fostering a positive influence
+            that will resonate for years to come.
+          </p>
         </div>
       </section>
       <section id="team" className=" flex flex-col md:flex-row h-screen">
@@ -140,10 +156,10 @@ export default function Team() {
           </div>
         </div>
       </section>
-      <Separator className=" bg-SunsetOrange p-1"></Separator>
+
       <section
         id="member"
-        className=" bg-white flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20"
+        className="  flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-white"
       >
         <div
           id="div1"

@@ -35,16 +35,16 @@ export function CarouselSize() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className=" text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className=" text-2xl lg:text-3xl text-WayneBlack underline">
                 Storm Damage Repair
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 Wind damage, hail damage, we&apos;ve seen it before. LP offers
                 comprehensive storm damage repair services to get your roof back
                 in shape.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"
@@ -74,16 +74,16 @@ export function CarouselSize() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className=" text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className=" text-2xl lg:text-3xl text-WayneBlack underline">
                 Roof Leak Repair
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 Roof leaks can happen.. Let us take care of you. LP offers
                 reliable roof repair services to fix leaks and ensure lasting
                 protection.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className=" text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"
@@ -112,16 +112,16 @@ export function CarouselSize() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className=" text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className=" text-2xl lg:text-3xl text-WayneBlack underline">
                 Shingle Replacement
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 Missing shingles, worn shingles, we&apos;ve seen it all. LP
                 offers reliable shingle replacement services to restore your
                 roof&apos;s durability and appearance.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className=" text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"
@@ -152,16 +152,16 @@ export function CarouselSize() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className=" text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className=" text-2xl lg:text-3xl text-WayneBlack underline">
                 Roof Replacement
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 If you feel like upgrading your roof, let LP&apos;s high-quality
                 craftsmanship complete your roof replacement to protect and
                 enhance your home.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className=" text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"
@@ -191,15 +191,15 @@ export function CarouselSize() {
               id="text-space"
               className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
             >
-              <h3 className=" text-xl sm:text-2xl lg:text-3xl text-WayneBlack underline">
+              <h3 className=" text-2xl lg:text-3xl text-WayneBlack underline">
                 Gutter Repair & Installation
               </h3>
-              <p className=" flex-1 sm:text-lg lg:text-xl">
+              <p className=" flex-1 text-lg lg:text-xl">
                 Professional gutter repair and installation to protect your home
                 from water damage.
               </p>
               <Link href="/services">
-                <Button className="text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                <Button className=" text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
                     src="/images/arrow-up-right.svg"

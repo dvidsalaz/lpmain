@@ -101,11 +101,11 @@ export default function Privacy() {
 
       <section
         id="member"
-        className=" bg-white flex flex-col gap-8 p-6 sm:p-10 lg:p-10"
+        className=" bg-cloudyGray flex flex-col gap-8 p-6 sm:p-10 lg:p-10"
       >
         <div
           id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg items-center text-center md:text-left md:items-start border-b-8 border-WayneBlack"
+          className=" flex-1 gap-8 flex flex-col p-6 bg-white sm:p-10 lg:p-20 shadow-lg items-center text-center md:text-left md:items-start border-b-8 border-WayneBlack"
         >
           <div>
             <h2 className=" text-WayneBlack text-2xl lg:text-5xl">
@@ -125,7 +125,10 @@ export default function Privacy() {
           </p>
         </div>
       </section>
-      <section id="member" className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10">
+      <section
+        id="member"
+        className=" flex flex-col bg-cloudyGray gap-8 p-6 sm:p-10 lg:p-10"
+      >
         <div
           id="div1"
           className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-center text-center md:text-left md:items-start border-l-8 border-SunsetOrange"
@@ -137,10 +140,13 @@ export default function Privacy() {
           </p>
         </div>
       </section>
-      <section id="member" className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10">
+      <section
+        id="member"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray sm:p-10 lg:p-10"
+      >
         <div
           id="container"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -180,11 +186,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -215,11 +221,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -252,11 +258,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray  shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -275,11 +281,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -306,11 +312,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray  shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -329,11 +335,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray  shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -357,11 +363,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray  shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
@@ -379,11 +385,11 @@ export default function Privacy() {
       </section>
       <section
         id="member"
-        className=" flex flex-col gap-8 p-6 bg-white shadow-lg sm:p-10 lg:p-10"
+        className=" flex flex-col gap-8 p-6 bg-cloudyGray  shadow-lg sm:p-10 lg:p-10"
       >
         <div
           id="container"
-          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow-lg border-b-8 border-SunsetOrange"
+          className=" gap-8 flex flex-col p-6 sm:p-10 lg:p-20 shadow-lg border-b-8 border-SunsetOrange"
         >
           <div>
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">

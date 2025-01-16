@@ -62,7 +62,7 @@ const MyFooter = () => {
               />
             </a>
           </nav>
-          <p className="text-white text-sm sm:text-base lg:text-lg text-center">
+          <p className="text-white text-base lg:text-lg text-center">
             Copyright &copy; 2025 LP Exteriors LLC. All rights reserved.
           </p>
         </div>
