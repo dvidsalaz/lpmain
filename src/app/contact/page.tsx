@@ -41,9 +41,11 @@ export default function Team() {
       <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400">
         <MyNavigationBar></MyNavigationBar>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
-          <h1>CONTACT US</h1>
+          <h1 className="motion-opacity-in-0 motion-translate-y-in-100 motion-delay-100">
+            CONTACT US
+          </h1>
         </div>
-        <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
+        <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white motion-opacity-in-0 motion-translate-y-in-100 motion-delay-500">
           SETTING THE NEW STANDARD FOR ROOFING
         </p>
       </section>

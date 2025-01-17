@@ -117,68 +117,26 @@ export default function Team() {
           </p>
         </div>
       </section>
-
-      <section
-        id="member"
-        className="  flex flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-white"
-      >
-        <div
-          id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 bg-white shadow items-center text-center md:text-left md:items-start"
-        >
-          <div>
-            <h2 className=" text-WayneBlack text-2xl sm:text-3xl lg:text-5xl">
-              Joaquin Salazar
-            </h2>
-            <h1 className="text-2xl text-gray-300 sm:text-3xl lg:text-5xl">
-              Founder
-            </h1>
-          </div>
-          <p className=" text-base sm:text-lg lg:text-xl">
-            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
-            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
-            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
-            in accumsan.
-          </p>
-          <p className=" text-base sm:text-lg lg:text-xl">
-            Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
-            Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
-            felis ac turpis at amet. Purus malesuada placerat arcu at enim elit
-            in accumsan.
-          </p>
-          <div>
-            <Link href="/team">
-              <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-slate-400 rounded-none">
-                CONTACT
-              </Button>
-            </Link>
-          </div>
-        </div>
-        <div className="relative flex-1 flex items-center justify-center md:flex-col">
+      <section className="flex h-screen bg-cloudyGray p-6 gap-10 sm:p-10 lg:p-10">
+        <div className="flex-1 overflow-hidden">
           <Image
-            src="/images/IMG_1684.jpg"
-            alt="founderpicture"
-            layout="responsive"
-            width={500}
-            height={500}
-            objectFit=" cover"
-            className="shadow-lg"
+            src="/images/IMG_6683.jpg"
+            alt="Construction Worker"
+            className="w-full h-full object-cover"
+            width={1080}
+            height={1080}
           />
         </div>
-      </section>
-      <section
-        id="member"
-        className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10 bg-cloudyGray"
-      >
-        <div
-          id="div1"
-          className=" gap-4 flex flex-col p-10 lg:p-20 text-left items-start border-l-8 border-SunsetOrange"
-        >
-          <h2 className=" text-4xl sm:text-5xl lg:text-6xl">Why Choose LP?</h2>
+
+        <div className="flex-1 text-WayneBlack flex flex-col justify-center p-8 border-r-8 border-SunsetOrange">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-4 ">
+            Our Mission
+          </h1>
           <p className="text-2xl lg:text-4xl">
-            LP Exteriors operates with intention. We strive to deliver the
-            highest standard of service while fostering a positive influence
-            that will resonate for years to come.
+            Lift, level, and lighten the load with the DEWALT® TOUGHSERIES™
+            Construction Jack. Equipped with a handle for step-to-lift operation
+            or squeeze-to-lift operation, this game-changing tool will elevate
+            your performance.
           </p>
         </div>
       </section>
@@ -192,9 +150,9 @@ export default function Team() {
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Our Services
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
-              We work together to make great things happen.
-            </h1>
+            <h2 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+              Enhancing Homes with Expertise You Can Always Trust
+            </h2>
           </div>
           <Link href="/about">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -224,7 +182,7 @@ export default function Team() {
           </div>
         </div>
       </section>
-      <MyFooter></MyFooter>
+      <MyFooter />
     </main>
   );
 }

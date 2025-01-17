@@ -43,7 +43,7 @@ export function CarouselSize() {
                 comprehensive storm damage repair services to get your roof back
                 in shape.
               </p>
-              <Link href="/services">
+              <Link href="/storm-damage">
                 <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image

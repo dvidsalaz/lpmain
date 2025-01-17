@@ -120,7 +120,7 @@ const MyFooter = () => {
           </AccordionTrigger>
           <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
             <Link
-              href="/services"
+              href="/storm-damage"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
               &middot; STORM DAMAGE REPAIR
