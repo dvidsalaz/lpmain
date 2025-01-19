@@ -77,7 +77,7 @@ const MyDrawer = () => {
                 />
               </Link>
 
-              <Link href="/portfolio">
+              <Link href="/">
                 <Image
                   src="/images/linkedin.svg"
                   alt="linkedin"
