@@ -128,7 +128,7 @@ export default function Team() {
         <div
           id="div2"
           className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/.svg')" }}
+          style={{ backgroundImage: "url('/images/image 46.svg')" }}
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
@@ -157,7 +157,7 @@ export default function Team() {
         <div
           id="div1"
           className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center bg-purple-500 justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/.svg')" }}
+          style={{ backgroundImage: "url('/images/image 43.svg')" }}
         >
           <div>
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
@@ -211,7 +211,7 @@ export default function Team() {
         <div
           id="div1"
           className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
+          style={{ backgroundImage: "url('/images/image 47.svg')" }}
         >
           <div>
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
