@@ -293,12 +293,9 @@ export default function Home() {
         </h3>
         <CarouselSize></CarouselSize>
       </section>
-      <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
-        <h3 className=" font-oswald font-bold text-2xl text-center md:text-2xl lg:text-3xl">
-          WE USE TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
-        </h3>
-        <CarouselPlugin></CarouselPlugin>
-      </section>
+
+      <CarouselPlugin></CarouselPlugin>
+      
       <Separator className=" bg-SunsetOrange p-1"></Separator>
 
       <section id="team" className=" flex flex-col md:flex-row h-screen">

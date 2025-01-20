@@ -117,29 +117,7 @@ export default function Team() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen bg-cloudyGray p-6 gap-10 sm:p-10 lg:p-10">
-        <div className="flex-1 overflow-hidden">
-          <Image
-            src="/images/IMG_6683.jpg"
-            alt="Construction Worker"
-            className="w-full h-full object-cover"
-            width={1080}
-            height={1080}
-          />
-        </div>
 
-        <div className="flex-1 text-WayneBlack flex flex-col justify-center p-8 border-r-8 border-SunsetOrange">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-4 ">
-            Our Mission
-          </h1>
-          <p className="text-2xl lg:text-4xl">
-            Lift, level, and lighten the load with the DEWALT® TOUGHSERIES™
-            Construction Jack. Equipped with a handle for step-to-lift operation
-            or squeeze-to-lift operation, this game-changing tool will elevate
-            your performance.
-          </p>
-        </div>
-      </section>
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
           id="div1"
