@@ -126,25 +126,25 @@ const MyFooter = () => {
               &middot; STORM DAMAGE REPAIR
             </Link>
             <Link
-              href="/services"
+              href="/roof-leaks"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
               &middot; ROOF LEAKS
             </Link>
             <Link
-              href="/services"
+              href="/shingle-replacement"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
               &middot; SHINGLE REPLACEMENT
             </Link>
             <Link
-              href="/services"
+              href="/roof-replacement"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
               &middot; ROOF REPLACEMENT
             </Link>
             <Link
-              href="/services"
+              href="/gutter-repair"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
               &middot; GUTTER REAPIR & INSTALLATION

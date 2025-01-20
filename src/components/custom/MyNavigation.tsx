@@ -78,25 +78,25 @@ const MyNavigationBar = () => {
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/services"
+                href="/roof-leaks"
               >
                 ROOF LEAKS
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/services"
+                href="/shingle-replacement"
               >
                 SHINGLE REPLACEMENT
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/services"
+                href="/roof-replacement"
               >
                 ROOF REPLACEMENT
               </Link>
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
-                href="/services"
+                href="/gutter-repair"
               >
                 GUTTER REPAIR & INSTALLATION
               </Link>

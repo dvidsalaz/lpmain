@@ -113,7 +113,7 @@ export default function Team() {
               We work together to make great things happen.
             </h1>
           </div>
-          <Link href="/about">
+          <Link href="/storm-damage">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
               LEARN MORE
               <Image
@@ -139,7 +139,7 @@ export default function Team() {
             </h1>
           </div>
           <div>
-            <Link href="/team">
+            <Link href="/roof-leaks">
               <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                 LEARN MORE
                 <Image
@@ -167,7 +167,7 @@ export default function Team() {
               We work together to make great things happen.
             </h1>
           </div>
-          <Link href="/about">
+          <Link href="/shingle-replacement">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
               LEARN MORE{" "}
               <Image
@@ -193,7 +193,7 @@ export default function Team() {
             </h1>
           </div>
           <div>
-            <Link href="/team">
+            <Link href="/roof-replacement">
               <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                 LEARN MORE
                 <Image
@@ -220,7 +220,7 @@ export default function Team() {
               We work together to make great things happen.
             </h1>
           </div>
-          <Link href="/about">
+          <Link href="/gutter-repair">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
               LEARN MORE{" "}
               <Image
