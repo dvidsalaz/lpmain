@@ -122,7 +122,7 @@ export default function Team() {
             restoration, debris removal, preventative measures, assistance with
             insurance, customer support
           </p>
-          <div className=" flex gap-6">
+          <div className=" flex flex-col lg:flex-row gap-6 ">
             <Link href="/services">
               <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                 REQUEST FREE INSPECTION
@@ -153,12 +153,12 @@ export default function Team() {
       </section>
       <section
         id="process"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:px-20 lg:py-0 bg-cloudyGray"
+        className="flex flex-col gap-8 p-6 py-4 sm:p-10 sm:py-4 lg:px-20 bg-cloudyGray"
       >
         <div className=" flex flex-col lg:flex-row gap-4 ">
           <div
             id="container"
-            className="flex flex-col bg-white w-full shadow-lg hover:shadow-xl "
+            className="flex flex-col bg-white w-full shadow-lg hover:shadow-xl"
           >
             <div className=" relative w-full h-96 overflow-hidden">
               <Image
@@ -249,7 +249,7 @@ export default function Team() {
       </section>
       <section
         id="process"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:px-20 lg:py-4 bg-cloudyGray"
+        className="flex flex-col gap-8 p-6 sm:p-10 sm:py-0 lg:px-20 py-0 bg-cloudyGray"
       >
         <div className=" flex flex-col lg:flex-row gap-4 ">
           <div
@@ -334,7 +334,7 @@ export default function Team() {
       </section>
       <section
         id="process"
-        className="flex flex-col gap-8 p-6 sm:p-10 lg:px-20 lg:py-0 bg-cloudyGray"
+        className="flex flex-col gap-8 p-6 py-4 sm:p-10 sm:py-4 lg:px-20 bg-cloudyGray"
       >
         <div className=" flex flex-col lg:flex-row gap-4 ">
           <div
@@ -414,56 +414,7 @@ export default function Team() {
           </div>
         </div>
       </section>
-      <section
-        id="member"
-        className=" bg-cloudyGray flex flex-col gap-8 p-6 sm:p-10 lg:p-20"
-      >
-        <div
-          id="div1"
-          className=" flex-1 gap-8 flex flex-col p-6 bg-white sm:p-10 lg:p-20 shadow-lg items-center text-center border-b-8 border-WayneBlack"
-        >
-          <div>
-            <h2 className=" text-WayneBlack text-2xl lg:text-5xl">
-              Schedule a FREE Inspection Now
-            </h2>
-            <h3 className=" text-gray-300 text-xl lg:text-4xl">
-              Effective Date: January 15, 2025
-            </h3>
-          </div>
-          <p className="text-xl font-oswald">
-            Inspection services, temporary damage control, reapairs and
-            restoration, debris removal, preventative measures, assistance with
-            insurance, customer support
-          </p>
-          <div className=" flex gap-6">
-            <Link href="/services">
-              <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
-                REQUEST FREE INSPECTION
-                <Image
-                  src="/images/arrow-up-right.svg"
-                  alt="arrow"
-                  width={24}
-                  height={24}
-                />
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button
-                className=" text-lg sm:text-xl lg:text-xl gap-2 text-devilRed p-6 bg-transparent border-devilRed rounded-none border-2 "
-                variant={"outline"}
-              >
-                832-468-6980
-                <Image
-                  src="/images/arrow-right.svg"
-                  alt="arrow"
-                  width={24}
-                  height={24}
-                />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+
       <section className=" bg-cloudyGray flex flex-col items-center justify-center p-6 gap-4">
         <h3 className=" font-oswald font-bold text-lg text-center sm:xl md:text-2xl lg:text-3xl">
           WE USE TOP-QUALITY ROOFING MATERIALS TAILORED TO YOUR NEEDS
@@ -477,7 +428,7 @@ export default function Team() {
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
           <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
-            Get In Touch
+            Request a Free Inspection
           </h1>
           <p className=" text-lg sm:text-2xl lg:text-2xl text-bottomGray">
             Have questions or want to learn more about how we can help? Reach
