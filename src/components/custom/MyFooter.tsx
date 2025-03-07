@@ -118,7 +118,14 @@ const MyFooter = () => {
           <AccordionTrigger className=" text-white text-2xl">
             SERVICES
           </AccordionTrigger>
+
           <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
+            <Link
+              href="/drone-services"
+              className=" hover:underline hover:decoration-SunsetOrange"
+            >
+              &middot; DRONE INSPECTION SERVICES
+            </Link>
             <Link
               href="/storm-damage"
               className=" hover:underline hover:decoration-SunsetOrange"

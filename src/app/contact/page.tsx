@@ -6,38 +6,13 @@ import { Button } from "@/components/ui/button";
 
 import { MyForm } from "@/components/custom/MyForm";
 import MyFooter from "@/components/custom/MyFooter";
+import MyBanner from "@/components/custom/myBanner";
 
 export default function Team() {
   return (
     <main className=" min-h-screen">
       {/* Notification Bar */}
-      <div className=" bg-WayneBlack text-white text-center p-2">
-        <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
-          <div className=" flex gap-4">
-            <p className="text-sm sm:text-base lg:text-lg">
-              dsalazar@lpexteriors.com
-            </p>
-            <span>|</span>
-            <a
-              href="tel:+18324686980"
-              className="text-sm sm:text-base lg:text-lg"
-              aria-label="Call us at (832) 468-6980"
-              title="Call us at (832) 468-6980"
-            >
-              (832) 468-6980
-            </a>
-            <span>
-              <Image
-                src="/images/phone.svg"
-                alt="Phone Icon"
-                width={24}
-                height={24}
-              />
-            </span>
-          </div>
-          <p className="text-sm sm:text-base lg:text-lg"></p>
-        </div>
-      </div>
+      <MyBanner></MyBanner>
       <section className="flex flex-col gap-20 p-6 sm:p-10 lg:p-20 bg-fixed bg-cover bg-center h-screen bg-slate-400">
         <MyNavigationBar></MyNavigationBar>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">

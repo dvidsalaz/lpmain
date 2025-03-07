@@ -62,7 +62,11 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("tailwindcss-motion")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-motion"),
+    require("tailwindcss-intersect"),
+  ],
 } satisfies Config;
 
 export default config;

@@ -20,38 +20,13 @@ import { Separator } from "@/components/ui/separator";
 import MyDrawer from "@/components/custom/myDrawer";
 import MyNavigationBar from "@/components/custom/MyNavigation";
 import MyFooter from "@/components/custom/MyFooter";
+import MyBanner from "@/components/custom/myBanner";
 
 export default function Privacy() {
   return (
     <main className=" min-h-screen">
       {/* Notification Bar */}
-      <div className=" bg-WayneBlack text-white text-center p-2">
-        <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
-          <div className=" flex gap-4">
-            <h3 className="text-sm sm:text-base lg:text-lg">
-              dsalazar@lpexteriors.com
-            </h3>
-            <span>|</span>
-            <a
-              href="tel:+18324686980"
-              className="text-sm sm:text-base lg:text-lg"
-              aria-label="Call us at (832) 468-6980"
-              title="Call us at (832) 468-6980"
-            >
-              (832) 468-6980
-            </a>
-            <span>
-              <Image
-                src="/images/phone.svg"
-                alt="Phone Icon"
-                width={24}
-                height={24}
-              />
-            </span>
-          </div>
-          <p className="text-sm sm:text-base lg:text-lg"></p>
-        </div>
-      </div>
+      <MyBanner></MyBanner>
       <section className="flex flex-col h-screen bg-slate-400">
         <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
           <MyNavigationBar></MyNavigationBar>
@@ -152,7 +127,7 @@ export default function Privacy() {
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
               1. Information We Collect
             </h2>
-            <h3 className=" text-gray-300 text-lg">
+            <h3 className=" text-WayneBlack text-lg">
               We may collect the following types of information:
             </h3>
           </div>
@@ -196,7 +171,7 @@ export default function Privacy() {
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
               2. How We Use Your Information
             </h2>
-            <h3 className=" text-gray-300 text-lg">
+            <h3 className=" text-WayneBlack text-lg">
               We use the information we collect for the following purposes:
             </h3>
           </div>
@@ -231,7 +206,7 @@ export default function Privacy() {
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
               3. How We Share Your Information
             </h2>
-            <h3 className=" text-gray-300 text-lg">
+            <h3 className=" text-WayneBlack text-lg">
               We do not sell, rent, or trade your personal information. However,
               we may share your information in the following circumstances:
             </h3>
@@ -345,7 +320,7 @@ export default function Privacy() {
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
               7. Your Rights{" "}
             </h2>
-            <h3 className=" text-gray-300 text-lg">
+            <h3 className=" text-WayneBlack text-lg">
               Depending on your location, you may have the following rights
               regarding your personal information:
             </h3>
@@ -395,7 +370,7 @@ export default function Privacy() {
             <h2 className=" text-WayneBlack text-xl lg:text-5xl">
               9. Contact Us{" "}
             </h2>
-            <h3 className=" text-gray-300 text-lg">
+            <h3 className=" text-WayneBlack text-lg">
               If you have any questions or concerns about this Privacy Policy or
               our data practices, please contact us:
             </h3>

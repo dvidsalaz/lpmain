@@ -43,7 +43,7 @@ export function CarouselSize() {
                 inspection services to assess roof damage with precision,
                 keeping your home protected from the top down.
               </p>
-              <Link href="/storm-damage">
+              <Link href="/drone-services">
                 <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
                   LEARN MORE
                   <Image
@@ -117,7 +117,7 @@ export function CarouselSize() {
                 Roof Leak Repair
               </h3>
               <p className=" flex-1 text-lg lg:text-xl">
-                Roof leaks can happen.. Let us take care of you. LP offers
+                Roof leaks can happen. Let us take care of you. LP offers
                 reliable roof repair services to fix leaks and ensure lasting
                 protection.
               </p>
