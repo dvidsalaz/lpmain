@@ -13,6 +13,7 @@ import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
 import MyFooter from "@/components/custom/MyFooter";
 import { Carousel } from "@/components/ui/carousel";
 import { CarouselSize } from "@/components/custom/CarouselSize";
+import MyMap from "@/components/custom/MyMap";
 
 export default function Home() {
   return (
@@ -397,6 +398,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <Separator className=" bg-SunsetOrange p-1"></Separator>
+
+      <MyMap></MyMap>
       <MyFooter></MyFooter>
     </main>
   );
