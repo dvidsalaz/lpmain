@@ -72,11 +72,19 @@ export default function Team() {
         </video>
         <MyNavigationBar></MyNavigationBar>
         <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
-          <h1>MEET</h1>
-          <h1>OUR</h1>
-          <h1>TEAM</h1>
+          <h1 className="flex flex-col">
+            <span className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-100 ">
+              MEET
+            </span>
+            <span className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-500">
+              OUR
+            </span>
+            <span className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-1000">
+              TEAM
+            </span>
+          </h1>
         </div>
-        <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white">
+        <p className=" text-lg sm:text-xl lg:text-2xl font-light text-white motion-opacity-in-0 motion-translate-y-in-100 motion-delay-1500">
           SETTING THE NEW STANDARD FOR ROOFING
         </p>
       </section>
@@ -92,9 +100,9 @@ export default function Team() {
             <h2 className=" text-WayneBlack text-2xl sm:text-3xl lg:text-5xl">
               Joaquin Salazar
             </h2>
-            <h1 className="text-2xl text-gray-300 sm:text-3xl lg:text-5xl">
+            <h3 className="text-xl text-gray-300 sm:text-2xl lg:text-4xl">
               Founder
-            </h1>
+            </h3>
           </div>
           <p className=" text-base sm:text-lg lg:text-xl">
             Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
@@ -164,9 +172,9 @@ export default function Team() {
             <h2 className=" text-WayneBlack text-2xl sm:text-3xl lg:text-5xl">
               David Salazar
             </h2>
-            <h1 className="text-2xl text-gray-300 sm:text-3xl lg:text-5xl">
+            <h3 className="text-xl text-gray-300 sm:text-2xl lg:text-4xl">
               Founder
-            </h1>
+            </h3>
           </div>
           <p className=" text-base sm:text-lg lg:text-xl">
             Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
@@ -203,9 +211,9 @@ export default function Team() {
             <h2 className="text-gray-300 text-center text-2xl sm:text-3xl lg:text-5xl">
               Build With Us
             </h2>
-            <h1 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
+            <h2 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
               Uvalde Residential Estate
-            </h1>
+            </h2>
           </div>
           <p className=" text-center text-WayneBlack text-base sm:text-lg lg:text-xl">
             We are looking forward to learning more about your project. Please
@@ -248,9 +256,9 @@ export default function Team() {
         className=" bg-white flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
-          <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
+          <h2 className=" text-4xl sm:text-5xl lg:text-6xl underline">
             Get In Touch
-          </h1>
+          </h2>
           <p className=" text-base sm:text-lg lg:text-xl text-gray-400">
             Egestas fringilla aliquam leo, habitasse arcu varius lorem elit.
             Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla

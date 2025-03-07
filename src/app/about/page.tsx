@@ -52,10 +52,7 @@ export default function Team() {
           <p className="text-sm sm:text-base lg:text-lg"></p>
         </div>
       </div>
-      <section
-        style={{ backgroundImage: "url('/images/IMG_6687.jpg')" }}
-        className="flex flex-col h-screen bg-cover shadow-inner-before"
-      >
+      <section className=" bg-[url('/images/IMG_6687.jpg')] flex flex-col h-screen bg-cover shadow-inner-before">
         <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
           <MyNavigationBar></MyNavigationBar>
           <h1 className="text-6xl sm:text-8xl lg:text-9xl text-white font-bold motion-opacity-in-0 motion-translate-y-in-100 motion-delay-100">
@@ -118,11 +115,39 @@ export default function Team() {
         </div>
       </section>
 
+      <section id="member" className=" flex flex-col gap-8 p-6 sm:p-10 lg:p-10">
+        <div
+          id="div1"
+          className=" gap-8 flex flex-col p-10 lg:p-20 text-left items-start border-l-8 border-SunsetOrange"
+        >
+          <h2 className=" text-4xl sm:text-5xl lg:text-6xl">Expertise</h2>
+          <p className="text-2xl lg:text-4xl">
+            We are{" "}
+            <span className=" font-bold">
+              experts in various quality roofing systems and roofing material
+              types
+            </span>
+            , but specialize in asphalt roofing shingles. We offer impact
+            resistant roofs and install a full range of the best products for
+            your home.
+          </p>
+          <Link href="/services">
+            <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+              LEARN MORE
+              <Image
+                src="/images/arrow-up-right.svg"
+                alt="arrow"
+                width={24}
+                height={24}
+              />
+            </Button>
+          </Link>
+        </div>
+      </section>
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
           id="div1"
-          className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
+          className="bg-[url('/images/IMG_7163.jpg')]  shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
         >
           <div>
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
@@ -147,9 +172,9 @@ export default function Team() {
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Contact Us
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h2 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               Impact-driven projects that build Houston for better.
-            </h1>
+            </h2>
           </div>
           <div>
             <Link href="/team">
@@ -160,6 +185,7 @@ export default function Team() {
           </div>
         </div>
       </section>
+
       <MyFooter />
     </main>
   );

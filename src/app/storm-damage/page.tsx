@@ -422,9 +422,9 @@ export default function Team() {
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
-          <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
+          <h2 className=" text-4xl sm:text-5xl lg:text-6xl underline">
             Request a Free Inspection
-          </h1>
+          </h2>
           <p className=" text-lg sm:text-2xl lg:text-2xl text-bottomGray">
             Have questions or want to learn more about how we can help? Reach
             out to us! We&apos;re here to provide answers, support, and guidance

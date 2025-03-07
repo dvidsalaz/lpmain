@@ -102,16 +102,15 @@ export default function Team() {
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
           id="div1"
-          className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center bg-green-500 justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/.svg')" }}
+          className="bg-[url('/images/image38.svg')]  shadow-inner-before hover:shadow-inner-after bg-cover bg-center bg-green-500 justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
         >
           <div>
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Storm Damage
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               We work together to make great things happen.
-            </h1>
+            </h3>
           </div>
           <Link href="/storm-damage">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -127,16 +126,15 @@ export default function Team() {
         </div>
         <div
           id="div2"
-          className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/.svg')" }}
+          className="bg-[url('/images/roofLeak.svg')] shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Roof Leaks
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               Impact-driven projects that build Houston for better.
-            </h1>
+            </h3>
           </div>
           <div>
             <Link href="/roof-leaks">
@@ -163,9 +161,9 @@ export default function Team() {
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Shingle Replacement
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               We work together to make great things happen.
-            </h1>
+            </h3>
           </div>
           <Link href="/shingle-replacement">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -181,16 +179,15 @@ export default function Team() {
         </div>
         <div
           id="div2"
-          className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/image41.svg')" }}
+          className="bg-[url('/images/image41.svg')] shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Roof Replacement
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               Impact-driven projects that build Houston for better.
-            </h1>
+            </h3>
           </div>
           <div>
             <Link href="/roof-replacement">
@@ -216,9 +213,9 @@ export default function Team() {
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Gutter Repair & Installment
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               We work together to make great things happen.
-            </h1>
+            </h3>
           </div>
           <Link href="/gutter-repair">
             <Button className=" text-base sm:text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -242,9 +239,9 @@ export default function Team() {
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
-          <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
+          <h2 className=" text-4xl sm:text-5xl lg:text-6xl underline">
             Get In Touch
-          </h1>
+          </h2>
           <p className=" text-lg sm:text-2xl lg:text-2xl text-bottomGray">
             Have questions or want to learn more about how we can help? Reach
             out to us! We&apos;re here to provide answers, support, and guidance

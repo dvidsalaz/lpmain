@@ -18,9 +18,20 @@ export default function Home() {
   return (
     <main className=" min-h-screen">
       {/* Notification Bar */}
-      <div className="bg-WayneBlack text-white text-center p-2">
-        <div className=" flex justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
-          <div className=" flex gap-4">
+      <div className="bg-WayneBlack text-white p-2">
+        <div className=" flex justify-between items-center gap-4 text-sm sm:text-base lg:text-lg">
+          <div className="flex justify-center items-center">
+            <span>
+              <Image
+                src="/images/map-marker-f.svg"
+                alt="Map Marker"
+                width={24}
+                height={24}
+              />
+            </span>
+            <h3>Serving the Dallas Fort-Worth Area</h3>
+          </div>
+          <div className=" flex gap-4 items-center">
             <h3 className="text-sm sm:text-base lg:text-lg">
               <a
                 href="mailto:dsalazar@lpexteriors.com"
@@ -63,20 +74,22 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
         <MyNavigationBar></MyNavigationBar>
-        <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold ">
-          <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-100 ">
-            LP
-          </h1>
-          <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-500">
-            DELIVERS
-          </h1>
-          <h1 className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-1000">
-            RESULTS
+        <div className=" text-6xl sm:text-8xl lg:text-9xl text-white font-bold">
+          <h1 className="flex flex-col">
+            <span className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-100 ">
+              LP
+            </span>
+            <span className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-500">
+              DELIVERS
+            </span>
+            <span className="motion-opacity-in-0 motion-translate-x-in-100 motion-delay-1000">
+              RESULTS
+            </span>
           </h1>
         </div>
-        <h2 className=" text-white text-lg sm:text-xl lg:text-2xl font-light motion-opacity-in-0 motion-translate-y-in-100 motion-delay-1500">
+        <h3 className=" text-white text-lg sm:text-xl lg:text-2xl font-light motion-opacity-in-0 motion-translate-y-in-100 motion-delay-1500">
           SETTING THE NEW STANDARD FOR ROOFING
-        </h2>
+        </h3>
       </section>
 
       <section
@@ -211,8 +224,7 @@ export default function Home() {
       <Separator className=" bg-SunsetOrange p-1"></Separator>
       <section
         id="services"
-        className="flex shadow-inner-before flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen"
-        style={{ backgroundImage: "url('/images/IMG_7164.jpg')" }}
+        className=" bg-[url('/images/IMG_7164.jpg')] flex shadow-inner-before flex-col md:flex-row gap-8 p-6 sm:p-10 lg:p-20 bg-cover md:bg-fixed bg-center h-screen"
       >
         <div className=" lg:p-20 items-center justify-center flex-1 flex w-full bg-none"></div>
         <div
@@ -223,9 +235,9 @@ export default function Home() {
             <h2 className="text-gray-300 text-center text-2xl sm:text-3xl lg:text-5xl">
               Solutions That Last
             </h2>
-            <h1 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
+            <h2 className="text-2xl text-center text-WayneBlack sm:text-3xl lg:text-5xl">
               Request A Quote
-            </h1>
+            </h2>
           </div>
           <p className=" text-center text-WayneBlack text-lg lg:text-xl">
             Whether you need repairs, replacements, or enhancements, we&apos;re
@@ -295,22 +307,21 @@ export default function Home() {
       </section>
 
       <CarouselPlugin></CarouselPlugin>
-      
+
       <Separator className=" bg-SunsetOrange p-1"></Separator>
 
       <section id="team" className=" flex flex-col md:flex-row h-screen">
         <div
           id="div1"
-          className=" shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/IMG_7163.jpg')" }}
+          className="bg-[url('/images/IMG_7163.jpg')] shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
         >
           <div>
             <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               About Us
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               We work together to make great things happen.
-            </h1>
+            </h3>
           </div>
           <Link href="/about">
             <Button className=" text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
@@ -327,15 +338,14 @@ export default function Home() {
         <div
           id="div2"
           className="shadow-inner-before hover:shadow-inner-after bg-purple-500 bg-center bg-cover justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
-          style={{ backgroundImage: "url('/images/.jpg')" }}
         >
           <div>
             <h2 className="text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
               Our Team
             </h2>
-            <h1 className="text-2xl text-white sm:text-3xl lg:text-5xl">
+            <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl">
               Impact-driven projects that build Houston for better.
-            </h1>
+            </h3>
           </div>
           <div>
             <Link href="/team">
@@ -358,9 +368,9 @@ export default function Home() {
         className="flex flex-col gap-8 p-6 sm:p-10 lg:p-20 items-center bg-white"
       >
         <div className=" flex flex-col gap-8 bg-cloudyGray p-6 sm:p-10 lg:p-20 items-center text-center">
-          <h1 className=" text-4xl sm:text-5xl lg:text-6xl underline">
+          <h2 className=" text-4xl sm:text-5xl lg:text-6xl underline">
             Get In Touch
-          </h1>
+          </h2>
           <p className=" text-lg sm:text-2xl lg:text-2xl text-bottomGray">
             Have questions or want to learn more about how we can help? Reach
             out to us! We&apos;re here to provide answers, support, and guidance

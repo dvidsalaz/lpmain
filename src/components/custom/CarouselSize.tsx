@@ -22,6 +22,45 @@ export function CarouselSize() {
           <Card className="flex flex-col bg-cloudyGray flex-1 rounded-none border-none">
             <div className=" relative w-full h-96 overflow-hidden ">
               <Image
+                src="/images/quadcopter.jpg"
+                alt="A flexible image"
+                layout="fill"
+                objectFit="cover"
+                loading="eager"
+              />
+            </div>
+            <Separator className=" bg-SunsetOrange p-1"></Separator>
+
+            <div
+              id="text-space"
+              className="flex flex-col items-center justify-center text-center gap-5 p-3 sm:p-5 lg:p-10 h-[350px]"
+            >
+              <h3 className=" text-2xl lg:text-3xl text-WayneBlack underline">
+                Drone Inspection Services
+              </h3>
+              <p className=" flex-1 text-lg lg:text-xl">
+                Missing shingles, hidden leaks—LP offers professional drone
+                inspection services to assess roof damage with precision,
+                keeping your home protected from the top down.
+              </p>
+              <Link href="/storm-damage">
+                <Button className="text-lg lg:text-xl gap-2 text-white p-6 bg-SunsetOrange rounded-none">
+                  LEARN MORE
+                  <Image
+                    src="/images/arrow-up-right.svg"
+                    alt="arrow"
+                    width={24}
+                    height={24}
+                  />
+                </Button>
+              </Link>
+            </div>
+          </Card>
+        </CarouselItem>
+        <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <Card className="flex flex-col bg-cloudyGray flex-1 rounded-none border-none">
+            <div className=" relative w-full h-96 overflow-hidden ">
+              <Image
                 src="/images/stormDamage.svg"
                 alt="A flexible image"
                 layout="fill"
