@@ -17,7 +17,7 @@ const MyMap = () => {
       center: [-96.89, 32.83], // Set your default center [lng, lat]
       zoom: 10, // Set default zoom level
       scrollZoom: false,
-      boxZoom: false,
+      boxZoom: true,
     });
 
     map.addControl(new mapboxgl.NavigationControl(), "top-right"); // Zoom & rotation controls
