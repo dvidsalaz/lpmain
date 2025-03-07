@@ -20,8 +20,8 @@ export default function Home() {
     <main className=" min-h-screen">
       {/* Notification Bar */}
       <div className="bg-WayneBlack text-white p-2">
-        <div className=" flex justify-between items-center gap-4 text-sm sm:text-base lg:text-lg">
-          <div className="flex justify-center items-center">
+        <div className=" flex sm:justify-between justify-end items-center gap-4 text-sm sm:text-base lg:text-lg">
+          <div className="sm:flex justify-center items-center hidden ">
             <span>
               <Image
                 src="/images/map-marker-f.svg"
@@ -32,7 +32,7 @@ export default function Home() {
             </span>
             <h3>Serving the Dallas Fort-Worth Area</h3>
           </div>
-          <div className=" flex gap-4 items-center">
+          <div className=" flex gap-4 items-center ">
             <h3 className="text-sm sm:text-base lg:text-lg">
               <a
                 href="mailto:dsalazar@lpexteriors.com"
@@ -399,7 +399,6 @@ export default function Home() {
         </div>
       </section>
       <Separator className=" bg-SunsetOrange p-1"></Separator>
-
       <MyMap></MyMap>
       <MyFooter></MyFooter>
     </main>
