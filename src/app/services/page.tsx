@@ -21,7 +21,7 @@ import MyDrawer from "@/components/custom/myDrawer";
 import MyNavigationBar from "@/components/custom/MyNavigation";
 import MyFooter from "@/components/custom/MyFooter";
 import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
-import MyBanner from "@/components/custom/myBanner";
+import MyBanner from "@/components/custom/MyBanner";
 
 export default function Team() {
   return (
