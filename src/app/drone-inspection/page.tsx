@@ -21,6 +21,7 @@ import MyDrawer from "@/components/custom/myDrawer";
 import MyNavigationBar from "@/components/custom/MyNavigation";
 import MyFooter from "@/components/custom/MyFooter";
 import MyBanner from "@/components/custom/MyBanner";
+
 export default function Drone() {
   return (
     <main className=" min-h-screen">
@@ -30,7 +31,7 @@ export default function Drone() {
         <div className="flex-grow flex flex-col gap-20 p-6 sm:p-10 lg:p-20">
           <MyNavigationBar></MyNavigationBar>
           <h1 className="text-6xl sm:text-8xl lg:text-9xl text-white font-bold motion-opacity-in-0 motion-translate-y-in-100 motion-delay-100">
-            DRONE SERVICES
+            DRONE INSPECTION
           </h1>
           <h3 className=" text-lg sm:text-xl lg:text-2xl font-light text-white motion-opacity-in-0 motion-translate-y-in-100 motion-delay-500">
             SETTING THE NEW STANDARD FOR ROOFING

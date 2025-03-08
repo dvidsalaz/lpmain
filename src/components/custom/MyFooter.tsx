@@ -121,7 +121,7 @@ const MyFooter = () => {
 
           <AccordionContent className=" flex flex-col gap-2 text-white text-lg text-left">
             <Link
-              href="/drone-services"
+              href="/drone-inspection"
               className=" hover:underline hover:decoration-SunsetOrange"
             >
               &middot; DRONE INSPECTION SERVICES

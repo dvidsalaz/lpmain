@@ -72,6 +72,12 @@ const MyNavigationBar = () => {
             <NavigationMenuContent className="flex flex-col gap-4 p-6">
               <Link
                 className="hover:underline hover:decoration-SunsetOrange"
+                href="/drone-inspection"
+              >
+                DRONE INSPECTION
+              </Link>
+              <Link
+                className="hover:underline hover:decoration-SunsetOrange"
                 href="/storm-damage"
               >
                 STORM DAMAGE
