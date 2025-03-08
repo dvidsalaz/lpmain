@@ -15,7 +15,7 @@ import { Carousel } from "@/components/ui/carousel";
 import { CarouselSize } from "@/components/custom/CarouselSize";
 import MyMap from "@/components/custom/MyMap";
 import ObserverProvider from "@/components/custom/ObserverProvider";
-import MyBanner from "@/components/custom/myBanner";
+import MyBanner from "@/components/custom/MyBanner";
 
 export default function Home() {
   return (
@@ -280,10 +280,10 @@ export default function Home() {
             className="bg-[url('/images/IMG_7163.jpg')] shadow-inner-before hover:shadow-inner-after bg-cover bg-center justify-end flex-1 gap-8 flex flex-col p-6 sm:p-10 lg:p-20 items-start text-left"
           >
             <div>
-              <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl intersect-once intersect:motion-preset-slide-up motion-delay-200">
+              <h2 className=" text-gray-300 text-2xl sm:text-3xl lg:text-5xl">
                 About Us
               </h2>
-              <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl intersect-once intersect:motion-preset-slide-up motion-delay-400">
+              <h3 className="text-2xl text-white sm:text-3xl lg:text-5xl ">
                 We work together to make great things happen.
               </h3>
             </div>
