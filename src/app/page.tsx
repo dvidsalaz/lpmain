@@ -68,7 +68,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-between gap-4 ">
             <div
               id="container"
-              className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1 shadow-lg hover:shadow-xl intersect-once intersect:motion-translate-y-in-100 intersect:motion-delay-100"
+              className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1 shadow-lg hover:shadow-xl intersect-once md:intersect:motion-translate-y-in-100 intersect:motion-delay-100"
             >
               <div className=" relative w-full h-96 overflow-hidden">
                 <Image
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
             <div
               id="container"
-              className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1  shadow-lg hover:shadow-xl intersect-once intersect:motion-translate-y-in-100 intersect:motion-delay-200"
+              className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1  shadow-lg hover:shadow-xl intersect-once md:intersect:motion-translate-y-in-100 intersect:motion-delay-200"
             >
               <div className=" relative w-full h-96 overflow-hidden">
                 <Image
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div
               id="container"
-              className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1  shadow-lg hover:shadow-xl intersect-once intersect:motion-translate-y-in-100 intersect:motion-delay-300"
+              className="flex flex-col bg-cloudyGray w-full md:flex-1 lg:flex-1  shadow-lg hover:shadow-xl intersect-once md:intersect:motion-translate-y-in-100 intersect:motion-delay-300"
             >
               <div className=" relative w-full h-96 overflow-hidden">
                 <Image
