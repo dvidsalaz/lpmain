@@ -20,7 +20,7 @@ import { Separator } from "@/components/ui/separator";
 import MyDrawer from "@/components/custom/myDrawer";
 import MyNavigationBar from "@/components/custom/MyNavigation";
 import MyFooter from "@/components/custom/MyFooter";
-import MyBanner from "@/components/custom/myBanner";
+import MyBanner from "@/components/custom/MyBanner";
 
 export default function Privacy() {
   return (

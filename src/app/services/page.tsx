@@ -22,7 +22,6 @@ import MyNavigationBar from "@/components/custom/MyNavigation";
 import MyFooter from "@/components/custom/MyFooter";
 import { CarouselPlugin } from "@/components/custom/CarouselPlugin";
 import MyBanner from "@/components/custom/MyBanner";
-
 export default function Team() {
   return (
     <main className=" min-h-screen">

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 import { MyForm } from "@/components/custom/MyForm";
 import MyFooter from "@/components/custom/MyFooter";
-import MyBanner from "@/components/custom/myBanner";
+import MyBanner from "@/components/custom/MyBanner";
 
 export default function Team() {
   return (
